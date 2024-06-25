@@ -1,0 +1,2775 @@
+﻿
+olatility'nin "getsids" komutu, hafıza görüntüsü üzerinde çalışırken süreçlerin Güvenlik Kimliği (SID) bilgilerini toplamak için kullanılır. SID'ler, Windows işletim sistemi tarafından kullanıcı hesapları, gruplar ve diğer güvenlik öznitelikleri için benzersiz kimlikler olarak kullanılır. Bu kimlikler, erişim kontrolü ve yetkilendirme süreçlerinde önemli rol oynar.
+
+getsids komutu, Volatility aracı içinde işletim sistemi hafızasında çalışan süreçlere ait SID'leri listelemek için kullanılır. Bu, hafıza analizi sırasında sistemdeki kullanıcılar ve süreçler arasındaki ilişkilerin ve yetkilendirmelerin anlaşılmasına yardımcı olabilir.
+
+Örnek olarak, Volatility ile hafıza görüntüsü üzerinde çalışırken getsids komutunu kullanarak sistemde çalışan süreçlerin SID'lerini listeleyebilirsiniz. Bu şekilde, hangi kullanıcıların veya grupların hangi süreçleri başlattığını ve hangi erişim haklarına sahip olduklarını belirlemek daha kolay hale gelir.
+
+"C:\Users\technopc\Downloads\VolatilityWorkbench\vol.exe" -f "C:\Users\technopc\Desktop\volatility3\20240516.mem" windows.getsids.GetSIDs 
+Volatility 3 Framework 2.5.0
+PID	Process	SID	Name
+108	Secure System	S-1-5-18	Local System
+108	Secure System	S-1-5-32-544	Administrators
+108	Secure System	S-1-1-0	Everyone
+108	Secure System	S-1-5-11	Authenticated Users
+108	Secure System	S-1-16-16384	System Mandatory Level
+148	Registry	S-1-5-18	Local System
+148	Registry	S-1-5-32-544	Administrators
+148	Registry	S-1-1-0	Everyone
+148	Registry	S-1-5-11	Authenticated Users
+148	Registry	S-1-16-16384	System Mandatory Level
+600	smss.exe	S-1-5-18	Local System
+600	smss.exe	S-1-5-32-544	Administrators
+600	smss.exe	S-1-1-0	Everyone
+600	smss.exe	S-1-5-11	Authenticated Users
+600	smss.exe	S-1-16-16384	System Mandatory Level
+756	csrss.exe	S-1-5-18	Local System
+756	csrss.exe	S-1-5-32-544	Administrators
+756	csrss.exe	S-1-1-0	Everyone
+756	csrss.exe	S-1-5-11	Authenticated Users
+756	csrss.exe	S-1-16-16384	System Mandatory Level
+1120	wininit.exe	S-1-5-18	Local System
+1120	wininit.exe	S-1-5-32-544	Administrators
+1120	wininit.exe	S-1-1-0	Everyone
+1120	wininit.exe	S-1-5-11	Authenticated Users
+1120	wininit.exe	S-1-16-16384	System Mandatory Level
+1128	csrss.exe	S-1-5-18	Local System
+1128	csrss.exe	S-1-5-32-544	Administrators
+1128	csrss.exe	S-1-1-0	Everyone
+1128	csrss.exe	S-1-5-11	Authenticated Users
+1128	csrss.exe	S-1-16-16384	System Mandatory Level
+1192	winlogon.exe	S-1-5-18	Local System
+1192	winlogon.exe	S-1-5-32-544	Administrators
+1192	winlogon.exe	S-1-1-0	Everyone
+1192	winlogon.exe	S-1-5-11	Authenticated Users
+1192	winlogon.exe	S-1-16-16384	System Mandatory Level
+1268	services.exe	S-1-5-18	Local System
+1268	services.exe	S-1-5-32-544	Administrators
+1268	services.exe	S-1-1-0	Everyone
+1268	services.exe	S-1-5-11	Authenticated Users
+1268	services.exe	S-1-16-16384	System Mandatory Level
+1288	LsaIso.exe	S-1-5-18	Local System
+1288	LsaIso.exe	S-1-5-32-544	Administrators
+1288	LsaIso.exe	S-1-1-0	Everyone
+1288	LsaIso.exe	S-1-5-11	Authenticated Users
+1288	LsaIso.exe	S-1-16-16384	System Mandatory Level
+1296	lsass.exe	S-1-5-18	Local System
+1296	lsass.exe	S-1-5-32-544	Administrators
+1296	lsass.exe	S-1-1-0	Everyone
+1296	lsass.exe	S-1-5-11	Authenticated Users
+1296	lsass.exe	S-1-16-16384	System Mandatory Level
+1424	svchost.exe	S-1-5-18	Local System
+1424	svchost.exe	S-1-16-16384	System Mandatory Level
+1424	svchost.exe	S-1-1-0	Everyone
+1424	svchost.exe	S-1-5-32-545	Users
+1424	svchost.exe	S-1-5-6	Service
+1424	svchost.exe	S-1-5-11	Authenticated Users
+1424	svchost.exe	S-1-5-15	This Organization
+1424	svchost.exe	S-1-5-80-1988685059-1921232356-378231328-2704142597-890457928	-
+1424	svchost.exe	S-1-5-80-1601830629-990752416-3372939810-977361409-3075122917	DcomLaunch
+1424	svchost.exe	S-1-5-80-2659457741-469498900-3203170401-3149177360-3048467625	-
+1424	svchost.exe	S-1-5-80-1230977110-1477712667-2747199032-477530733-939374687	-
+1424	svchost.exe	S-1-5-80-1981970923-922788642-3535304421-2999920573-318732269	PlugPlay
+1424	svchost.exe	S-1-5-80-2343416411-2961288913-598565901-392633850-2111459193	Power
+1424	svchost.exe	S-1-5-80-1662832393-3268938575-4001313665-1200257238-783911988	-
+1424	svchost.exe	S-1-5-5-0-74688	Logon Session
+1424	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+1424	svchost.exe	S-1-5-32-544	Administrators
+1452	fontdrvhost.ex	S-1-5-96-0-1	-
+1452	fontdrvhost.ex	S-1-16-4096	Low Mandatory Level
+1452	fontdrvhost.ex	S-1-1-0	Everyone
+1452	fontdrvhost.ex	S-1-5-32-545	Users
+1452	fontdrvhost.ex	S-1-5-4	Interactive
+1452	fontdrvhost.ex	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+1452	fontdrvhost.ex	S-1-5-11	Authenticated Users
+1452	fontdrvhost.ex	S-1-5-15	This Organization
+1452	fontdrvhost.ex	S-1-5-5-0-74517	Logon Session
+1452	fontdrvhost.ex	S-1-5-96-0	-
+1460	fontdrvhost.ex	S-1-5-96-0-0	-
+1460	fontdrvhost.ex	S-1-16-4096	Low Mandatory Level
+1460	fontdrvhost.ex	S-1-1-0	Everyone
+1460	fontdrvhost.ex	S-1-5-32-545	Users
+1460	fontdrvhost.ex	S-1-5-4	Interactive
+1460	fontdrvhost.ex	S-1-5-11	Authenticated Users
+1460	fontdrvhost.ex	S-1-5-15	This Organization
+1460	fontdrvhost.ex	S-1-5-5-0-74542	Logon Session
+1460	fontdrvhost.ex	S-1-5-96-0	-
+1560	svchost.exe	S-1-5-20	NT Authority
+1560	svchost.exe	S-1-16-16384	System Mandatory Level
+1560	svchost.exe	S-1-1-0	Everyone
+1560	svchost.exe	S-1-5-32-545	Users
+1560	svchost.exe	S-1-5-6	Service
+1560	svchost.exe	S-1-5-11	Authenticated Users
+1560	svchost.exe	S-1-5-15	This Organization
+1560	svchost.exe	S-1-5-80-521322694-906040134-3864710659-1525148216-3451224162	RpcEptMapper
+1560	svchost.exe	S-1-5-80-979556362-403687129-3954533659-2335141334-1547273080	RpcSs
+1560	svchost.exe	S-1-5-5-0-103909	Logon Session
+1560	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+1608	svchost.exe	S-1-5-18	Local System
+1608	svchost.exe	S-1-16-16384	System Mandatory Level
+1608	svchost.exe	S-1-1-0	Everyone
+1608	svchost.exe	S-1-5-32-545	Users
+1608	svchost.exe	S-1-5-6	Service
+1608	svchost.exe	S-1-5-11	Authenticated Users
+1608	svchost.exe	S-1-5-15	This Organization
+1608	svchost.exe	S-1-5-80-1230977110-1477712667-2747199032-477530733-939374687	-
+1608	svchost.exe	S-1-5-5-0-108201	Logon Session
+1608	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+1608	svchost.exe	S-1-5-32-544	Administrators
+1688	svchost.exe	S-1-5-18	Local System
+1688	svchost.exe	S-1-16-16384	System Mandatory Level
+1688	svchost.exe	S-1-1-0	Everyone
+1688	svchost.exe	S-1-5-32-545	Users
+1688	svchost.exe	S-1-5-6	Service
+1688	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+1688	svchost.exe	S-1-5-11	Authenticated Users
+
+1688	svchost.exe	S-1-5-15	This Organization
+1688	svchost.exe	S-1-5-80-44780642-2200031541-2427509763-915290973-996987375	-
+1688	svchost.exe	S-1-5-5-0-112958	Logon Session
+1688	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+1688	svchost.exe	S-1-5-32-544	Administrators
+1732	svchost.exe	S-1-5-18	Local System
+1732	svchost.exe	S-1-16-16384	System Mandatory Level
+1732	svchost.exe	S-1-1-0	Everyone
+1732	svchost.exe	S-1-5-32-545	Users
+1732	svchost.exe	S-1-5-6	Service
+1732	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+1732	svchost.exe	S-1-5-11	Authenticated Users
+1732	svchost.exe	S-1-5-15	This Organization
+1732	svchost.exe	S-1-5-80-3169048008-2586333165-76651690-3609634147-4147641610	-
+1732	svchost.exe	S-1-5-5-0-114485	Logon Session
+1732	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+1732	svchost.exe	S-1-5-32-544	Administrators
+1768	svchost.exe	S-1-5-18	Local System
+1768	svchost.exe	S-1-16-16384	System Mandatory Level
+1768	svchost.exe	S-1-1-0	Everyone
+1768	svchost.exe	S-1-5-32-545	Users
+1768	svchost.exe	S-1-5-6	Service
+1768	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+1768	svchost.exe	S-1-5-11	Authenticated Users
+1768	svchost.exe	S-1-5-15	This Organization
+1768	svchost.exe	S-1-5-80-3914275374-678031271-1603343729-3906112567-2888048264	-
+1768	svchost.exe	S-1-5-5-0-115319	Logon Session
+1768	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+1768	svchost.exe	S-1-5-32-544	Administrators
+1792	svchost.exe	S-1-5-19	NT Authority
+1792	svchost.exe	S-1-16-16384	System Mandatory Level
+1792	svchost.exe	S-1-1-0	Everyone
+1792	svchost.exe	S-1-5-32-545	Users
+
+1792	svchost.exe	S-1-5-6	Service
+1792	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+1792	svchost.exe	S-1-5-11	Authenticated Users
+1792	svchost.exe	S-1-5-15	This Organization
+1792	svchost.exe	S-1-5-80-172094073-716411664-54255058-185476446-2329512179	lmhosts
+1792	svchost.exe	S-1-5-5-0-113166	Logon Session
+1792	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+1792	svchost.exe	S-1-5-32-3167453650-624722384-889205278-321484983-714554697-3592933102-807660695-1632717421	-
+1792	svchost.exe	S-1-5-32-383293015-3350740429-1839969850-1819881064-1569454686-4198502490-78857879-1413643331	-
+1792	svchost.exe	S-1-5-32-2035927579-283314533-3422103930-3587774809-765962649-3034203285-3544878962-607181067	-
+1792	svchost.exe	S-1-5-32-3659434007-2290108278-1125199667-3679670526-1293081662-2164323352-1777701501-2595986263	-
+1792	svchost.exe	S-1-5-32-11742800-2107441976-3443185924-4134956905-3840447964-3749968454-3843513199-670971053	-
+1792	svchost.exe	S-1-5-32-3523901360-1745872541-794127107-675934034-1867954868-1951917511-1111796624-2052600462	-
+1792	svchost.exe	S-1-5-32-1488445330-856673777-1515413738-1380768593-2977925950-2228326386-886087428-2802422674	-
+1800	svchost.exe	S-1-5-19	NT Authority
+1800	svchost.exe	S-1-16-16384	System Mandatory Level
+1800	svchost.exe	S-1-1-0	Everyone
+1800	svchost.exe	S-1-5-32-545	Users
+1800	svchost.exe	S-1-5-6	Service
+1800	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+1800	svchost.exe	S-1-5-11	Authenticated Users
+1800	svchost.exe	S-1-5-15	This Organization
+1800	svchost.exe	S-1-5-80-410965207-2550896871-1717734767-2321332215-3755966139	-
+1800	svchost.exe	S-1-5-80-3557709225-3446934100-2592608561-3401846376-4273827271	-
+1800	svchost.exe	S-1-5-5-0-114954	Logon Session
+1800	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+1800	svchost.exe	S-1-5-32-3167453650-624722384-889205278-321484983-714554697-3592933102-807660695-1632717421	-
+1800	svchost.exe	S-1-5-32-383293015-3350740429-1839969850-1819881064-1569454686-4198502490-78857879-1413643331	-
+1800	svchost.exe	S-1-5-32-2035927579-283314533-3422103930-3587774809-765962649-3034203285-3544878962-607181067	-
+1800	svchost.exe	S-1-5-32-3659434007-2290108278-1125199667-3679670526-1293081662-2164323352-1777701501-2595986263	-
+1800	svchost.exe	S-1-5-32-11742800-2107441976-3443185924-4134956905-3840447964-3749968454-3843513199-670971053	-
+1800	svchost.exe	S-1-5-32-3523901360-1745872541-794127107-675934034-1867954868-1951917511-1111796624-2052600462	-
+1800	svchost.exe	S-1-5-32-1488445330-856673777-1515413738-1380768593-2977925950-2228326386-886087428-2802422674	-
+1808	svchost.exe	S-1-5-19	NT Authority
+1808	svchost.exe	S-1-16-16384	System Mandatory Level
+1808	svchost.exe	S-1-1-0	Everyone
+1808	svchost.exe	S-1-5-32-545	Users
+1808	svchost.exe	S-1-5-6	Service
+1808	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+1808	svchost.exe	S-1-5-11	Authenticated Users
+1808	svchost.exe	S-1-5-15	This Organization
+1808	svchost.exe	S-1-5-80-1264790548-4164306546-4160824920-750804445-3452039388	-
+1808	svchost.exe	S-1-5-5-0-113558	Logon Session
+1808	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+1808	svchost.exe	S-1-5-32-3167453650-624722384-889205278-321484983-714554697-3592933102-807660695-1632717421	-
+1808	svchost.exe	S-1-5-32-383293015-3350740429-1839969850-1819881064-1569454686-4198502490-78857879-1413643331	-
+1808	svchost.exe	S-1-5-32-2035927579-283314533-3422103930-3587774809-765962649-3034203285-3544878962-607181067	-
+1808	svchost.exe	S-1-5-32-3659434007-2290108278-1125199667-3679670526-1293081662-2164323352-1777701501-2595986263	-
+1808	svchost.exe	S-1-5-32-11742800-2107441976-3443185924-4134956905-3840447964-3749968454-3843513199-670971053	-
+1808	svchost.exe	S-1-5-32-3523901360-1745872541-794127107-675934034-1867954868-1951917511-1111796624-2052600462	-
+1808	svchost.exe	S-1-5-32-1488445330-856673777-1515413738-1380768593-2977925950-2228326386-886087428-2802422674	-
+1816	svchost.exe	S-1-5-19	NT Authority
+1816	svchost.exe	S-1-16-16384	System Mandatory Level
+1816	svchost.exe	S-1-1-0	Everyone
+1816	svchost.exe	S-1-5-32-545	Users
+1816	svchost.exe	S-1-5-6	Service
+1816	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+1816	svchost.exe	S-1-5-11	Authenticated Users
+1816	svchost.exe	S-1-5-15	This Organization
+1816	svchost.exe	S-1-5-80-2586557155-168560303-1373426920-983201488-1499765686	bthserv
+1816	svchost.exe	S-1-5-5-0-113735	Logon Session
+1816	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+1816	svchost.exe	S-1-5-32-3167453650-624722384-889205278-321484983-714554697-3592933102-807660695-1632717421	-
+1816	svchost.exe	S-1-5-32-383293015-3350740429-1839969850-1819881064-1569454686-4198502490-78857879-1413643331	-
+1816	svchost.exe	S-1-5-32-2035927579-283314533-3422103930-3587774809-765962649-3034203285-3544878962-607181067	-
+1816	svchost.exe	S-1-5-32-3659434007-2290108278-1125199667-3679670526-1293081662-2164323352-1777701501-2595986263	-
+1816	svchost.exe	S-1-5-32-11742800-2107441976-3443185924-4134956905-3840447964-3749968454-3843513199-670971053	-
+1816	svchost.exe	S-1-5-32-3523901360-1745872541-794127107-675934034-1867954868-1951917511-1111796624-2052600462	-
+1816	svchost.exe	S-1-5-32-1488445330-856673777-1515413738-1380768593-2977925950-2228326386-886087428-2802422674	-
+1824	svchost.exe	S-1-5-19	NT Authority
+1824	svchost.exe	S-1-16-16384	System Mandatory Level
+1824	svchost.exe	S-1-1-0	Everyone
+1824	svchost.exe	S-1-5-32-545	Users
+1824	svchost.exe	S-1-5-6	Service
+1824	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+1824	svchost.exe	S-1-5-11	Authenticated Users
+1824	svchost.exe	S-1-5-15	This Organization
+1824	svchost.exe	S-1-5-80-3316959809-2577409367-488518535-1805171532-1438653141	-
+1824	svchost.exe	S-1-5-5-0-113382	Logon Session
+1824	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+1824	svchost.exe	S-1-5-32-3167453650-624722384-889205278-321484983-714554697-3592933102-807660695-1632717421	-
+1824	svchost.exe	S-1-5-32-383293015-3350740429-1839969850-1819881064-1569454686-4198502490-78857879-1413643331	-
+1824	svchost.exe	S-1-5-32-2035927579-283314533-3422103930-3587774809-765962649-3034203285-3544878962-607181067	-
+1824	svchost.exe	S-1-5-32-3659434007-2290108278-1125199667-3679670526-1293081662-2164323352-1777701501-2595986263	-
+1824	svchost.exe	S-1-5-32-11742800-2107441976-3443185924-4134956905-3840447964-3749968454-3843513199-670971053	-
+1824	svchost.exe	S-1-5-32-3523901360-1745872541-794127107-675934034-1867954868-1951917511-1111796624-2052600462	-
+1824	svchost.exe	S-1-5-32-1488445330-856673777-1515413738-1380768593-2977925950-2228326386-886087428-2802422674	-
+1904	svchost.exe	S-1-5-18	Local System
+1904	svchost.exe	S-1-16-16384	System Mandatory Level
+1904	svchost.exe	S-1-1-0	Everyone
+1904	svchost.exe	S-1-5-32-545	Users
+1904	svchost.exe	S-1-5-6	Service
+1904	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+1904	svchost.exe	S-1-5-11	Authenticated Users
+1904	svchost.exe	S-1-5-15	This Organization
+1904	svchost.exe	S-1-5-80-89818136-74175777-88572358-3912780041-2421659406	hidserv
+1904	svchost.exe	S-1-5-5-0-117679	Logon Session
+1904	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+1904	svchost.exe	S-1-5-32-544	Administrators
+1912	svchost.exe	S-1-5-18	Local System
+1912	svchost.exe	S-1-16-16384	System Mandatory Level
+1912	svchost.exe	S-1-1-0	Everyone
+1912	svchost.exe	S-1-5-32-545	Users
+1912	svchost.exe	S-1-5-6	Service
+1912	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+1912	svchost.exe	S-1-5-11	Authenticated Users
+1912	svchost.exe	S-1-5-15	This Organization
+1912	svchost.exe	S-1-5-80-1999281942-4196217620-51267815-1628483199-606183737	-
+1912	svchost.exe	S-1-5-5-0-117627	Logon Session
+1912	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+1912	svchost.exe	S-1-5-32-544	Administrators
+1364	dwm.exe	S-1-5-90-0-1	-
+1364	dwm.exe	S-1-16-16384	System Mandatory Level
+1364	dwm.exe	S-1-1-0	Everyone
+1364	dwm.exe	S-1-5-32-545	Users
+1364	dwm.exe	S-1-5-4	Interactive
+1364	dwm.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+1364	dwm.exe	S-1-5-11	Authenticated Users
+1364	dwm.exe	S-1-5-15	This Organization
+1364	dwm.exe	S-1-5-19	NT Authority
+1364	dwm.exe	S-1-2-0	Local (Users with the ability to log in locally)
+1364	dwm.exe	S-1-5-90-0	-
+1724	svchost.exe	S-1-5-19	NT Authority
+1724	svchost.exe	S-1-16-16384	System Mandatory Level
+1724	svchost.exe	S-1-1-0	Everyone
+1724	svchost.exe	S-1-5-32-545	Users
+1724	svchost.exe	S-1-5-6	Service
+1724	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+1724	svchost.exe	S-1-5-11	Authenticated Users
+1724	svchost.exe	S-1-5-15	This Organization
+1724	svchost.exe	S-1-5-80-2310782386-4237065203-3688974353-390202159-3511571085	nsi
+1724	svchost.exe	S-1-5-5-0-121906	Logon Session
+1724	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+1724	svchost.exe	S-1-5-32-3167453650-624722384-889205278-321484983-714554697-3592933102-807660695-1632717421	-
+1724	svchost.exe	S-1-5-32-383293015-3350740429-1839969850-1819881064-1569454686-4198502490-78857879-1413643331	-
+1724	svchost.exe	S-1-5-32-2035927579-283314533-3422103930-3587774809-765962649-3034203285-3544878962-607181067	-
+1724	svchost.exe	S-1-5-32-3659434007-2290108278-1125199667-3679670526-1293081662-2164323352-1777701501-2595986263	-
+
+1724	svchost.exe	S-1-5-32-11742800-2107441976-3443185924-4134956905-3840447964-3749968454-3843513199-670971053	-
+1724	svchost.exe	S-1-5-32-3523901360-1745872541-794127107-675934034-1867954868-1951917511-1111796624-2052600462	-
+1724	svchost.exe	S-1-5-32-1488445330-856673777-1515413738-1380768593-2977925950-2228326386-886087428-2802422674	-
+2064	svchost.exe	S-1-5-18	Local System
+
+2064	svchost.exe	S-1-16-16384	System Mandatory Level
+2064	svchost.exe	S-1-1-0	Everyone
+2064	svchost.exe	S-1-5-32-545	Users
+2064	svchost.exe	S-1-5-6	Service
+2064	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+2064	svchost.exe	S-1-5-11	Authenticated Users
+2064	svchost.exe	S-1-5-15	This Organization
+2064	svchost.exe	S-1-5-80-1646229720-1474186231-1049421145-3719583575-3014288788	-
+2064	svchost.exe	S-1-5-5-0-123220	Logon Session
+2064	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+2064	svchost.exe	S-1-5-32-544	Administrators
+2072	svchost.exe	S-1-5-20	NT Authority
+2072	svchost.exe	S-1-16-16384	System Mandatory Level
+2072	svchost.exe	S-1-1-0	Everyone
+2072	svchost.exe	S-1-5-32-545	Users
+2072	svchost.exe	S-1-5-6	Service
+2072	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+2072	svchost.exe	S-1-5-11	Authenticated Users
+2072	svchost.exe	S-1-5-15	This Organization
+2072	svchost.exe	S-1-5-80-3635958274-2059881490-2225992882-984577281-633327304	netprofm
+2072	svchost.exe	S-1-5-5-0-123255	Logon Session
+2072	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+2156	svchost.exe	S-1-5-18	Local System
+2156	svchost.exe	S-1-5-32-544	Administrators
+2156	svchost.exe	S-1-1-0	Everyone
+2156	svchost.exe	S-1-5-11	Authenticated Users
+2156	svchost.exe	S-1-16-16384	System Mandatory Level
+2224	WUDFHost.exe	S-1-5-19	NT Authority
+2224	WUDFHost.exe	S-1-16-16384	System Mandatory Level
+2224	WUDFHost.exe	S-1-1-0	Everyone
+2224	WUDFHost.exe	S-1-5-32-545	Users
+2224	WUDFHost.exe	S-1-5-6	Service
+2224	WUDFHost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+2224	WUDFHost.exe	S-1-5-11	Authenticated Users
+2224	WUDFHost.exe	S-1-5-15	This Organization
+2224	WUDFHost.exe	S-1-5-84-0-127516-0-0-0	-
+2224	WUDFHost.exe	S-1-5-84-0-0-0-0-0	Usermode Drivers
+2224	WUDFHost.exe	S-1-5-32-3167453650-624722384-889205278-321484983-714554697-3592933102-807660695-1632717421	-
+2224	WUDFHost.exe	S-1-5-32-383293015-3350740429-1839969850-1819881064-1569454686-4198502490-78857879-1413643331	-
+2224	WUDFHost.exe	S-1-5-32-2035927579-283314533-3422103930-3587774809-765962649-3034203285-3544878962-607181067	-
+2224	WUDFHost.exe	S-1-5-32-3659434007-2290108278-1125199667-3679670526-1293081662-2164323352-1777701501-2595986263	-
+2224	WUDFHost.exe	S-1-5-32-11742800-2107441976-3443185924-4134956905-3840447964-3749968454-3843513199-670971053	-
+2224	WUDFHost.exe	S-1-5-32-3523901360-1745872541-794127107-675934034-1867954868-1951917511-1111796624-2052600462	-
+2224	WUDFHost.exe	S-1-5-32-1488445330-856673777-1515413738-1380768593-2977925950-2228326386-886087428-2802422674	-
+2340	svchost.exe	S-1-5-18	Local System
+2340	svchost.exe	S-1-5-32-544	Administrators
+2340	svchost.exe	S-1-1-0	Everyone
+2340	svchost.exe	S-1-5-11	Authenticated Users
+2340	svchost.exe	S-1-16-16384	System Mandatory Level
+2388	svchost.exe	S-1-5-18	Local System
+2388	svchost.exe	S-1-16-16384	System Mandatory Level
+2388	svchost.exe	S-1-1-0	Everyone
+2388	svchost.exe	S-1-5-32-545	Users
+2388	svchost.exe	S-1-5-6	Service
+2388	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+2388	svchost.exe	S-1-5-11	Authenticated Users
+2388	svchost.exe	S-1-5-15	This Organization
+2388	svchost.exe	S-1-5-80-3750560858-172214265-3889451188-1914796615-4100997547	Winmgmt
+2388	svchost.exe	S-1-5-5-0-134412	Logon Session
+2388	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+2388	svchost.exe	S-1-5-32-544	Administrators
+2448	svchost.exe	S-1-5-18	Local System
+2448	svchost.exe	S-1-16-16384	System Mandatory Level
+2448	svchost.exe	S-1-1-0	Everyone
+2448	svchost.exe	S-1-5-32-545	Users
+2448	svchost.exe	S-1-5-6	Service
+2448	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+2448	svchost.exe	S-1-5-11	Authenticated Users
+2448	svchost.exe	S-1-5-15	This Organization
+2448	svchost.exe	S-1-5-80-3369530244-1263555520-1552818992-544823788-1590281562	-
+2448	svchost.exe	S-1-5-5-0-135725	Logon Session
+2448	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+2448	svchost.exe	S-1-5-32-544	Administrators
+2560	vmms.exe	S-1-5-18	Local System
+2560	vmms.exe	S-1-16-16384	System Mandatory Level
+2560	vmms.exe	S-1-1-0	Everyone
+2560	vmms.exe	S-1-5-32-545	Users
+2560	vmms.exe	S-1-5-6	Service
+2560	vmms.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+2560	vmms.exe	S-1-5-11	Authenticated Users
+2560	vmms.exe	S-1-5-15	This Organization
+2560	vmms.exe	S-1-5-80-372862235-2032486189-3501277350-209496046-1642810407	-
+2560	vmms.exe	S-1-5-5-0-138003	Logon Session
+2560	vmms.exe	S-1-2-0	Local (Users with the ability to log in locally)
+2560	vmms.exe	S-1-5-32-544	Administrators
+2672	svchost.exe	S-1-5-19	NT Authority
+2672	svchost.exe	S-1-16-16384	System Mandatory Level
+2672	svchost.exe	S-1-1-0	Everyone
+2672	svchost.exe	S-1-5-32-545	Users
+2672	svchost.exe	S-1-5-6	Service
+2672	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+2672	svchost.exe	S-1-5-11	Authenticated Users
+2672	svchost.exe	S-1-5-15	This Organization
+2672	svchost.exe	S-1-5-80-2636612206-2079418197-1004231589-1812192203-4197254245	-
+2672	svchost.exe	S-1-5-5-0-142871	Logon Session
+2672	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+2672	svchost.exe	S-1-5-32-3167453650-624722384-889205278-321484983-714554697-3592933102-807660695-1632717421	-
+2672	svchost.exe	S-1-5-32-383293015-3350740429-1839969850-1819881064-1569454686-4198502490-78857879-1413643331	-
+2672	svchost.exe	S-1-5-32-2035927579-283314533-3422103930-3587774809-765962649-3034203285-3544878962-607181067	-
+2672	svchost.exe	S-1-5-32-3659434007-2290108278-1125199667-3679670526-1293081662-2164323352-1777701501-2595986263	-
+2672	svchost.exe	S-1-5-32-11742800-2107441976-3443185924-4134956905-3840447964-3749968454-3843513199-670971053	-
+2672	svchost.exe	S-1-5-32-3523901360-1745872541-794127107-675934034-1867954868-1951917511-1111796624-2052600462	-
+2672	svchost.exe	S-1-5-32-1488445330-856673777-1515413738-1380768593-2977925950-2228326386-886087428-2802422674	-
+2720	svchost.exe	S-1-5-20	NT Authority
+2720	svchost.exe	S-1-16-16384	System Mandatory Level
+2720	svchost.exe	S-1-1-0	Everyone
+2720	svchost.exe	S-1-5-32-545	Users
+2720	svchost.exe	S-1-5-6	Service
+2720	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+2720	svchost.exe	S-1-5-11	Authenticated Users
+2720	svchost.exe	S-1-5-15	This Organization
+2720	svchost.exe	S-1-5-80-859482183-879914841-863379149-1145462774-2388618682	Dnscache
+2720	svchost.exe	S-1-5-5-0-143885	Logon Session
+2720	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+
+2748	svchost.exe	S-1-5-18	Local System
+2748	svchost.exe	S-1-16-16384	System Mandatory Level
+2748	svchost.exe	S-1-1-0	Everyone
+2748	svchost.exe	S-1-5-32-545	Users
+2748	svchost.exe	S-1-5-6	Service
+2748	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+2748	svchost.exe	S-1-5-11	Authenticated Users
+2748	svchost.exe	S-1-5-15	This Organization
+2748	svchost.exe	S-1-5-80-2536636004-4072673470-1048721469-2703517266-1433793019	-
+2748	svchost.exe	S-1-5-5-0-145143	Logon Session
+2748	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+2748	svchost.exe	S-1-5-32-544	Administrators
+3032	svchost.exe	S-1-5-19	NT Authority
+3032	svchost.exe	S-1-16-16384	System Mandatory Level
+3032	svchost.exe	S-1-1-0	Everyone
+3032	svchost.exe	S-1-5-32-545	Users
+3032	svchost.exe	S-1-5-6	Service
+3032	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+3032	svchost.exe	S-1-5-11	Authenticated Users
+3032	svchost.exe	S-1-5-15	This Organization
+3032	svchost.exe	S-1-5-80-2940520708-3855866260-481812779-327648279-1710889582	Dhcp
+3032	svchost.exe	S-1-5-5-0-173849	Logon Session
+3032	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+3032	svchost.exe	S-1-5-32-3167453650-624722384-889205278-321484983-714554697-3592933102-807660695-1632717421	-
+3032	svchost.exe	S-1-5-32-383293015-3350740429-1839969850-1819881064-1569454686-4198502490-78857879-1413643331	-
+3032	svchost.exe	S-1-5-32-2035927579-283314533-3422103930-3587774809-765962649-3034203285-3544878962-607181067	-
+3032	svchost.exe	S-1-5-32-3659434007-2290108278-1125199667-3679670526-1293081662-2164323352-1777701501-2595986263	-
+3032	svchost.exe	S-1-5-32-11742800-2107441976-3443185924-4134956905-3840447964-3749968454-3843513199-670971053	-
+3032	svchost.exe	S-1-5-32-3523901360-1745872541-794127107-675934034-1867954868-1951917511-1111796624-2052600462	-
+3032	svchost.exe	S-1-5-32-1488445330-856673777-1515413738-1380768593-2977925950-2228326386-886087428-2802422674	-
+3040	dasHost.exe	S-1-5-19	NT Authority
+3040	dasHost.exe	S-1-16-16384	System Mandatory Level
+3040	dasHost.exe	S-1-1-0	Everyone
+3040	dasHost.exe	S-1-5-32-545	Users
+3040	dasHost.exe	S-1-5-6	Service
+3040	dasHost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+3040	dasHost.exe	S-1-5-11	Authenticated Users
+3040	dasHost.exe	S-1-5-15	This Organization
+3040	dasHost.exe	S-1-5-92-933257453-1117212482-1216340100-3328771170-0	-
+3040	dasHost.exe	S-1-5-92-3339056971-1291069075-3798698925-2882100687-0	-
+3040	dasHost.exe	S-1-5-92-1467204242-1103346305-4253404563-2848856930-0	-
+3040	dasHost.exe	S-1-5-92-3101059759-1284816879-721976251-1813760811-0	-
+3040	dasHost.exe	S-1-5-92-1465950962-1269850781-1201917113-1807638133-0	-
+3040	dasHost.exe	S-1-5-92-772714260-1330759245-1607081917-2237938158-0	-
+3040	dasHost.exe	S-1-5-92-507857385-1133792159-3243016362-2537263318-0	-
+3040	dasHost.exe	S-1-5-21-2702878673-795188819-444038987-1031	-
+3040	dasHost.exe	S-1-5-21-2702878673-795188819-444038987-1033	-
+3040	dasHost.exe	S-1-5-21-2702878673-795188819-444038987-1447	-
+3040	dasHost.exe	S-1-5-21-2702878673-795188819-444038987-1043	-
+3040	dasHost.exe	S-1-5-32-3167453650-624722384-889205278-321484983-714554697-3592933102-807660695-1632717421	-
+3040	dasHost.exe	S-1-5-32-383293015-3350740429-1839969850-1819881064-1569454686-4198502490-78857879-1413643331	-
+3040	dasHost.exe	S-1-5-32-2035927579-283314533-3422103930-3587774809-765962649-3034203285-3544878962-607181067	-
+3040	dasHost.exe	S-1-5-32-3659434007-2290108278-1125199667-3679670526-1293081662-2164323352-1777701501-2595986263	-
+3040	dasHost.exe	S-1-5-32-11742800-2107441976-3443185924-4134956905-3840447964-3749968454-3843513199-670971053	-
+3040	dasHost.exe	S-1-5-32-3523901360-1745872541-794127107-675934034-1867954868-1951917511-1111796624-2052600462	-
+3040	dasHost.exe	S-1-5-32-1488445330-856673777-1515413738-1380768593-2977925950-2228326386-886087428-2802422674	-
+3088	svchost.exe	S-1-5-18	Local System
+3088	svchost.exe	S-1-16-16384	System Mandatory Level
+3088	svchost.exe	S-1-1-0	Everyone
+3088	svchost.exe	S-1-5-32-545	Users
+3088	svchost.exe	S-1-5-6	Service
+3088	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+3088	svchost.exe	S-1-5-11	Authenticated Users
+3088	svchost.exe	S-1-5-15	This Organization
+3088	svchost.exe	S-1-5-80-991716400-826889928-193533569-83613712-222221544	-
+3088	svchost.exe	S-1-5-5-0-180562	Logon Session
+3088	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+3088	svchost.exe	S-1-5-32-544	Administrators
+3172	svchost.exe	S-1-5-19	NT Authority
+3172	svchost.exe	S-1-16-16384	System Mandatory Level
+3172	svchost.exe	S-1-1-0	Everyone
+3172	svchost.exe	S-1-5-32-545	Users
+3172	svchost.exe	S-1-5-6	Service
+3172	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+3172	svchost.exe	S-1-5-11	Authenticated Users
+3172	svchost.exe	S-1-5-15	This Organization
+3172	svchost.exe	S-1-5-80-880578595-1860270145-482643319-2788375705-1540778122	eventlog
+3172	svchost.exe	S-1-5-5-0-214273	Logon Session
+3172	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+3172	svchost.exe	S-1-5-32-3167453650-624722384-889205278-321484983-714554697-3592933102-807660695-1632717421	-
+3172	svchost.exe	S-1-5-32-383293015-3350740429-1839969850-1819881064-1569454686-4198502490-78857879-1413643331	-
+3172	svchost.exe	S-1-5-32-2035927579-283314533-3422103930-3587774809-765962649-3034203285-3544878962-607181067	-
+3172	svchost.exe	S-1-5-32-3659434007-2290108278-1125199667-3679670526-1293081662-2164323352-1777701501-2595986263	-
+3172	svchost.exe	S-1-5-32-11742800-2107441976-3443185924-4134956905-3840447964-3749968454-3843513199-670971053	-
+3172	svchost.exe	S-1-5-32-3523901360-1745872541-794127107-675934034-1867954868-1951917511-1111796624-2052600462	-
+3172	svchost.exe	S-1-5-32-1488445330-856673777-1515413738-1380768593-2977925950-2228326386-886087428-2802422674	-
+3196	amdfendrsr.exe	S-1-5-18	Local System
+3196	amdfendrsr.exe	S-1-5-32-544	Administrators
+3196	amdfendrsr.exe	S-1-1-0	Everyone
+3196	amdfendrsr.exe	S-1-5-11	Authenticated Users
+3196	amdfendrsr.exe	S-1-16-16384	System Mandatory Level
+3204	atiesrxx.exe	S-1-5-18	Local System
+3204	atiesrxx.exe	S-1-5-32-544	Administrators
+3204	atiesrxx.exe	S-1-1-0	Everyone
+3204	atiesrxx.exe	S-1-5-11	Authenticated Users
+3204	atiesrxx.exe	S-1-16-16384	System Mandatory Level
+3512	svchost.exe	S-1-5-19	NT Authority
+3512	svchost.exe	S-1-16-16384	System Mandatory Level
+3512	svchost.exe	S-1-1-0	Everyone
+3512	svchost.exe	S-1-5-32-545	Users
+3512	svchost.exe	S-1-5-6	Service
+3512	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+3512	svchost.exe	S-1-5-11	Authenticated Users
+3512	svchost.exe	S-1-5-15	This Organization
+3512	svchost.exe	S-1-5-80-2455429942-3131183193-3617688776-595395669-3772047725	WinHttpAutoProxySvc
+3512	svchost.exe	S-1-5-5-0-231122	Logon Session
+3512	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+3512	svchost.exe	S-1-5-32-3167453650-624722384-889205278-321484983-714554697-3592933102-807660695-1632717421	-
+3512	svchost.exe	S-1-5-32-383293015-3350740429-1839969850-1819881064-1569454686-4198502490-78857879-1413643331	-
+3512	svchost.exe	S-1-5-32-2035927579-283314533-3422103930-3587774809-765962649-3034203285-3544878962-607181067	-
+3512	svchost.exe	S-1-5-32-3659434007-2290108278-1125199667-3679670526-1293081662-2164323352-1777701501-2595986263	-
+3512	svchost.exe	S-1-5-32-11742800-2107441976-3443185924-4134956905-3840447964-3749968454-3843513199-670971053	-
+3512	svchost.exe	S-1-5-32-3523901360-1745872541-794127107-675934034-1867954868-1951917511-1111796624-2052600462	-
+3512	svchost.exe	S-1-5-32-1488445330-856673777-1515413738-1380768593-2977925950-2228326386-886087428-2802422674	-
+3612	svchost.exe	S-1-5-18	Local System
+3612	svchost.exe	S-1-16-16384	System Mandatory Level
+3612	svchost.exe	S-1-1-0	Everyone
+3612	svchost.exe	S-1-5-32-545	Users
+3612	svchost.exe	S-1-5-6	Service
+3612	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+3612	svchost.exe	S-1-5-11	Authenticated Users
+3612	svchost.exe	S-1-5-15	This Organization
+3612	svchost.exe	S-1-5-80-4125092361-1567024937-842823819-2091237918-836075745	Schedule
+3612	svchost.exe	S-1-5-5-0-232827	Logon Session
+3612	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+3612	svchost.exe	S-1-5-32-544	Administrators
+3676	svchost.exe	S-1-5-18	Local System
+3676	svchost.exe	S-1-16-16384	System Mandatory Level
+3676	svchost.exe	S-1-1-0	Everyone
+3676	svchost.exe	S-1-5-32-545	Users
+3676	svchost.exe	S-1-5-6	Service
+3676	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+3676	svchost.exe	S-1-5-11	Authenticated Users
+3676	svchost.exe	S-1-5-15	This Organization
+3676	svchost.exe	S-1-5-80-942605847-3469100509-1716550209-2656375805-4130630430	-
+3676	svchost.exe	S-1-5-5-0-235059	Logon Session
+3676	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+3676	svchost.exe	S-1-5-32-544	Administrators
+3764	svchost.exe	S-1-5-19	NT Authority
+3764	svchost.exe	S-1-16-16384	System Mandatory Level
+3764	svchost.exe	S-1-1-0	Everyone
+3764	svchost.exe	S-1-5-32-545	Users
+3764	svchost.exe	S-1-5-6	Service
+3764	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+3764	svchost.exe	S-1-5-11	Authenticated Users
+3764	svchost.exe	S-1-5-15	This Organization
+3764	svchost.exe	S-1-5-80-1383147646-27650227-2710666058-1662982300-1023958487	BFE
+3764	svchost.exe	S-1-5-80-3088073201-1464728630-1879813800-1107566885-823218052	MpsSvc
+3764	svchost.exe	S-1-5-5-0-236478	Logon Session
+3764	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+3764	svchost.exe	S-1-5-33	Write Restricted
+3764	svchost.exe	S-1-5-32-3167453650-624722384-889205278-321484983-714554697-3592933102-807660695-1632717421	-
+3764	svchost.exe	S-1-5-32-383293015-3350740429-1839969850-1819881064-1569454686-4198502490-78857879-1413643331	-
+3764	svchost.exe	S-1-5-32-2035927579-283314533-3422103930-3587774809-765962649-3034203285-3544878962-607181067	-
+3764	svchost.exe	S-1-5-32-3659434007-2290108278-1125199667-3679670526-1293081662-2164323352-1777701501-2595986263	-
+3764	svchost.exe	S-1-5-32-11742800-2107441976-3443185924-4134956905-3840447964-3749968454-3843513199-670971053	-
+3764	svchost.exe	S-1-5-32-3523901360-1745872541-794127107-675934034-1867954868-1951917511-1111796624-2052600462	-
+3764	svchost.exe	S-1-5-32-1488445330-856673777-1515413738-1380768593-2977925950-2228326386-886087428-2802422674	-
+3888	svchost.exe	S-1-5-18	Local System
+3888	svchost.exe	S-1-16-16384	System Mandatory Level
+3888	svchost.exe	S-1-1-0	Everyone
+3888	svchost.exe	S-1-5-32-545	Users
+3888	svchost.exe	S-1-5-6	Service
+
+3888	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+3888	svchost.exe	S-1-5-11	Authenticated Users
+3888	svchost.exe	S-1-5-15	This Organization
+3888	svchost.exe	S-1-5-80-2009329905-444645132-2728249442-922493431-93864177	SharedAccess
+3888	svchost.exe	S-1-5-5-0-242064	Logon Session
+3888	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+3888	svchost.exe	S-1-5-32-544	Administrators
+3924	svchost.exe	S-1-5-19	NT Authority
+3924	svchost.exe	S-1-16-16384	System Mandatory Level
+3924	svchost.exe	S-1-1-0	Everyone
+3924	svchost.exe	S-1-5-32-545	Users
+3924	svchost.exe	S-1-5-6	Service
+3924	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+3924	svchost.exe	S-1-5-11	Authenticated Users
+3924	svchost.exe	S-1-5-15	This Organization
+3924	svchost.exe	S-1-5-80-486568272-975562994-1883531608-2732234258-332540751	SSDPSRV
+3924	svchost.exe	S-1-5-5-0-242875	Logon Session
+3924	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+3924	svchost.exe	S-1-5-32-3167453650-624722384-889205278-321484983-714554697-3592933102-807660695-1632717421	-
+3924	svchost.exe	S-1-5-32-383293015-3350740429-1839969850-1819881064-1569454686-4198502490-78857879-1413643331	-
+3924	svchost.exe	S-1-5-32-2035927579-283314533-3422103930-3587774809-765962649-3034203285-3544878962-607181067	-
+3924	svchost.exe	S-1-5-32-3659434007-2290108278-1125199667-3679670526-1293081662-2164323352-1777701501-2595986263	-
+3924	svchost.exe	S-1-5-32-11742800-2107441976-3443185924-4134956905-3840447964-3749968454-3843513199-670971053	-
+3924	svchost.exe	S-1-5-32-3523901360-1745872541-794127107-675934034-1867954868-1951917511-1111796624-2052600462	-
+3924	svchost.exe	S-1-5-32-1488445330-856673777-1515413738-1380768593-2977925950-2228326386-886087428-2802422674	-
+3964	svchost.exe	S-1-5-18	Local System
+3964	svchost.exe	S-1-5-32-544	Administrators
+3964	svchost.exe	S-1-1-0	Everyone
+3964	svchost.exe	S-1-5-11	Authenticated Users
+3964	svchost.exe	S-1-16-16384	System Mandatory Level
+3972	svchost.exe	S-1-5-18	Local System
+3972	svchost.exe	S-1-5-32-544	Administrators
+3972	svchost.exe	S-1-1-0	Everyone
+3972	svchost.exe	S-1-5-11	Authenticated Users
+3972	svchost.exe	S-1-16-16384	System Mandatory Level
+3980	svchost.exe	S-1-5-19	NT Authority
+3980	svchost.exe	S-1-16-16384	System Mandatory Level
+3980	svchost.exe	S-1-1-0	Everyone
+3980	svchost.exe	S-1-5-32-545	Users
+3980	svchost.exe	S-1-5-6	Service
+3980	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+3980	svchost.exe	S-1-5-11	Authenticated Users
+3980	svchost.exe	S-1-5-15	This Organization
+3980	svchost.exe	S-1-5-80-1772571935-1555666882-3369284645-1675012128-2386634627	EventSystem
+3980	svchost.exe	S-1-5-5-0-243548	Logon Session
+3980	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+3980	svchost.exe	S-1-5-32-3167453650-624722384-889205278-321484983-714554697-3592933102-807660695-1632717421	-
+3980	svchost.exe	S-1-5-32-383293015-3350740429-1839969850-1819881064-1569454686-4198502490-78857879-1413643331	-
+3980	svchost.exe	S-1-5-32-2035927579-283314533-3422103930-3587774809-765962649-3034203285-3544878962-607181067	-
+3980	svchost.exe	S-1-5-32-3659434007-2290108278-1125199667-3679670526-1293081662-2164323352-1777701501-2595986263	-
+3980	svchost.exe	S-1-5-32-11742800-2107441976-3443185924-4134956905-3840447964-3749968454-3843513199-670971053	-
+3980	svchost.exe	S-1-5-32-3523901360-1745872541-794127107-675934034-1867954868-1951917511-1111796624-2052600462	-
+3980	svchost.exe	S-1-5-32-1488445330-856673777-1515413738-1380768593-2977925950-2228326386-886087428-2802422674	-
+4112	svchost.exe	S-1-5-18	Local System
+4112	svchost.exe	S-1-16-16384	System Mandatory Level
+4112	svchost.exe	S-1-1-0	Everyone
+4112	svchost.exe	S-1-5-32-545	Users
+4112	svchost.exe	S-1-5-6	Service
+4112	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+
+4112	svchost.exe	S-1-5-11	Authenticated Users
+4112	svchost.exe	S-1-5-15	This Organization
+4112	svchost.exe	S-1-5-80-4259241309-1822918763-1176128033-1339750638-3428293995	SENS
+4112	svchost.exe	S-1-5-5-0-248083	Logon Session
+4112	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+4112	svchost.exe	S-1-5-32-544	Administrators
+4148	svchost.exe	S-1-5-18	Local System
+4148	svchost.exe	S-1-16-16384	System Mandatory Level
+4148	svchost.exe	S-1-1-0	Everyone
+4148	svchost.exe	S-1-5-32-545	Users
+4148	svchost.exe	S-1-5-6	Service
+4148	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+4148	svchost.exe	S-1-5-11	Authenticated Users
+4148	svchost.exe	S-1-5-15	This Organization
+4148	svchost.exe	S-1-5-80-1580948945-3239616721-2529237571-3761093093-1214243633	AudioEndpointBuilder
+4148	svchost.exe	S-1-5-5-0-248974	Logon Session
+4148	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+4148	svchost.exe	S-1-5-32-544	Administrators
+4156	svchost.exe	S-1-5-19	NT Authority
+4156	svchost.exe	S-1-16-16384	System Mandatory Level
+4156	svchost.exe	S-1-1-0	Everyone
+4156	svchost.exe	S-1-5-32-545	Users
+4156	svchost.exe	S-1-5-6	Service
+4156	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+4156	svchost.exe	S-1-5-11	Authenticated Users
+4156	svchost.exe	S-1-5-15	This Organization
+4156	svchost.exe	S-1-5-80-3655275221-2954682349-3644260495-855223267-1438849333	FontCache
+4156	svchost.exe	S-1-5-5-0-248991	Logon Session
+4156	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+4156	svchost.exe	S-1-5-32-3167453650-624722384-889205278-321484983-714554697-3592933102-807660695-1632717421	-
+4156	svchost.exe	S-1-5-32-383293015-3350740429-1839969850-1819881064-1569454686-4198502490-78857879-1413643331	-
+4156	svchost.exe	S-1-5-32-2035927579-283314533-3422103930-3587774809-765962649-3034203285-3544878962-607181067	-
+4156	svchost.exe	S-1-5-32-3659434007-2290108278-1125199667-3679670526-1293081662-2164323352-1777701501-2595986263	-
+4156	svchost.exe	S-1-5-32-11742800-2107441976-3443185924-4134956905-3840447964-3749968454-3843513199-670971053	-
+4156	svchost.exe	S-1-5-32-3523901360-1745872541-794127107-675934034-1867954868-1951917511-1111796624-2052600462	-
+4156	svchost.exe	S-1-5-32-1488445330-856673777-1515413738-1380768593-2977925950-2228326386-886087428-2802422674	-
+4188	MemCompression	S-1-5-18	Local System
+4188	MemCompression	S-1-5-32-544	Administrators
+4188	MemCompression	S-1-1-0	Everyone
+4188	MemCompression	S-1-5-11	Authenticated Users
+4188	MemCompression	S-1-16-16384	System Mandatory Level
+4476	svchost.exe	S-1-5-18	Local System
+4476	svchost.exe	S-1-16-16384	System Mandatory Level
+4476	svchost.exe	S-1-1-0	Everyone
+4476	svchost.exe	S-1-5-32-545	Users
+4476	svchost.exe	S-1-5-6	Service
+4476	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+4476	svchost.exe	S-1-5-11	Authenticated Users
+4476	svchost.exe	S-1-5-15	This Organization
+4476	svchost.exe	S-1-5-80-4118144674-975173503-976751360-2062754009-4288402176	-
+4476	svchost.exe	S-1-5-5-0-286708	Logon Session
+4476	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+4476	svchost.exe	S-1-5-32-544	Administrators
+4500	svchost.exe	S-1-5-19	NT Authority
+4500	svchost.exe	S-1-16-16384	System Mandatory Level
+4500	svchost.exe	S-1-1-0	Everyone
+4500	svchost.exe	S-1-5-32-545	Users
+4500	svchost.exe	S-1-5-6	Service
+4500	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+4500	svchost.exe	S-1-5-11	Authenticated Users
+4500	svchost.exe	S-1-5-15	This Organization
+4500	svchost.exe	S-1-5-80-2676549577-1911656217-2625096541-4178041876-1366760775	Audiosrv
+4500	svchost.exe	S-1-5-5-0-305071	Logon Session
+4500	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+4500	svchost.exe	S-1-5-32-3167453650-624722384-889205278-321484983-714554697-3592933102-807660695-1632717421	-
+4500	svchost.exe	S-1-5-32-383293015-3350740429-1839969850-1819881064-1569454686-4198502490-78857879-1413643331	-
+4500	svchost.exe	S-1-5-32-2035927579-283314533-3422103930-3587774809-765962649-3034203285-3544878962-607181067	-
+4500	svchost.exe	S-1-5-32-3659434007-2290108278-1125199667-3679670526-1293081662-2164323352-1777701501-2595986263	-
+4500	svchost.exe	S-1-5-32-11742800-2107441976-3443185924-4134956905-3840447964-3749968454-3843513199-670971053	-
+4500	svchost.exe	S-1-5-32-3523901360-1745872541-794127107-675934034-1867954868-1951917511-1111796624-2052600462	-
+4500	svchost.exe	S-1-5-32-1488445330-856673777-1515413738-1380768593-2977925950-2228326386-886087428-2802422674	-
+4528	svchost.exe	S-1-5-18	Local System
+4528	svchost.exe	S-1-16-16384	System Mandatory Level
+4528	svchost.exe	S-1-1-0	Everyone
+4528	svchost.exe	S-1-5-32-545	Users
+4528	svchost.exe	S-1-5-6	Service
+4528	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+4528	svchost.exe	S-1-5-11	Authenticated Users
+4528	svchost.exe	S-1-5-15	This Organization
+4528	svchost.exe	S-1-5-80-1569767499-1044542396-1260780493-218930462-4138269783	-
+4528	svchost.exe	S-1-5-5-0-305598	Logon Session
+4528	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+4528	svchost.exe	S-1-5-32-544	Administrators
+4652	svchost.exe	S-1-5-19	NT Authority
+4652	svchost.exe	S-1-16-16384	System Mandatory Level
+4652	svchost.exe	S-1-1-0	Everyone
+4652	svchost.exe	S-1-5-32-545	Users
+4652	svchost.exe	S-1-5-6	Service
+4652	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+4652	svchost.exe	S-1-5-11	Authenticated Users
+4652	svchost.exe	S-1-5-15	This Organization
+4652	svchost.exe	S-1-5-80-4071458001-3563271761-1846288968-3700919931-3809667977	-
+4652	svchost.exe	S-1-5-5-0-313607	Logon Session
+4652	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+4652	svchost.exe	S-1-5-32-3167453650-624722384-889205278-321484983-714554697-3592933102-807660695-1632717421	-
+4652	svchost.exe	S-1-5-32-383293015-3350740429-1839969850-1819881064-1569454686-4198502490-78857879-1413643331	-
+4652	svchost.exe	S-1-5-32-2035927579-283314533-3422103930-3587774809-765962649-3034203285-3544878962-607181067	-
+4652	svchost.exe	S-1-5-32-3659434007-2290108278-1125199667-3679670526-1293081662-2164323352-1777701501-2595986263	-
+4652	svchost.exe	S-1-5-32-11742800-2107441976-3443185924-4134956905-3840447964-3749968454-3843513199-670971053	-
+4652	svchost.exe	S-1-5-32-3523901360-1745872541-794127107-675934034-1867954868-1951917511-1111796624-2052600462	-
+4652	svchost.exe	S-1-5-32-1488445330-856673777-1515413738-1380768593-2977925950-2228326386-886087428-2802422674	-
+4664	svchost.exe	S-1-5-19	NT Authority
+4664	svchost.exe	S-1-16-16384	System Mandatory Level
+4664	svchost.exe	S-1-1-0	Everyone
+4664	svchost.exe	S-1-5-32-545	Users
+4664	svchost.exe	S-1-5-6	Service
+4664	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+4664	svchost.exe	S-1-5-11	Authenticated Users
+4664	svchost.exe	S-1-5-15	This Organization
+4664	svchost.exe	S-1-5-80-4155767994-3874329934-3800885181-2130851812-726865888	-
+4664	svchost.exe	S-1-5-5-0-315297	Logon Session
+4664	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+4664	svchost.exe	S-1-5-32-3167453650-624722384-889205278-321484983-714554697-3592933102-807660695-1632717421	-
+4664	svchost.exe	S-1-5-32-383293015-3350740429-1839969850-1819881064-1569454686-4198502490-78857879-1413643331	-
+4664	svchost.exe	S-1-5-32-2035927579-283314533-3422103930-3587774809-765962649-3034203285-3544878962-607181067	-
+4664	svchost.exe	S-1-5-32-3659434007-2290108278-1125199667-3679670526-1293081662-2164323352-1777701501-2595986263	-
+4664	svchost.exe	S-1-5-32-11742800-2107441976-3443185924-4134956905-3840447964-3749968454-3843513199-670971053	-
+4664	svchost.exe	S-1-5-32-3523901360-1745872541-794127107-675934034-1867954868-1951917511-1111796624-2052600462	-
+4664	svchost.exe	S-1-5-32-1488445330-856673777-1515413738-1380768593-2977925950-2228326386-886087428-2802422674	-
+4908	svchost.exe	S-1-5-18	Local System
+4908	svchost.exe	S-1-16-16384	System Mandatory Level
+4908	svchost.exe	S-1-1-0	Everyone
+4908	svchost.exe	S-1-5-32-545	Users
+4908	svchost.exe	S-1-5-6	Service
+4908	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+4908	svchost.exe	S-1-5-11	Authenticated Users
+4908	svchost.exe	S-1-5-15	This Organization
+4908	svchost.exe	S-1-5-80-1428027539-3309602793-2678353003-1498846795-3763184142	Wlansvc
+4908	svchost.exe	S-1-5-5-0-362119	Logon Session
+4908	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+4908	svchost.exe	S-1-5-32-544	Administrators
+4932	svchost.exe	S-1-5-18	Local System
+4932	svchost.exe	S-1-16-16384	System Mandatory Level
+4932	svchost.exe	S-1-1-0	Everyone
+4932	svchost.exe	S-1-5-32-545	Users
+4932	svchost.exe	S-1-5-6	Service
+4932	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+4932	svchost.exe	S-1-5-11	Authenticated Users
+4932	svchost.exe	S-1-5-15	This Organization
+4932	svchost.exe	S-1-5-80-1690854464-3758363787-3981977099-3843555589-1401248062	ShellHWDetection
+4932	svchost.exe	S-1-5-5-0-362559	Logon Session
+4932	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+4932	svchost.exe	S-1-5-32-544	Administrators
+4960	spoolsv.exe	S-1-5-18	Local System
+4960	spoolsv.exe	S-1-16-16384	System Mandatory Level
+4960	spoolsv.exe	S-1-1-0	Everyone
+4960	spoolsv.exe	S-1-5-32-545	Users
+4960	spoolsv.exe	S-1-5-6	Service
+4960	spoolsv.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+4960	spoolsv.exe	S-1-5-11	Authenticated Users
+4960	spoolsv.exe	S-1-5-15	This Organization
+4960	spoolsv.exe	S-1-5-80-3951239711-1671533544-1416304335-3763227691-3930497994	Spooler
+4960	spoolsv.exe	S-1-5-5-0-363784	Logon Session
+4960	spoolsv.exe	S-1-2-0	Local (Users with the ability to log in locally)
+4960	spoolsv.exe	S-1-5-32-544	Administrators
+5008	svchost.exe	S-1-5-20	NT Authority
+5008	svchost.exe	S-1-16-16384	System Mandatory Level
+5008	svchost.exe	S-1-1-0	Everyone
+5008	svchost.exe	S-1-5-32-545	Users
+5008	svchost.exe	S-1-5-6	Service
+5008	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+5008	svchost.exe	S-1-5-11	Authenticated Users
+5008	svchost.exe	S-1-5-15	This Organization
+5008	svchost.exe	S-1-5-80-719998295-2833700043-1566817583-4093942769-1414026312	LanmanWorkstation
+5008	svchost.exe	S-1-5-5-0-367539	Logon Session
+5008	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+4548	svchost.exe	S-1-5-19	NT Authority
+4548	svchost.exe	S-1-16-16384	System Mandatory Level
+4548	svchost.exe	S-1-1-0	Everyone
+4548	svchost.exe	S-1-5-32-545	Users
+4548	svchost.exe	S-1-5-6	Service
+
+4548	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+4548	svchost.exe	S-1-5-11	Authenticated Users
+4548	svchost.exe	S-1-5-15	This Organization
+4548	svchost.exe	S-1-5-80-4171086659-1617898341-2870161492-1466607281-2109097600	-
+4548	svchost.exe	S-1-5-5-0-368223	Logon Session
+4548	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+4548	svchost.exe	S-1-5-32-3167453650-624722384-889205278-321484983-714554697-3592933102-807660695-1632717421	-
+4548	svchost.exe	S-1-5-32-383293015-3350740429-1839969850-1819881064-1569454686-4198502490-78857879-1413643331	-
+4548	svchost.exe	S-1-5-32-2035927579-283314533-3422103930-3587774809-765962649-3034203285-3544878962-607181067	-
+4548	svchost.exe	S-1-5-32-3659434007-2290108278-1125199667-3679670526-1293081662-2164323352-1777701501-2595986263	-
+4548	svchost.exe	S-1-5-32-11742800-2107441976-3443185924-4134956905-3840447964-3749968454-3843513199-670971053	-
+
+4548	svchost.exe	S-1-5-32-3523901360-1745872541-794127107-675934034-1867954868-1951917511-1111796624-2052600462	-
+4548	svchost.exe	S-1-5-32-1488445330-856673777-1515413738-1380768593-2977925950-2228326386-886087428-2802422674	-
+2864	svchost.exe	S-1-5-19	NT Authority
+2864	svchost.exe	S-1-16-16384	System Mandatory Level
+2864	svchost.exe	S-1-1-0	Everyone
+2864	svchost.exe	S-1-5-32-545	Users
+2864	svchost.exe	S-1-5-6	Service
+2864	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+2864	svchost.exe	S-1-5-11	Authenticated Users
+2864	svchost.exe	S-1-5-15	This Organization
+2864	svchost.exe	S-1-5-80-2970612574-78537857-698502321-558674196-1451644582	DPS
+2864	svchost.exe	S-1-5-5-0-368326	Logon Session
+2864	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+2864	svchost.exe	S-1-5-33	Write Restricted
+2864	svchost.exe	S-1-5-32-3167453650-624722384-889205278-321484983-714554697-3592933102-807660695-1632717421	-
+2864	svchost.exe	S-1-5-32-383293015-3350740429-1839969850-1819881064-1569454686-4198502490-78857879-1413643331	-
+2864	svchost.exe	S-1-5-32-2035927579-283314533-3422103930-3587774809-765962649-3034203285-3544878962-607181067	-
+2864	svchost.exe	S-1-5-32-3659434007-2290108278-1125199667-3679670526-1293081662-2164323352-1777701501-2595986263	-
+2864	svchost.exe	S-1-5-32-11742800-2107441976-3443185924-4134956905-3840447964-3749968454-3843513199-670971053	-
+2864	svchost.exe	S-1-5-32-3523901360-1745872541-794127107-675934034-1867954868-1951917511-1111796624-2052600462	-
+2864	svchost.exe	S-1-5-32-1488445330-856673777-1515413738-1380768593-2977925950-2228326386-886087428-2802422674	-
+4728	svchost.exe	S-1-5-18	Local System
+4728	svchost.exe	S-1-16-16384	System Mandatory Level
+4728	svchost.exe	S-1-1-0	Everyone
+4728	svchost.exe	S-1-5-32-545	Users
+4728	svchost.exe	S-1-5-6	Service
+4728	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+4728	svchost.exe	S-1-5-11	Authenticated Users
+4728	svchost.exe	S-1-5-15	This Organization
+4728	svchost.exe	S-1-5-80-2620808479-2171380039-3191355562-2070425692-3097948119	-
+4728	svchost.exe	S-1-5-5-0-368324	Logon Session
+
+4728	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+4728	svchost.exe	S-1-5-32-544	Administrators
+4752	svchost.exe	S-1-5-20	NT Authority
+4752	svchost.exe	S-1-16-16384	System Mandatory Level
+4752	svchost.exe	S-1-1-0	Everyone
+4752	svchost.exe	S-1-5-32-545	Users
+4752	svchost.exe	S-1-5-6	Service
+4752	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+4752	svchost.exe	S-1-5-11	Authenticated Users
+4752	svchost.exe	S-1-5-15	This Organization
+4752	svchost.exe	S-1-5-80-242729624-280608522-2219052887-3187409060-2225943459	CryptSvc
+4752	svchost.exe	S-1-5-5-0-368500	Logon Session
+
+4752	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+5128	svchost.exe	S-1-5-18	Local System
+5128	svchost.exe	S-1-16-16384	System Mandatory Level
+5128	svchost.exe	S-1-1-0	Everyone
+5128	svchost.exe	S-1-5-32-545	Users
+5128	svchost.exe	S-1-5-6	Service
+5128	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+5128	svchost.exe	S-1-5-11	Authenticated Users
+5128	svchost.exe	S-1-5-15	This Organization
+5128	svchost.exe	S-1-5-80-62724632-2456781206-3863850748-1496050881-1042387526	iphlpsvc
+5128	svchost.exe	S-1-5-5-0-368590	Logon Session
+5128	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+5128	svchost.exe	S-1-5-32-544	Administrators
+5136	svchost.exe	S-1-5-18	Local System
+5136	svchost.exe	S-1-16-16384	System Mandatory Level
+5136	svchost.exe	S-1-1-0	Everyone
+5136	svchost.exe	S-1-5-32-545	Users
+5136	svchost.exe	S-1-5-6	Service
+5136	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+5136	svchost.exe	S-1-5-11	Authenticated Users
+5136	svchost.exe	S-1-5-15	This Organization
+5136	svchost.exe	S-1-5-80-768763963-4214222998-2156221936-2953597973-713500239	TrkWks
+5136	svchost.exe	S-1-5-5-0-368758	Logon Session
+5136	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+5136	svchost.exe	S-1-5-32-544	Administrators
+5144	svchost.exe	S-1-5-19	NT Authority
+5144	svchost.exe	S-1-16-16384	System Mandatory Level
+5144	svchost.exe	S-1-1-0	Everyone
+5144	svchost.exe	S-1-5-32-545	Users
+5144	svchost.exe	S-1-5-6	Service
+5144	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+5144	svchost.exe	S-1-5-11	Authenticated Users
+5144	svchost.exe	S-1-5-15	This Organization
+5144	svchost.exe	S-1-5-80-1021139062-1866602279-1255292388-1008060685-2498416891	-
+5144	svchost.exe	S-1-5-80-2970612574-78537857-698502321-558674196-1451644582	DPS
+5144	svchost.exe	S-1-5-80-639065985-1709096039-2702309040-2770678766-2981280942	-
+5144	svchost.exe	S-1-5-80-2661322625-712705077-2999183737-3043590567-590698655	pla
+5144	svchost.exe	S-1-5-5-0-368187	Logon Session
+5144	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+5144	svchost.exe	S-1-5-33	Write Restricted
+5144	svchost.exe	S-1-5-32-3167453650-624722384-889205278-321484983-714554697-3592933102-807660695-1632717421	-
+5144	svchost.exe	S-1-5-32-383293015-3350740429-1839969850-1819881064-1569454686-4198502490-78857879-1413643331	-
+5144	svchost.exe	S-1-5-32-2035927579-283314533-3422103930-3587774809-765962649-3034203285-3544878962-607181067	-
+5144	svchost.exe	S-1-5-32-3659434007-2290108278-1125199667-3679670526-1293081662-2164323352-1777701501-2595986263	-
+5144	svchost.exe	S-1-5-32-11742800-2107441976-3443185924-4134956905-3840447964-3749968454-3843513199-670971053	-
+5144	svchost.exe	S-1-5-32-3523901360-1745872541-794127107-675934034-1867954868-1951917511-1111796624-2052600462	-
+5144	svchost.exe	S-1-5-32-1488445330-856673777-1515413738-1380768593-2977925950-2228326386-886087428-2802422674	-
+5152	svchost.exe	S-1-5-19	NT Authority
+5152	svchost.exe	S-1-16-16384	System Mandatory Level
+5152	svchost.exe	S-1-1-0	Everyone
+5152	svchost.exe	S-1-5-32-545	Users
+5152	svchost.exe	S-1-5-6	Service
+5152	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+5152	svchost.exe	S-1-5-11	Authenticated Users
+5152	svchost.exe	S-1-5-15	This Organization
+5152	svchost.exe	S-1-5-80-3182985763-1431228038-2757062859-428472846-3914011746	StiSvc
+5152	svchost.exe	S-1-5-5-0-368699	Logon Session
+5152	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+5152	svchost.exe	S-1-5-32-3167453650-624722384-889205278-321484983-714554697-3592933102-807660695-1632717421	-
+5152	svchost.exe	S-1-5-32-383293015-3350740429-1839969850-1819881064-1569454686-4198502490-78857879-1413643331	-
+5152	svchost.exe	S-1-5-32-2035927579-283314533-3422103930-3587774809-765962649-3034203285-3544878962-607181067	-
+5152	svchost.exe	S-1-5-32-3659434007-2290108278-1125199667-3679670526-1293081662-2164323352-1777701501-2595986263	-
+5152	svchost.exe	S-1-5-32-11742800-2107441976-3443185924-4134956905-3840447964-3749968454-3843513199-670971053	-
+5152	svchost.exe	S-1-5-32-3523901360-1745872541-794127107-675934034-1867954868-1951917511-1111796624-2052600462	-
+5152	svchost.exe	S-1-5-32-1488445330-856673777-1515413738-1380768593-2977925950-2228326386-886087428-2802422674	-
+5160	svchost.exe	S-1-5-18	Local System
+5160	svchost.exe	S-1-16-16384	System Mandatory Level
+5160	svchost.exe	S-1-1-0	Everyone
+5160	svchost.exe	S-1-5-32-545	Users
+5160	svchost.exe	S-1-5-6	Service
+5160	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+5160	svchost.exe	S-1-5-11	Authenticated Users
+5160	svchost.exe	S-1-5-15	This Organization
+5160	svchost.exe	S-1-5-80-1938892561-4120931771-3580170924-3403102300-2651602529	-
+5160	svchost.exe	S-1-5-5-0-368878	Logon Session
+5160	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+5160	svchost.exe	S-1-5-32-544	Administrators
+5176	vmware-authd.e	S-1-5-18	Local System
+5176	vmware-authd.e	S-1-5-32-544	Administrators
+5176	vmware-authd.e	S-1-1-0	Everyone
+5176	vmware-authd.e	S-1-5-11	Authenticated Users
+5176	vmware-authd.e	S-1-16-16384	System Mandatory Level
+5184	CmWebAdmin.exe	S-1-5-19	NT Authority
+5184	CmWebAdmin.exe	S-1-16-16384	System Mandatory Level
+5184	CmWebAdmin.exe	S-1-1-0	Everyone
+
+5184	CmWebAdmin.exe	S-1-5-32-545	Users
+5184	CmWebAdmin.exe	S-1-5-6	Service
+5184	CmWebAdmin.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+5184	CmWebAdmin.exe	S-1-5-11	Authenticated Users
+5184	CmWebAdmin.exe	S-1-5-15	This Organization
+5184	CmWebAdmin.exe	S-1-2-0	Local (Users with the ability to log in locally)
+5184	CmWebAdmin.exe	S-1-5-5-0-368453	Logon Session
+5184	CmWebAdmin.exe	S-1-5-32-3167453650-624722384-889205278-321484983-714554697-3592933102-807660695-1632717421	-
+
+5184	CmWebAdmin.exe	S-1-5-32-383293015-3350740429-1839969850-1819881064-1569454686-4198502490-78857879-1413643331	-
+5184	CmWebAdmin.exe	S-1-5-32-2035927579-283314533-3422103930-3587774809-765962649-3034203285-3544878962-607181067	-
+5184	CmWebAdmin.exe	S-1-5-32-3659434007-2290108278-1125199667-3679670526-1293081662-2164323352-1777701501-2595986263	-
+5184	CmWebAdmin.exe	S-1-5-32-11742800-2107441976-3443185924-4134956905-3840447964-3749968454-3843513199-670971053	-
+5184	CmWebAdmin.exe	S-1-5-32-3523901360-1745872541-794127107-675934034-1867954868-1951917511-1111796624-2052600462	-
+5184	CmWebAdmin.exe	S-1-5-32-1488445330-856673777-1515413738-1380768593-2977925950-2228326386-886087428-2802422674	-
+5204	mDNSResponder.	S-1-5-18	Local System
+5204	mDNSResponder.	S-1-5-32-544	Administrators
+5204	mDNSResponder.	S-1-1-0	Everyone
+5204	mDNSResponder.	S-1-5-11	Authenticated Users
+5204	mDNSResponder.	S-1-16-16384	System Mandatory Level
+5212	vmnat.exe	S-1-5-18	Local System
+5212	vmnat.exe	S-1-5-32-544	Administrators
+5212	vmnat.exe	S-1-1-0	Everyone
+5212	vmnat.exe	S-1-5-11	Authenticated Users
+5212	vmnat.exe	S-1-16-16384	System Mandatory Level
+5220	MsMpEng.exe	S-1-5-18	Local System
+5220	MsMpEng.exe	S-1-16-16384	System Mandatory Level
+5220	MsMpEng.exe	S-1-1-0	Everyone
+5220	MsMpEng.exe	S-1-5-32-545	Users
+5220	MsMpEng.exe	S-1-5-6	Service
+5220	MsMpEng.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+5220	MsMpEng.exe	S-1-5-11	Authenticated Users
+5220	MsMpEng.exe	S-1-5-15	This Organization
+5220	MsMpEng.exe	S-1-5-80-1913148863-3492339771-4165695881-2087618961-4109116736	WinDefend
+5220	MsMpEng.exe	S-1-5-5-0-368879	Logon Session
+5220	MsMpEng.exe	S-1-2-0	Local (Users with the ability to log in locally)
+5220	MsMpEng.exe	S-1-5-32-544	Administrators
+5232	EZCastService.	S-1-5-18	Local System
+5232	EZCastService.	S-1-5-32-544	Administrators
+5232	EZCastService.	S-1-1-0	Everyone
+5232	EZCastService.	S-1-5-11	Authenticated Users
+5232	EZCastService.	S-1-16-16384	System Mandatory Level
+5248	vmnetdhcp.exe	S-1-5-18	Local System
+5248	vmnetdhcp.exe	S-1-5-32-544	Administrators
+5248	vmnetdhcp.exe	S-1-1-0	Everyone
+5248	vmnetdhcp.exe	S-1-5-11	Authenticated Users
+5248	vmnetdhcp.exe	S-1-16-16384	System Mandatory Level
+5256	MpDefenderCore	S-1-5-18	Local System
+5256	MpDefenderCore	S-1-16-16384	System Mandatory Level
+
+5256	MpDefenderCore	S-1-1-0	Everyone
+5256	MpDefenderCore	S-1-5-32-545	Users
+5256	MpDefenderCore	S-1-5-6	Service
+5256	MpDefenderCore	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+5256	MpDefenderCore	S-1-5-11	Authenticated Users
+5256	MpDefenderCore	S-1-5-15	This Organization
+5256	MpDefenderCore	S-1-5-80-30551196-2029750602-3680353947-2336859763-523537544	-
+5256	MpDefenderCore	S-1-5-5-0-368612	Logon Session
+5256	MpDefenderCore	S-1-2-0	Local (Users with the ability to log in locally)
+5256	MpDefenderCore	S-1-5-32-544	Administrators
+5288	sqlwriter.exe	S-1-5-18	Local System
+5288	sqlwriter.exe	S-1-16-16384	System Mandatory Level
+5288	sqlwriter.exe	S-1-1-0	Everyone
+5288	sqlwriter.exe	S-1-5-32-545	Users
+5288	sqlwriter.exe	S-1-5-6	Service
+5288	sqlwriter.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+5288	sqlwriter.exe	S-1-5-11	Authenticated Users
+5288	sqlwriter.exe	S-1-5-15	This Organization
+5288	sqlwriter.exe	S-1-5-80-1402415987-66678372-3059512406-1823130485-2345841878	-
+5288	sqlwriter.exe	S-1-5-5-0-368658	Logon Session
+5288	sqlwriter.exe	S-1-2-0	Local (Users with the ability to log in locally)
+5288	sqlwriter.exe	S-1-5-32-544	Administrators
+5372	vmware-usbarbi	S-1-5-18	Local System
+5372	vmware-usbarbi	S-1-5-32-544	Administrators
+5372	vmware-usbarbi	S-1-1-0	Everyone
+5372	vmware-usbarbi	S-1-5-11	Authenticated Users
+5372	vmware-usbarbi	S-1-16-16384	System Mandatory Level
+5472	wslservice.exe	S-1-5-18	Local System
+5472	wslservice.exe	S-1-5-32-544	Administrators
+5472	wslservice.exe	S-1-1-0	Everyone
+5472	wslservice.exe	S-1-5-11	Authenticated Users
+5472	wslservice.exe	S-1-16-16384	System Mandatory Level
+5692	svchost.exe	S-1-5-18	Local System
+5692	svchost.exe	S-1-16-16384	System Mandatory Level
+5692	svchost.exe	S-1-1-0	Everyone
+5692	svchost.exe	S-1-5-32-545	Users
+5692	svchost.exe	S-1-5-6	Service
+5692	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+5692	svchost.exe	S-1-5-11	Authenticated Users
+5692	svchost.exe	S-1-5-15	This Organization
+5692	svchost.exe	S-1-5-80-879696042-2351668846-370232824-2524288904-4023536711	LanmanServer
+5692	svchost.exe	S-1-5-5-0-387359	Logon Session
+5692	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+5692	svchost.exe	S-1-5-32-544	Administrators
+6140	sqlservr.exe	S-1-5-80-3880718306-3832830129-1677859214-2598158968-1052248003	MSSQLSERVER
+6140	sqlservr.exe	S-1-16-12288	High Mandatory Level
+6140	sqlservr.exe	S-1-1-0	Everyone
+6140	sqlservr.exe	S-1-5-32-558	BUILTIN\Performance Monitor Users
+6140	sqlservr.exe	S-1-5-32-545	Users
+6140	sqlservr.exe	S-1-5-6	Service
+6140	sqlservr.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+6140	sqlservr.exe	S-1-5-11	Authenticated Users
+6140	sqlservr.exe	S-1-5-15	This Organization
+6140	sqlservr.exe	S-1-5-5-0-379061	Logon Session
+6140	sqlservr.exe	S-1-2-0	Local (Users with the ability to log in locally)
+6140	sqlservr.exe	S-1-5-80-0	-
+
+5380	sqlceip.exe	S-1-5-80-2652535364-2169709536-2857650723-2622804123-1107741775	SQLTELEMETRY
+5380	sqlceip.exe	S-1-16-12288	High Mandatory Level
+5380	sqlceip.exe	S-1-1-0	Everyone
+5380	sqlceip.exe	S-1-5-32-545	Users
+5380	sqlceip.exe	S-1-5-6	Service
+5380	sqlceip.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+5380	sqlceip.exe	S-1-5-11	Authenticated Users
+5380	sqlceip.exe	S-1-5-15	This Organization
+5380	sqlceip.exe	S-1-5-5-0-368760	Logon Session
+5380	sqlceip.exe	S-1-2-0	Local (Users with the ability to log in locally)
+5380	sqlceip.exe	S-1-5-80-0	-
+6512	WmiPrvSE.exe	S-1-5-18	Local System
+6512	WmiPrvSE.exe	S-1-16-16384	System Mandatory Level
+6512	WmiPrvSE.exe	S-1-1-0	Everyone
+6512	WmiPrvSE.exe	S-1-5-32-545	Users
+6512	WmiPrvSE.exe	S-1-5-6	Service
+6512	WmiPrvSE.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+6512	WmiPrvSE.exe	S-1-5-11	Authenticated Users
+6512	WmiPrvSE.exe	S-1-5-15	This Organization
+6512	WmiPrvSE.exe	S-1-5-80-3750560858-172214265-3889451188-1914796615-4100997547	Winmgmt
+6512	WmiPrvSE.exe	S-1-5-5-0-134412	Logon Session
+6512	WmiPrvSE.exe	S-1-2-0	Local (Users with the ability to log in locally)
+6512	WmiPrvSE.exe	S-1-5-32-544	Administrators
+6192	svchost.exe	S-1-5-18	Local System
+6192	svchost.exe	S-1-16-16384	System Mandatory Level
+6192	svchost.exe	S-1-1-0	Everyone
+6192	svchost.exe	S-1-5-32-545	Users
+6192	svchost.exe	S-1-5-6	Service
+6192	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+6192	svchost.exe	S-1-5-11	Authenticated Users
+6192	svchost.exe	S-1-5-15	This Organization
+6192	svchost.exe	S-1-5-80-1949724575-2387902436-65106593-1201171665-3967308604	-
+6192	svchost.exe	S-1-5-5-0-998841	Logon Session
+6192	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+6192	svchost.exe	S-1-5-32-544	Administrators
+6396	gamingservices	S-1-5-19	NT Authority
+6396	gamingservices	S-1-16-16384	System Mandatory Level
+6396	gamingservices	S-1-1-0	Everyone
+6396	gamingservices	S-1-5-32-545	Users
+6396	gamingservices	S-1-5-6	Service
+6396	gamingservices	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+6396	gamingservices	S-1-5-11	Authenticated Users
+6396	gamingservices	S-1-5-15	This Organization
+6396	gamingservices	S-1-5-80-996380096-971103506-1580795391-3222755479-169742074	-
+6396	gamingservices	S-1-5-5-0-956636	Logon Session
+6396	gamingservices	S-1-2-0	Local (Users with the ability to log in locally)
+6396	gamingservices	S-1-5-32-3167453650-624722384-889205278-321484983-714554697-3592933102-807660695-1632717421	-
+6396	gamingservices	S-1-5-32-383293015-3350740429-1839969850-1819881064-1569454686-4198502490-78857879-1413643331	-
+6396	gamingservices	S-1-5-32-2035927579-283314533-3422103930-3587774809-765962649-3034203285-3544878962-607181067	-
+6396	gamingservices	S-1-5-32-3659434007-2290108278-1125199667-3679670526-1293081662-2164323352-1777701501-2595986263	-
+6396	gamingservices	S-1-5-32-11742800-2107441976-3443185924-4134956905-3840447964-3749968454-3843513199-670971053	-
+6396	gamingservices	S-1-5-32-3523901360-1745872541-794127107-675934034-1867954868-1951917511-1111796624-2052600462	-
+6396	gamingservices	S-1-5-32-1488445330-856673777-1515413738-1380768593-2977925950-2228326386-886087428-2802422674	-
+6480	gamingservices	S-1-5-18	Local System
+6480	gamingservices	S-1-16-16384	System Mandatory Level
+6480	gamingservices	S-1-1-0	Everyone
+6480	gamingservices	S-1-5-32-545	Users
+6480	gamingservices	S-1-5-6	Service
+6480	gamingservices	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+6480	gamingservices	S-1-5-11	Authenticated Users
+6480	gamingservices	S-1-5-15	This Organization
+6480	gamingservices	S-1-5-80-551243587-2870776832-1071166150-863718480-2448809324	-
+6480	gamingservices	S-1-5-5-0-956639	Logon Session
+6480	gamingservices	S-1-2-0	Local (Users with the ability to log in locally)
+6480	gamingservices	S-1-5-32-544	Administrators
+4208	svchost.exe	S-1-5-18	Local System
+4208	svchost.exe	S-1-16-16384	System Mandatory Level
+4208	svchost.exe	S-1-1-0	Everyone
+4208	svchost.exe	S-1-5-32-545	Users
+4208	svchost.exe	S-1-5-6	Service
+4208	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+4208	svchost.exe	S-1-5-11	Authenticated Users
+4208	svchost.exe	S-1-5-15	This Organization
+4208	svchost.exe	S-1-5-80-2659457741-469498900-3203170401-3149177360-3048467625	-
+4208	svchost.exe	S-1-5-5-0-1198151	Logon Session
+4208	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+4208	svchost.exe	S-1-5-32-544	Administrators
+6432	svchost.exe	S-1-5-18	Local System
+6432	svchost.exe	S-1-16-16384	System Mandatory Level
+6432	svchost.exe	S-1-1-0	Everyone
+6432	svchost.exe	S-1-5-32-545	Users
+6432	svchost.exe	S-1-5-6	Service
+6432	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+6432	svchost.exe	S-1-5-11	Authenticated Users
+6432	svchost.exe	S-1-5-15	This Organization
+6432	svchost.exe	S-1-5-80-2284069148-621670086-2606570695-3321162879-2563206788	-
+6432	svchost.exe	S-1-5-5-0-1292076	Logon Session
+6432	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+6432	svchost.exe	S-1-5-32-544	Administrators
+7192	svchost.exe	S-1-5-18	Local System
+7192	svchost.exe	S-1-16-16384	System Mandatory Level
+7192	svchost.exe	S-1-1-0	Everyone
+7192	svchost.exe	S-1-5-32-545	Users
+7192	svchost.exe	S-1-5-6	Service
+7192	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+7192	svchost.exe	S-1-5-11	Authenticated Users
+7192	svchost.exe	S-1-5-15	This Organization
+7192	svchost.exe	S-1-5-80-3355894222-2288616474-3163838539-1515771758-43395969	StorSvc
+7192	svchost.exe	S-1-5-5-0-1338613	Logon Session
+7192	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+7192	svchost.exe	S-1-5-32-544	Administrators
+7236	AggregatorHost	S-1-5-18	Local System
+7236	AggregatorHost	S-1-16-16384	System Mandatory Level
+7236	AggregatorHost	S-1-1-0	Everyone
+7236	AggregatorHost	S-1-5-32-545	Users
+7236	AggregatorHost	S-1-5-6	Service
+7236	AggregatorHost	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+7236	AggregatorHost	S-1-5-11	Authenticated Users
+7236	AggregatorHost	S-1-5-15	This Organization
+7236	AggregatorHost	S-1-5-80-2620808479-2171380039-3191355562-2070425692-3097948119	-
+7236	AggregatorHost	S-1-5-5-0-368324	Logon Session
+7236	AggregatorHost	S-1-2-0	Local (Users with the ability to log in locally)
+7236	AggregatorHost	S-1-5-32-544	Administrators
+7900	svchost.exe	S-1-5-18	Local System
+7900	svchost.exe	S-1-16-16384	System Mandatory Level
+7900	svchost.exe	S-1-1-0	Everyone
+7900	svchost.exe	S-1-5-32-545	Users
+7900	svchost.exe	S-1-5-6	Service
+7900	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+7900	svchost.exe	S-1-5-11	Authenticated Users
+7900	svchost.exe	S-1-5-15	This Organization
+7900	svchost.exe	S-1-5-80-2952724807-2252311773-3412998076-2712868122-780978283	-
+7900	svchost.exe	S-1-5-5-0-1493909	Logon Session
+7900	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+7900	svchost.exe	S-1-5-32-544	Administrators
+7336	NisSrv.exe	S-1-5-19	NT Authority
+7336	NisSrv.exe	S-1-16-16384	System Mandatory Level
+7336	NisSrv.exe	S-1-1-0	Everyone
+7336	NisSrv.exe	S-1-5-32-545	Users
+7336	NisSrv.exe	S-1-5-6	Service
+7336	NisSrv.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+7336	NisSrv.exe	S-1-5-11	Authenticated Users
+7336	NisSrv.exe	S-1-5-15	This Organization
+7336	NisSrv.exe	S-1-5-80-3668810961-2468724468-4084584310-3029221373-430494444	-
+7336	NisSrv.exe	S-1-5-5-0-2429826	Logon Session
+7336	NisSrv.exe	S-1-2-0	Local (Users with the ability to log in locally)
+7336	NisSrv.exe	S-1-5-32-3167453650-624722384-889205278-321484983-714554697-3592933102-807660695-1632717421	-
+7336	NisSrv.exe	S-1-5-32-383293015-3350740429-1839969850-1819881064-1569454686-4198502490-78857879-1413643331	-
+7336	NisSrv.exe	S-1-5-32-2035927579-283314533-3422103930-3587774809-765962649-3034203285-3544878962-607181067	-
+7336	NisSrv.exe	S-1-5-32-3659434007-2290108278-1125199667-3679670526-1293081662-2164323352-1777701501-2595986263	-
+7336	NisSrv.exe	S-1-5-32-11742800-2107441976-3443185924-4134956905-3840447964-3749968454-3843513199-670971053	-
+7336	NisSrv.exe	S-1-5-32-3523901360-1745872541-794127107-675934034-1867954868-1951917511-1111796624-2052600462	-
+7336	NisSrv.exe	S-1-5-32-1488445330-856673777-1515413738-1380768593-2977925950-2228326386-886087428-2802422674	-
+7384	svchost.exe	S-1-5-18	Local System
+7384	svchost.exe	S-1-16-16384	System Mandatory Level
+7384	svchost.exe	S-1-1-0	Everyone
+7384	svchost.exe	S-1-5-32-545	Users
+7384	svchost.exe	S-1-5-6	Service
+7384	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+7384	svchost.exe	S-1-5-11	Authenticated Users
+7384	svchost.exe	S-1-5-15	This Organization
+7384	svchost.exe	S-1-5-80-3524758515-3090971750-345616940-2322499744-3530715838	WdiSystemHost
+7384	svchost.exe	S-1-5-5-0-2529448	Logon Session
+7384	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+7384	svchost.exe	S-1-5-32-544	Administrators
+6968	svchost.exe	S-1-5-18	Local System
+6968	svchost.exe	S-1-16-16384	System Mandatory Level
+6968	svchost.exe	S-1-1-0	Everyone
+6968	svchost.exe	S-1-5-32-545	Users
+6968	svchost.exe	S-1-5-6	Service
+6968	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+6968	svchost.exe	S-1-5-11	Authenticated Users
+6968	svchost.exe	S-1-5-15	This Organization
+
+6968	svchost.exe	S-1-5-80-1948712186-1330865447-943413596-1669284603-1648638051	PcaSvc
+6968	svchost.exe	S-1-5-5-0-2531202	Logon Session
+6968	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+6968	svchost.exe	S-1-5-32-544	Administrators
+4016	vmcompute.exe	S-1-5-18	Local System
+4016	vmcompute.exe	S-1-16-16384	System Mandatory Level
+4016	vmcompute.exe	S-1-1-0	Everyone
+4016	vmcompute.exe	S-1-5-32-545	Users
+4016	vmcompute.exe	S-1-5-6	Service
+4016	vmcompute.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+4016	vmcompute.exe	S-1-5-11	Authenticated Users
+4016	vmcompute.exe	S-1-5-15	This Organization
+4016	vmcompute.exe	S-1-5-80-3867325368-3464583989-2985581467-4189893692-1030155791	-
+4016	vmcompute.exe	S-1-5-5-0-2887712	Logon Session
+4016	vmcompute.exe	S-1-2-0	Local (Users with the ability to log in locally)
+4016	vmcompute.exe	S-1-5-32-544	Administrators
+3084	atieclxx.exe	S-1-5-18	Local System
+
+3084	atieclxx.exe	S-1-5-32-544	Administrators
+3084	atieclxx.exe	S-1-1-0	Everyone
+3084	atieclxx.exe	S-1-5-11	Authenticated Users
+3084	atieclxx.exe	S-1-16-16384	System Mandatory Level
+8072	sihost.exe	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+8072	sihost.exe	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+8072	sihost.exe	S-1-1-0	Everyone
+8072	sihost.exe	S-1-5-114	Local Account (Member of Administrators)
+8072	sihost.exe	S-1-5-21-1942469836-708821519-518219048-1011	-
+8072	sihost.exe	S-1-5-32-544	Administrators
+8072	sihost.exe	S-1-5-32-545	Users
+8072	sihost.exe	S-1-5-4	Interactive
+8072	sihost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+8072	sihost.exe	S-1-5-11	Authenticated Users
+8072	sihost.exe	S-1-5-15	This Organization
+8072	sihost.exe	S-1-5-113	Local Account
+8072	sihost.exe	S-1-5-5-0-4925322	Logon Session
+8072	sihost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+8072	sihost.exe	S-1-5-64-10	NTLM Authentication
+8072	sihost.exe	S-1-16-8192	Medium Mandatory Level
+3248	svchost.exe	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+3248	svchost.exe	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+3248	svchost.exe	S-1-1-0	Everyone
+3248	svchost.exe	S-1-5-114	Local Account (Member of Administrators)
+3248	svchost.exe	S-1-5-21-1942469836-708821519-518219048-1011	-
+3248	svchost.exe	S-1-5-32-544	Administrators
+3248	svchost.exe	S-1-5-32-545	Users
+3248	svchost.exe	S-1-5-4	Interactive
+3248	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+3248	svchost.exe	S-1-5-11	Authenticated Users
+3248	svchost.exe	S-1-5-15	This Organization
+3248	svchost.exe	S-1-5-113	Local Account
+3248	svchost.exe	S-1-5-5-0-4925322	Logon Session
+3248	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+3248	svchost.exe	S-1-5-64-10	NTLM Authentication
+3248	svchost.exe	S-1-16-8192	Medium Mandatory Level
+5104	svchost.exe	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+5104	svchost.exe	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+5104	svchost.exe	S-1-1-0	Everyone
+5104	svchost.exe	S-1-5-114	Local Account (Member of Administrators)
+5104	svchost.exe	S-1-5-21-1942469836-708821519-518219048-1011	-
+5104	svchost.exe	S-1-5-32-544	Administrators
+5104	svchost.exe	S-1-5-32-545	Users
+5104	svchost.exe	S-1-5-4	Interactive
+5104	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+5104	svchost.exe	S-1-5-11	Authenticated Users
+5104	svchost.exe	S-1-5-15	This Organization
+5104	svchost.exe	S-1-5-113	Local Account
+5104	svchost.exe	S-1-5-5-0-4925322	Logon Session
+5104	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+5104	svchost.exe	S-1-5-64-10	NTLM Authentication
+5104	svchost.exe	S-1-16-8192	Medium Mandatory Level
+5988	svchost.exe	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+5988	svchost.exe	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+5988	svchost.exe	S-1-1-0	Everyone
+5988	svchost.exe	S-1-5-114	Local Account (Member of Administrators)
+5988	svchost.exe	S-1-5-21-1942469836-708821519-518219048-1011	-
+5988	svchost.exe	S-1-5-32-544	Administrators
+5988	svchost.exe	S-1-5-32-545	Users
+5988	svchost.exe	S-1-5-4	Interactive
+5988	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+5988	svchost.exe	S-1-5-11	Authenticated Users
+5988	svchost.exe	S-1-5-15	This Organization
+5988	svchost.exe	S-1-5-113	Local Account
+5988	svchost.exe	S-1-5-5-0-4925322	Logon Session
+5988	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+5988	svchost.exe	S-1-5-64-10	NTLM Authentication
+5988	svchost.exe	S-1-16-8192	Medium Mandatory Level
+2168	taskhostw.exe	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+2168	taskhostw.exe	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+2168	taskhostw.exe	S-1-1-0	Everyone
+2168	taskhostw.exe	S-1-5-114	Local Account (Member of Administrators)
+2168	taskhostw.exe	S-1-5-21-1942469836-708821519-518219048-1011	-
+2168	taskhostw.exe	S-1-5-32-544	Administrators
+
+2168	taskhostw.exe	S-1-5-32-545	Users
+2168	taskhostw.exe	S-1-5-4	Interactive
+2168	taskhostw.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+2168	taskhostw.exe	S-1-5-11	Authenticated Users
+2168	taskhostw.exe	S-1-5-15	This Organization
+2168	taskhostw.exe	S-1-5-113	Local Account
+2168	taskhostw.exe	S-1-5-5-0-4925322	Logon Session
+2168	taskhostw.exe	S-1-2-0	Local (Users with the ability to log in locally)
+2168	taskhostw.exe	S-1-5-64-10	NTLM Authentication
+2168	taskhostw.exe	S-1-16-8192	Medium Mandatory Level
+8256	svchost.exe	S-1-5-18	Local System
+8256	svchost.exe	S-1-5-32-544	Administrators
+8256	svchost.exe	S-1-1-0	Everyone
+8256	svchost.exe	S-1-5-11	Authenticated Users
+8256	svchost.exe	S-1-16-16384	System Mandatory Level
+
+8736	svchost.exe	S-1-5-19	NT Authority
+8736	svchost.exe	S-1-16-16384	System Mandatory Level
+8736	svchost.exe	S-1-1-0	Everyone
+8736	svchost.exe	S-1-5-32-545	Users
+8736	svchost.exe	S-1-5-6	Service
+8736	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+8736	svchost.exe	S-1-5-11	Authenticated Users
+8736	svchost.exe	S-1-5-15	This Organization
+8736	svchost.exe	S-1-5-80-3433512109-503559027-1389316256-1766580070-2256751264	-
+8736	svchost.exe	S-1-5-5-0-5088703	Logon Session
+8736	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+8736	svchost.exe	S-1-5-32-3167453650-624722384-889205278-321484983-714554697-3592933102-807660695-1632717421	-
+8736	svchost.exe	S-1-5-32-383293015-3350740429-1839969850-1819881064-1569454686-4198502490-78857879-1413643331	-
+8736	svchost.exe	S-1-5-32-2035927579-283314533-3422103930-3587774809-765962649-3034203285-3544878962-607181067	-
+8736	svchost.exe	S-1-5-32-3659434007-2290108278-1125199667-3679670526-1293081662-2164323352-1777701501-2595986263	-
+8736	svchost.exe	S-1-5-32-11742800-2107441976-3443185924-4134956905-3840447964-3749968454-3843513199-670971053	-
+8736	svchost.exe	S-1-5-32-3523901360-1745872541-794127107-675934034-1867954868-1951917511-1111796624-2052600462	-
+8736	svchost.exe	S-1-5-32-1488445330-856673777-1515413738-1380768593-2977925950-2228326386-886087428-2802422674	-
+8464	svchost.exe	S-1-5-18	Local System
+8464	svchost.exe	S-1-16-16384	System Mandatory Level
+8464	svchost.exe	S-1-1-0	Everyone
+8464	svchost.exe	S-1-5-32-545	Users
+8464	svchost.exe	S-1-5-6	Service
+8464	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+8464	svchost.exe	S-1-5-11	Authenticated Users
+8464	svchost.exe	S-1-5-15	This Organization
+8464	svchost.exe	S-1-5-80-3578261754-285310837-913589462-2834155770-667502746	EapHost
+8464	svchost.exe	S-1-5-5-0-5161021	Logon Session
+8464	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+8464	svchost.exe	S-1-5-32-544	Administrators
+8392	BraveCrashHand	S-1-5-18	Local System
+8392	BraveCrashHand	S-1-16-16384	System Mandatory Level
+8392	BraveCrashHand	S-1-1-0	Everyone
+8392	BraveCrashHand	S-1-5-32-545	Users
+8392	BraveCrashHand	S-1-5-6	Service
+8392	BraveCrashHand	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+8392	BraveCrashHand	S-1-5-11	Authenticated Users
+8392	BraveCrashHand	S-1-5-15	This Organization
+8392	BraveCrashHand	S-1-5-80-4125092361-1567024937-842823819-2091237918-836075745	Schedule
+8392	BraveCrashHand	S-1-5-5-0-232827	Logon Session
+8392	BraveCrashHand	S-1-2-0	Local (Users with the ability to log in locally)
+8392	BraveCrashHand	S-1-5-32-544	Administrators
+8728	BraveCrashHand	S-1-5-18	Local System
+8728	BraveCrashHand	S-1-16-16384	System Mandatory Level
+8728	BraveCrashHand	S-1-1-0	Everyone
+8728	BraveCrashHand	S-1-5-32-545	Users
+8728	BraveCrashHand	S-1-5-6	Service
+8728	BraveCrashHand	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+8728	BraveCrashHand	S-1-5-11	Authenticated Users
+8728	BraveCrashHand	S-1-5-15	This Organization
+8728	BraveCrashHand	S-1-5-80-4125092361-1567024937-842823819-2091237918-836075745	Schedule
+8728	BraveCrashHand	S-1-5-5-0-232827	Logon Session
+8728	BraveCrashHand	S-1-2-0	Local (Users with the ability to log in locally)
+8728	BraveCrashHand	S-1-5-32-544	Administrators
+8984	userinit.exe	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+8984	userinit.exe	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+8984	userinit.exe	S-1-1-0	Everyone
+8984	userinit.exe	S-1-5-114	Local Account (Member of Administrators)
+8984	userinit.exe	S-1-5-21-1942469836-708821519-518219048-1011	-
+8984	userinit.exe	S-1-5-32-544	Administrators
+8984	userinit.exe	S-1-5-32-545	Users
+8984	userinit.exe	S-1-5-4	Interactive
+8984	userinit.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+8984	userinit.exe	S-1-5-11	Authenticated Users
+8984	userinit.exe	S-1-5-15	This Organization
+8984	userinit.exe	S-1-5-113	Local Account
+8984	userinit.exe	S-1-5-5-0-4925322	Logon Session
+8984	userinit.exe	S-1-2-0	Local (Users with the ability to log in locally)
+8984	userinit.exe	S-1-5-64-10	NTLM Authentication
+8984	userinit.exe	S-1-16-8192	Medium Mandatory Level
+8780	explorer.exe	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+8780	explorer.exe	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+8780	explorer.exe	S-1-1-0	Everyone
+8780	explorer.exe	S-1-5-114	Local Account (Member of Administrators)
+8780	explorer.exe	S-1-5-21-1942469836-708821519-518219048-1011	-
+8780	explorer.exe	S-1-5-32-544	Administrators
+8780	explorer.exe	S-1-5-32-545	Users
+8780	explorer.exe	S-1-5-4	Interactive
+8780	explorer.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+8780	explorer.exe	S-1-5-11	Authenticated Users
+8780	explorer.exe	S-1-5-15	This Organization
+8780	explorer.exe	S-1-5-113	Local Account
+8780	explorer.exe	S-1-5-5-0-4925322	Logon Session
+8780	explorer.exe	S-1-2-0	Local (Users with the ability to log in locally)
+8780	explorer.exe	S-1-5-64-10	NTLM Authentication
+8780	explorer.exe	S-1-16-8192	Medium Mandatory Level
+8340	svchost.exe	S-1-5-19	NT Authority
+8340	svchost.exe	S-1-16-16384	System Mandatory Level
+8340	svchost.exe	S-1-1-0	Everyone
+8340	svchost.exe	S-1-5-32-545	Users
+8340	svchost.exe	S-1-5-6	Service
+8340	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+8340	svchost.exe	S-1-5-11	Authenticated Users
+8340	svchost.exe	S-1-5-15	This Organization
+8340	svchost.exe	S-1-5-80-3765985997-1043742756-2756022526-3497566756-2081646175	-
+8340	svchost.exe	S-1-5-5-0-5241550	Logon Session
+8340	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+8340	svchost.exe	S-1-5-32-3167453650-624722384-889205278-321484983-714554697-3592933102-807660695-1632717421	-
+8340	svchost.exe	S-1-5-32-383293015-3350740429-1839969850-1819881064-1569454686-4198502490-78857879-1413643331	-
+8340	svchost.exe	S-1-5-32-2035927579-283314533-3422103930-3587774809-765962649-3034203285-3544878962-607181067	-
+8340	svchost.exe	S-1-5-32-3659434007-2290108278-1125199667-3679670526-1293081662-2164323352-1777701501-2595986263	-
+8340	svchost.exe	S-1-5-32-11742800-2107441976-3443185924-4134956905-3840447964-3749968454-3843513199-670971053	-
+8340	svchost.exe	S-1-5-32-3523901360-1745872541-794127107-675934034-1867954868-1951917511-1111796624-2052600462	-
+8340	svchost.exe	S-1-5-32-1488445330-856673777-1515413738-1380768593-2977925950-2228326386-886087428-2802422674	-
+9444	svchost.exe	S-1-5-19	NT Authority
+9444	svchost.exe	S-1-16-16384	System Mandatory Level
+9444	svchost.exe	S-1-1-0	Everyone
+9444	svchost.exe	S-1-5-32-545	Users
+9444	svchost.exe	S-1-5-6	Service
+9444	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+9444	svchost.exe	S-1-5-11	Authenticated Users
+9444	svchost.exe	S-1-5-15	This Organization
+9444	svchost.exe	S-1-5-80-2381253463-2694003897-3435975801-3559003598-683041300	-
+9444	svchost.exe	S-1-5-5-0-5272854	Logon Session
+9444	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+9444	svchost.exe	S-1-5-32-3167453650-624722384-889205278-321484983-714554697-3592933102-807660695-1632717421	-
+9444	svchost.exe	S-1-5-32-383293015-3350740429-1839969850-1819881064-1569454686-4198502490-78857879-1413643331	-
+9444	svchost.exe	S-1-5-32-2035927579-283314533-3422103930-3587774809-765962649-3034203285-3544878962-607181067	-
+9444	svchost.exe	S-1-5-32-3659434007-2290108278-1125199667-3679670526-1293081662-2164323352-1777701501-2595986263	-
+9444	svchost.exe	S-1-5-32-11742800-2107441976-3443185924-4134956905-3840447964-3749968454-3843513199-670971053	-
+9444	svchost.exe	S-1-5-32-3523901360-1745872541-794127107-675934034-1867954868-1951917511-1111796624-2052600462	-
+9444	svchost.exe	S-1-5-32-1488445330-856673777-1515413738-1380768593-2977925950-2228326386-886087428-2802422674	-
+9720	smartscreen.ex	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+9720	smartscreen.ex	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+9720	smartscreen.ex	S-1-1-0	Everyone
+9720	smartscreen.ex	S-1-5-114	Local Account (Member of Administrators)
+9720	smartscreen.ex	S-1-5-21-1942469836-708821519-518219048-1011	-
+9720	smartscreen.ex	S-1-5-32-544	Administrators
+9720	smartscreen.ex	S-1-5-32-545	Users
+9720	smartscreen.ex	S-1-5-4	Interactive
+9720	smartscreen.ex	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+9720	smartscreen.ex	S-1-5-11	Authenticated Users
+9720	smartscreen.ex	S-1-5-15	This Organization
+9720	smartscreen.ex	S-1-5-113	Local Account
+9720	smartscreen.ex	S-1-5-5-0-4925322	Logon Session
+9720	smartscreen.ex	S-1-2-0	Local (Users with the ability to log in locally)
+9720	smartscreen.ex	S-1-5-64-10	NTLM Authentication
+9720	smartscreen.ex	S-1-16-8192	Medium Mandatory Level
+9020	svchost.exe	S-1-5-19	NT Authority
+9020	svchost.exe	S-1-16-16384	System Mandatory Level
+9020	svchost.exe	S-1-1-0	Everyone
+9020	svchost.exe	S-1-5-32-545	Users
+9020	svchost.exe	S-1-5-6	Service
+9020	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+9020	svchost.exe	S-1-5-11	Authenticated Users
+9020	svchost.exe	S-1-5-15	This Organization
+9020	svchost.exe	S-1-5-80-2776957860-1097445026-538298369-1343338959-476919943	-
+9020	svchost.exe	S-1-5-5-0-6565658	Logon Session
+9020	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+9020	svchost.exe	S-1-5-32-3167453650-624722384-889205278-321484983-714554697-3592933102-807660695-1632717421	-
+9020	svchost.exe	S-1-5-32-383293015-3350740429-1839969850-1819881064-1569454686-4198502490-78857879-1413643331	-
+9020	svchost.exe	S-1-5-32-2035927579-283314533-3422103930-3587774809-765962649-3034203285-3544878962-607181067	-
+9020	svchost.exe	S-1-5-32-3659434007-2290108278-1125199667-3679670526-1293081662-2164323352-1777701501-2595986263	-
+9020	svchost.exe	S-1-5-32-11742800-2107441976-3443185924-4134956905-3840447964-3749968454-3843513199-670971053	-
+9020	svchost.exe	S-1-5-32-3523901360-1745872541-794127107-675934034-1867954868-1951917511-1111796624-2052600462	-
+9020	svchost.exe	S-1-5-32-1488445330-856673777-1515413738-1380768593-2977925950-2228326386-886087428-2802422674	-
+9460	svchost.exe	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+9460	svchost.exe	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+9460	svchost.exe	S-1-1-0	Everyone
+9460	svchost.exe	S-1-5-114	Local Account (Member of Administrators)
+9460	svchost.exe	S-1-5-21-1942469836-708821519-518219048-1011	-
+9460	svchost.exe	S-1-5-32-544	Administrators
+9460	svchost.exe	S-1-5-32-545	Users
+9460	svchost.exe	S-1-5-4	Interactive
+9460	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+9460	svchost.exe	S-1-5-11	Authenticated Users
+9460	svchost.exe	S-1-5-15	This Organization
+9460	svchost.exe	S-1-5-113	Local Account
+9460	svchost.exe	S-1-5-5-0-4925322	Logon Session
+9460	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+9460	svchost.exe	S-1-5-64-10	NTLM Authentication
+9460	svchost.exe	S-1-16-8192	Medium Mandatory Level
+7124	svchost.exe	S-1-5-18	Local System
+7124	svchost.exe	S-1-5-32-544	Administrators
+7124	svchost.exe	S-1-1-0	Everyone
+7124	svchost.exe	S-1-5-11	Authenticated Users
+7124	svchost.exe	S-1-16-16384	System Mandatory Level
+8844	SearchHost.exe	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+8844	SearchHost.exe	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+8844	SearchHost.exe	S-1-1-0	Everyone
+8844	SearchHost.exe	S-1-5-114	Local Account (Member of Administrators)
+8844	SearchHost.exe	S-1-5-21-1942469836-708821519-518219048-1011	-
+8844	SearchHost.exe	S-1-5-32-544	Administrators
+8844	SearchHost.exe	S-1-5-32-545	Users
+8844	SearchHost.exe	S-1-5-4	Interactive
+8844	SearchHost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+8844	SearchHost.exe	S-1-5-11	Authenticated Users
+8844	SearchHost.exe	S-1-5-15	This Organization
+8844	SearchHost.exe	S-1-5-113	Local Account
+8844	SearchHost.exe	S-1-5-5-0-4925322	Logon Session
+8844	SearchHost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+8844	SearchHost.exe	S-1-5-64-10	NTLM Authentication
+8844	SearchHost.exe	S-1-16-4096	Low Mandatory Level
+8712	StartMenuExper	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+8712	StartMenuExper	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+8712	StartMenuExper	S-1-1-0	Everyone
+8712	StartMenuExper	S-1-5-114	Local Account (Member of Administrators)
+8712	StartMenuExper	S-1-5-21-1942469836-708821519-518219048-1011	-
+8712	StartMenuExper	S-1-5-32-544	Administrators
+8712	StartMenuExper	S-1-5-32-545	Users
+8712	StartMenuExper	S-1-5-4	Interactive
+8712	StartMenuExper	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+8712	StartMenuExper	S-1-5-11	Authenticated Users
+8712	StartMenuExper	S-1-5-15	This Organization
+8712	StartMenuExper	S-1-5-113	Local Account
+8712	StartMenuExper	S-1-5-5-0-4925322	Logon Session
+8712	StartMenuExper	S-1-2-0	Local (Users with the ability to log in locally)
+8712	StartMenuExper	S-1-5-64-10	NTLM Authentication
+8712	StartMenuExper	S-1-16-4096	Low Mandatory Level
+9716	Widgets.exe	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+9716	Widgets.exe	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+9716	Widgets.exe	S-1-1-0	Everyone
+9716	Widgets.exe	S-1-5-114	Local Account (Member of Administrators)
+9716	Widgets.exe	S-1-5-21-1942469836-708821519-518219048-1011	-
+9716	Widgets.exe	S-1-5-32-544	Administrators
+9716	Widgets.exe	S-1-5-32-545	Users
+9716	Widgets.exe	S-1-5-4	Interactive
+9716	Widgets.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+9716	Widgets.exe	S-1-5-11	Authenticated Users
+9716	Widgets.exe	S-1-5-15	This Organization
+9716	Widgets.exe	S-1-5-113	Local Account
+9716	Widgets.exe	S-1-5-5-0-4925322	Logon Session
+9716	Widgets.exe	S-1-2-0	Local (Users with the ability to log in locally)
+9716	Widgets.exe	S-1-5-64-10	NTLM Authentication
+9716	Widgets.exe	S-1-16-8192	Medium Mandatory Level
+10224	RuntimeBroker.	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+10224	RuntimeBroker.	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+10224	RuntimeBroker.	S-1-1-0	Everyone
+10224	RuntimeBroker.	S-1-5-114	Local Account (Member of Administrators)
+10224	RuntimeBroker.	S-1-5-21-1942469836-708821519-518219048-1011	-
+10224	RuntimeBroker.	S-1-5-32-544	Administrators
+10224	RuntimeBroker.	S-1-5-32-545	Users
+10224	RuntimeBroker.	S-1-5-4	Interactive
+10224	RuntimeBroker.	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+10224	RuntimeBroker.	S-1-5-11	Authenticated Users
+10224	RuntimeBroker.	S-1-5-15	This Organization
+10224	RuntimeBroker.	S-1-5-113	Local Account
+10224	RuntimeBroker.	S-1-5-5-0-4925322	Logon Session
+10224	RuntimeBroker.	S-1-2-0	Local (Users with the ability to log in locally)
+10224	RuntimeBroker.	S-1-5-64-10	NTLM Authentication
+10224	RuntimeBroker.	S-1-16-8192	Medium Mandatory Level
+10372	RuntimeBroker.	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+10372	RuntimeBroker.	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+10372	RuntimeBroker.	S-1-1-0	Everyone
+10372	RuntimeBroker.	S-1-5-114	Local Account (Member of Administrators)
+10372	RuntimeBroker.	S-1-5-21-1942469836-708821519-518219048-1011	-
+10372	RuntimeBroker.	S-1-5-32-544	Administrators
+10372	RuntimeBroker.	S-1-5-32-545	Users
+10372	RuntimeBroker.	S-1-5-4	Interactive
+10372	RuntimeBroker.	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+10372	RuntimeBroker.	S-1-5-11	Authenticated Users
+10372	RuntimeBroker.	S-1-5-15	This Organization
+10372	RuntimeBroker.	S-1-5-113	Local Account
+10372	RuntimeBroker.	S-1-5-5-0-4925322	Logon Session
+10372	RuntimeBroker.	S-1-2-0	Local (Users with the ability to log in locally)
+10372	RuntimeBroker.	S-1-5-64-10	NTLM Authentication
+10372	RuntimeBroker.	S-1-16-8192	Medium Mandatory Level
+10444	svchost.exe	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+10444	svchost.exe	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+10444	svchost.exe	S-1-1-0	Everyone
+10444	svchost.exe	S-1-5-114	Local Account (Member of Administrators)
+10444	svchost.exe	S-1-5-21-1942469836-708821519-518219048-1011	-
+
+10444	svchost.exe	S-1-5-32-544	Administrators
+10444	svchost.exe	S-1-5-32-545	Users
+10444	svchost.exe	S-1-5-4	Interactive
+10444	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+10444	svchost.exe	S-1-5-11	Authenticated Users
+10444	svchost.exe	S-1-5-15	This Organization
+10444	svchost.exe	S-1-5-113	Local Account
+10444	svchost.exe	S-1-5-5-0-4925322	Logon Session
+10444	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+10444	svchost.exe	S-1-5-64-10	NTLM Authentication
+10444	svchost.exe	S-1-16-8192	Medium Mandatory Level
+10744	dllhost.exe	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+10744	dllhost.exe	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+10744	dllhost.exe	S-1-1-0	Everyone
+
+10744	dllhost.exe	S-1-5-114	Local Account (Member of Administrators)
+10744	dllhost.exe	S-1-5-21-1942469836-708821519-518219048-1011	-
+10744	dllhost.exe	S-1-5-32-544	Administrators
+10744	dllhost.exe	S-1-5-32-545	Users
+10744	dllhost.exe	S-1-5-4	Interactive
+10744	dllhost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+10744	dllhost.exe	S-1-5-11	Authenticated Users
+10744	dllhost.exe	S-1-5-15	This Organization
+10744	dllhost.exe	S-1-5-113	Local Account
+10744	dllhost.exe	S-1-5-5-0-4925322	Logon Session
+10744	dllhost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+10744	dllhost.exe	S-1-5-64-10	NTLM Authentication
+10744	dllhost.exe	S-1-16-8192	Medium Mandatory Level
+10984	UserOOBEBroker	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+10984	UserOOBEBroker	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+10984	UserOOBEBroker	S-1-1-0	Everyone
+10984	UserOOBEBroker	S-1-5-114	Local Account (Member of Administrators)
+10984	UserOOBEBroker	S-1-5-21-1942469836-708821519-518219048-1011	-
+10984	UserOOBEBroker	S-1-5-32-544	Administrators
+10984	UserOOBEBroker	S-1-5-32-545	Users
+10984	UserOOBEBroker	S-1-5-4	Interactive
+10984	UserOOBEBroker	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+10984	UserOOBEBroker	S-1-5-11	Authenticated Users
+10984	UserOOBEBroker	S-1-5-15	This Organization
+10984	UserOOBEBroker	S-1-5-113	Local Account
+10984	UserOOBEBroker	S-1-5-5-0-4925322	Logon Session
+10984	UserOOBEBroker	S-1-2-0	Local (Users with the ability to log in locally)
+10984	UserOOBEBroker	S-1-5-64-10	NTLM Authentication
+10984	UserOOBEBroker	S-1-16-8192	Medium Mandatory Level
+12016	ctfmon.exe	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+12016	ctfmon.exe	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+12016	ctfmon.exe	S-1-1-0	Everyone
+12016	ctfmon.exe	S-1-5-114	Local Account (Member of Administrators)
+12016	ctfmon.exe	S-1-5-21-1942469836-708821519-518219048-1011	-
+12016	ctfmon.exe	S-1-5-32-544	Administrators
+12016	ctfmon.exe	S-1-5-32-545	Users
+12016	ctfmon.exe	S-1-5-4	Interactive
+12016	ctfmon.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+12016	ctfmon.exe	S-1-5-11	Authenticated Users
+12016	ctfmon.exe	S-1-5-15	This Organization
+12016	ctfmon.exe	S-1-5-113	Local Account
+12016	ctfmon.exe	S-1-5-5-0-4925322	Logon Session
+12016	ctfmon.exe	S-1-2-0	Local (Users with the ability to log in locally)
+12016	ctfmon.exe	S-1-5-64-10	NTLM Authentication
+12016	ctfmon.exe	S-1-16-12288	High Mandatory Level
+11888	RadeonSoftware	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+11888	RadeonSoftware	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+11888	RadeonSoftware	S-1-1-0	Everyone
+
+11888	RadeonSoftware	S-1-5-114	Local Account (Member of Administrators)
+11888	RadeonSoftware	S-1-5-21-1942469836-708821519-518219048-1011	-
+11888	RadeonSoftware	S-1-5-32-544	Administrators
+
+11888	RadeonSoftware	S-1-5-32-545	Users
+11888	RadeonSoftware	S-1-5-4	Interactive
+11888	RadeonSoftware	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+11888	RadeonSoftware	S-1-5-11	Authenticated Users
+11888	RadeonSoftware	S-1-5-15	This Organization
+11888	RadeonSoftware	S-1-5-113	Local Account
+11888	RadeonSoftware	S-1-5-5-0-4925322	Logon Session
+11888	RadeonSoftware	S-1-2-0	Local (Users with the ability to log in locally)
+11888	RadeonSoftware	S-1-5-64-10	NTLM Authentication
+11888	RadeonSoftware	S-1-16-8192	Medium Mandatory Level
+2324	CPUMetricsServ	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+2324	CPUMetricsServ	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+2324	CPUMetricsServ	S-1-1-0	Everyone
+2324	CPUMetricsServ	S-1-5-114	Local Account (Member of Administrators)
+2324	CPUMetricsServ	S-1-5-21-1942469836-708821519-518219048-1011	-
+2324	CPUMetricsServ	S-1-5-32-544	Administrators
+2324	CPUMetricsServ	S-1-5-32-545	Users
+2324	CPUMetricsServ	S-1-5-4	Interactive
+2324	CPUMetricsServ	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+2324	CPUMetricsServ	S-1-5-11	Authenticated Users
+2324	CPUMetricsServ	S-1-5-15	This Organization
+2324	CPUMetricsServ	S-1-5-113	Local Account
+2324	CPUMetricsServ	S-1-5-5-0-4925322	Logon Session
+2324	CPUMetricsServ	S-1-2-0	Local (Users with the ability to log in locally)
+2324	CPUMetricsServ	S-1-5-64-10	NTLM Authentication
+2324	CPUMetricsServ	S-1-16-12288	High Mandatory Level
+5836	CodeMeter.exe	S-1-5-18	Local System
+5836	CodeMeter.exe	S-1-5-32-544	Administrators
+5836	CodeMeter.exe	S-1-1-0	Everyone
+5836	CodeMeter.exe	S-1-5-11	Authenticated Users
+5836	CodeMeter.exe	S-1-16-16384	System Mandatory Level
+9268	TextInputHost.	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+9268	TextInputHost.	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+9268	TextInputHost.	S-1-1-0	Everyone
+9268	TextInputHost.	S-1-5-114	Local Account (Member of Administrators)
+9268	TextInputHost.	S-1-5-21-1942469836-708821519-518219048-1011	-
+9268	TextInputHost.	S-1-5-32-544	Administrators
+9268	TextInputHost.	S-1-5-32-545	Users
+9268	TextInputHost.	S-1-5-4	Interactive
+9268	TextInputHost.	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+9268	TextInputHost.	S-1-5-11	Authenticated Users
+9268	TextInputHost.	S-1-5-15	This Organization
+9268	TextInputHost.	S-1-5-113	Local Account
+9268	TextInputHost.	S-1-5-5-0-4925322	Logon Session
+9268	TextInputHost.	S-1-2-0	Local (Users with the ability to log in locally)
+
+9268	TextInputHost.	S-1-5-64-10	NTLM Authentication
+9268	TextInputHost.	S-1-16-8192	Medium Mandatory Level
+3476	SearchIndexer.	S-1-5-18	Local System
+3476	SearchIndexer.	S-1-16-16384	System Mandatory Level
+3476	SearchIndexer.	S-1-1-0	Everyone
+3476	SearchIndexer.	S-1-5-32-545	Users
+3476	SearchIndexer.	S-1-5-6	Service
+3476	SearchIndexer.	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+3476	SearchIndexer.	S-1-5-11	Authenticated Users
+3476	SearchIndexer.	S-1-5-15	This Organization
+3476	SearchIndexer.	S-1-5-80-117416528-2204451360-1913602512-1355018040-1234992034	WSearch
+3476	SearchIndexer.	S-1-5-5-0-7504014	Logon Session
+3476	SearchIndexer.	S-1-2-0	Local (Users with the ability to log in locally)
+3476	SearchIndexer.	S-1-5-32-544	Administrators
+2132	cncmd.exe	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+2132	cncmd.exe	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+2132	cncmd.exe	S-1-1-0	Everyone
+2132	cncmd.exe	S-1-5-114	Local Account (Member of Administrators)
+2132	cncmd.exe	S-1-5-21-1942469836-708821519-518219048-1011	-
+2132	cncmd.exe	S-1-5-32-544	Administrators
+2132	cncmd.exe	S-1-5-32-545	Users
+2132	cncmd.exe	S-1-5-4	Interactive
+2132	cncmd.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+2132	cncmd.exe	S-1-5-11	Authenticated Users
+2132	cncmd.exe	S-1-5-15	This Organization
+2132	cncmd.exe	S-1-5-113	Local Account
+2132	cncmd.exe	S-1-5-5-0-4925322	Logon Session
+2132	cncmd.exe	S-1-2-0	Local (Users with the ability to log in locally)
+2132	cncmd.exe	S-1-5-64-10	NTLM Authentication
+2132	cncmd.exe	S-1-16-8192	Medium Mandatory Level
+12264	ShellExperienc	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+12264	ShellExperienc	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+12264	ShellExperienc	S-1-1-0	Everyone
+12264	ShellExperienc	S-1-5-114	Local Account (Member of Administrators)
+12264	ShellExperienc	S-1-5-21-1942469836-708821519-518219048-1011	-
+12264	ShellExperienc	S-1-5-32-544	Administrators
+12264	ShellExperienc	S-1-5-32-545	Users
+12264	ShellExperienc	S-1-5-4	Interactive
+12264	ShellExperienc	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+12264	ShellExperienc	S-1-5-11	Authenticated Users
+12264	ShellExperienc	S-1-5-15	This Organization
+
+12264	ShellExperienc	S-1-5-113	Local Account
+12264	ShellExperienc	S-1-5-5-0-4925322	Logon Session
+12264	ShellExperienc	S-1-2-0	Local (Users with the ability to log in locally)
+12264	ShellExperienc	S-1-5-64-10	NTLM Authentication
+12264	ShellExperienc	S-1-16-4096	Low Mandatory Level
+10268	svchost.exe	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+10268	svchost.exe	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+10268	svchost.exe	S-1-1-0	Everyone
+10268	svchost.exe	S-1-5-114	Local Account (Member of Administrators)
+10268	svchost.exe	S-1-5-21-1942469836-708821519-518219048-1011	-
+10268	svchost.exe	S-1-5-32-544	Administrators
+10268	svchost.exe	S-1-5-32-545	Users
+10268	svchost.exe	S-1-5-4	Interactive
+10268	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+10268	svchost.exe	S-1-5-11	Authenticated Users
+10268	svchost.exe	S-1-5-15	This Organization
+10268	svchost.exe	S-1-5-113	Local Account
+10268	svchost.exe	S-1-5-5-0-4925322	Logon Session
+10268	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+10268	svchost.exe	S-1-5-64-10	NTLM Authentication
+10268	svchost.exe	S-1-16-8192	Medium Mandatory Level
+11184	RuntimeBroker.	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+11184	RuntimeBroker.	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+11184	RuntimeBroker.	S-1-1-0	Everyone
+11184	RuntimeBroker.	S-1-5-114	Local Account (Member of Administrators)
+11184	RuntimeBroker.	S-1-5-21-1942469836-708821519-518219048-1011	-
+11184	RuntimeBroker.	S-1-5-32-544	Administrators
+11184	RuntimeBroker.	S-1-5-32-545	Users
+11184	RuntimeBroker.	S-1-5-4	Interactive
+11184	RuntimeBroker.	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+11184	RuntimeBroker.	S-1-5-11	Authenticated Users
+11184	RuntimeBroker.	S-1-5-15	This Organization
+11184	RuntimeBroker.	S-1-5-113	Local Account
+11184	RuntimeBroker.	S-1-5-5-0-4925322	Logon Session
+11184	RuntimeBroker.	S-1-2-0	Local (Users with the ability to log in locally)
+11184	RuntimeBroker.	S-1-5-64-10	NTLM Authentication
+11184	RuntimeBroker.	S-1-16-8192	Medium Mandatory Level
+11576	SystemSettings	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+11576	SystemSettings	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+11576	SystemSettings	S-1-1-0	Everyone
+11576	SystemSettings	S-1-5-114	Local Account (Member of Administrators)
+11576	SystemSettings	S-1-5-21-1942469836-708821519-518219048-1011	-
+11576	SystemSettings	S-1-5-32-544	Administrators
+11576	SystemSettings	S-1-5-32-545	Users
+11576	SystemSettings	S-1-5-4	Interactive
+11576	SystemSettings	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+11576	SystemSettings	S-1-5-11	Authenticated Users
+11576	SystemSettings	S-1-5-15	This Organization
+11576	SystemSettings	S-1-5-113	Local Account
+11576	SystemSettings	S-1-5-5-0-4925322	Logon Session
+11576	SystemSettings	S-1-2-0	Local (Users with the ability to log in locally)
+11576	SystemSettings	S-1-5-64-10	NTLM Authentication
+11576	SystemSettings	S-1-16-8192	Medium Mandatory Level
+3484	svchost.exe	S-1-5-19	NT Authority
+3484	svchost.exe	S-1-16-16384	System Mandatory Level
+3484	svchost.exe	S-1-1-0	Everyone
+3484	svchost.exe	S-1-5-32-545	Users
+3484	svchost.exe	S-1-5-6	Service
+3484	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+3484	svchost.exe	S-1-5-11	Authenticated Users
+3484	svchost.exe	S-1-5-15	This Organization
+3484	svchost.exe	S-1-5-80-3435701886-799518250-3791383489-3228296122-2938884314	SstpSvc
+3484	svchost.exe	S-1-5-5-0-7626579	Logon Session
+3484	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+3484	svchost.exe	S-1-5-32-3167453650-624722384-889205278-321484983-714554697-3592933102-807660695-1632717421	-
+3484	svchost.exe	S-1-5-32-383293015-3350740429-1839969850-1819881064-1569454686-4198502490-78857879-1413643331	-
+3484	svchost.exe	S-1-5-32-2035927579-283314533-3422103930-3587774809-765962649-3034203285-3544878962-607181067	-
+3484	svchost.exe	S-1-5-32-3659434007-2290108278-1125199667-3679670526-1293081662-2164323352-1777701501-2595986263	-
+3484	svchost.exe	S-1-5-32-11742800-2107441976-3443185924-4134956905-3840447964-3749968454-3843513199-670971053	-
+3484	svchost.exe	S-1-5-32-3523901360-1745872541-794127107-675934034-1867954868-1951917511-1111796624-2052600462	-
+3484	svchost.exe	S-1-5-32-1488445330-856673777-1515413738-1380768593-2977925950-2228326386-886087428-2802422674	-
+2808	svchost.exe	S-1-5-20	NT Authority
+2808	svchost.exe	S-1-16-16384	System Mandatory Level
+2808	svchost.exe	S-1-1-0	Everyone
+2808	svchost.exe	S-1-5-32-545	Users
+2808	svchost.exe	S-1-5-6	Service
+2808	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+2808	svchost.exe	S-1-5-11	Authenticated Users
+2808	svchost.exe	S-1-5-15	This Organization
+2808	svchost.exe	S-1-5-80-4230913304-2206818457-801678004-120036174-1892434133	TapiSrv
+2808	svchost.exe	S-1-5-5-0-7641041	Logon Session
+2808	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+2812	svchost.exe	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+2812	svchost.exe	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+2812	svchost.exe	S-1-1-0	Everyone
+2812	svchost.exe	S-1-5-114	Local Account (Member of Administrators)
+2812	svchost.exe	S-1-5-21-1942469836-708821519-518219048-1011	-
+2812	svchost.exe	S-1-5-32-544	Administrators
+2812	svchost.exe	S-1-5-32-545	Users
+2812	svchost.exe	S-1-5-4	Interactive
+2812	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+2812	svchost.exe	S-1-5-11	Authenticated Users
+2812	svchost.exe	S-1-5-15	This Organization
+2812	svchost.exe	S-1-5-113	Local Account
+2812	svchost.exe	S-1-5-5-0-4925322	Logon Session
+2812	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+2812	svchost.exe	S-1-5-64-10	NTLM Authentication
+2812	svchost.exe	S-1-16-8192	Medium Mandatory Level
+2500	svchost.exe	S-1-5-18	Local System
+2500	svchost.exe	S-1-16-16384	System Mandatory Level
+2500	svchost.exe	S-1-1-0	Everyone
+2500	svchost.exe	S-1-5-32-545	Users
+2500	svchost.exe	S-1-5-6	Service
+2500	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+2500	svchost.exe	S-1-5-11	Authenticated Users
+2500	svchost.exe	S-1-5-15	This Organization
+2500	svchost.exe	S-1-5-80-3256172449-2363790065-3617575471-4144056108-756904704	CertPropSvc
+2500	svchost.exe	S-1-5-80-1594061079-2000966165-462148798-751814865-2644087104	-
+2500	svchost.exe	S-1-5-80-4176366874-305252471-2256717057-2714189771-3552532790	RasMan
+2500	svchost.exe	S-1-5-80-1954729425-4294152082-187165618-318331177-3831297489	RemoteAccess
+2500	svchost.exe	S-1-5-80-1691538513-4084330536-1620899472-1113280783-3554754292	SCPolicySvc
+2500	svchost.exe	S-1-5-5-0-7646940	Logon Session
+2500	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+2500	svchost.exe	S-1-5-32-544	Administrators
+12352	audiodg.exe	S-1-5-19	NT Authority
+12352	audiodg.exe	S-1-16-16384	System Mandatory Level
+12352	audiodg.exe	S-1-1-0	Everyone
+12352	audiodg.exe	S-1-5-32-545	Users
+12352	audiodg.exe	S-1-5-6	Service
+12352	audiodg.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+12352	audiodg.exe	S-1-5-11	Authenticated Users
+12352	audiodg.exe	S-1-5-15	This Organization
+12352	audiodg.exe	S-1-5-80-2676549577-1911656217-2625096541-4178041876-1366760775	Audiosrv
+12352	audiodg.exe	S-1-5-5-0-305071	Logon Session
+12352	audiodg.exe	S-1-2-0	Local (Users with the ability to log in locally)
+12352	audiodg.exe	S-1-5-32-3167453650-624722384-889205278-321484983-714554697-3592933102-807660695-1632717421	-
+12352	audiodg.exe	S-1-5-32-383293015-3350740429-1839969850-1819881064-1569454686-4198502490-78857879-1413643331	-
+12352	audiodg.exe	S-1-5-32-2035927579-283314533-3422103930-3587774809-765962649-3034203285-3544878962-607181067	-
+12352	audiodg.exe	S-1-5-32-3659434007-2290108278-1125199667-3679670526-1293081662-2164323352-1777701501-2595986263	-
+12352	audiodg.exe	S-1-5-32-11742800-2107441976-3443185924-4134956905-3840447964-3749968454-3843513199-670971053	-
+12352	audiodg.exe	S-1-5-32-3523901360-1745872541-794127107-675934034-1867954868-1951917511-1111796624-2052600462	-
+12352	audiodg.exe	S-1-5-32-1488445330-856673777-1515413738-1380768593-2977925950-2228326386-886087428-2802422674	-
+13096	PhoneExperienc	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+13096	PhoneExperienc	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+13096	PhoneExperienc	S-1-1-0	Everyone
+13096	PhoneExperienc	S-1-5-114	Local Account (Member of Administrators)
+13096	PhoneExperienc	S-1-5-21-1942469836-708821519-518219048-1011	-
+13096	PhoneExperienc	S-1-5-32-544	Administrators
+13096	PhoneExperienc	S-1-5-32-545	Users
+13096	PhoneExperienc	S-1-5-4	Interactive
+13096	PhoneExperienc	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+13096	PhoneExperienc	S-1-5-11	Authenticated Users
+13096	PhoneExperienc	S-1-5-15	This Organization
+13096	PhoneExperienc	S-1-5-113	Local Account
+13096	PhoneExperienc	S-1-5-5-0-4925322	Logon Session
+
+13096	PhoneExperienc	S-1-2-0	Local (Users with the ability to log in locally)
+13096	PhoneExperienc	S-1-5-64-10	NTLM Authentication
+13096	PhoneExperienc	S-1-16-8192	Medium Mandatory Level
+9436	WidgetService.	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+9436	WidgetService.	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+9436	WidgetService.	S-1-1-0	Everyone
+9436	WidgetService.	S-1-5-114	Local Account (Member of Administrators)
+9436	WidgetService.	S-1-5-21-1942469836-708821519-518219048-1011	-
+9436	WidgetService.	S-1-5-32-544	Administrators
+9436	WidgetService.	S-1-5-32-545	Users
+9436	WidgetService.	S-1-5-4	Interactive
+9436	WidgetService.	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+9436	WidgetService.	S-1-5-11	Authenticated Users
+9436	WidgetService.	S-1-5-15	This Organization
+9436	WidgetService.	S-1-5-113	Local Account
+9436	WidgetService.	S-1-5-5-0-4925322	Logon Session
+9436	WidgetService.	S-1-2-0	Local (Users with the ability to log in locally)
+9436	WidgetService.	S-1-5-64-10	NTLM Authentication
+9436	WidgetService.	S-1-16-8192	Medium Mandatory Level
+8768	svchost.exe	S-1-5-18	Local System
+8768	svchost.exe	S-1-16-16384	System Mandatory Level
+8768	svchost.exe	S-1-1-0	Everyone
+8768	svchost.exe	S-1-5-32-545	Users
+8768	svchost.exe	S-1-5-6	Service
+8768	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+8768	svchost.exe	S-1-5-11	Authenticated Users
+8768	svchost.exe	S-1-5-15	This Organization
+8768	svchost.exe	S-1-5-80-223807737-1693445485-119162242-1977420160-1403034029	-
+8768	svchost.exe	S-1-5-5-0-8396298	Logon Session
+8768	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+8768	svchost.exe	S-1-5-32-544	Administrators
+13104	LogonUI.exe	S-1-5-18	Local System
+13104	LogonUI.exe	S-1-5-32-544	Administrators
+13104	LogonUI.exe	S-1-1-0	Everyone
+13104	LogonUI.exe	S-1-5-11	Authenticated Users
+13104	LogonUI.exe	S-1-16-16384	System Mandatory Level
+13492	LockApp.exe	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+13492	LockApp.exe	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+13492	LockApp.exe	S-1-1-0	Everyone
+13492	LockApp.exe	S-1-5-114	Local Account (Member of Administrators)
+13492	LockApp.exe	S-1-5-21-1942469836-708821519-518219048-1011	-
+13492	LockApp.exe	S-1-5-32-544	Administrators
+13492	LockApp.exe	S-1-5-32-545	Users
+13492	LockApp.exe	S-1-5-4	Interactive
+
+13492	LockApp.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+13492	LockApp.exe	S-1-5-11	Authenticated Users
+13492	LockApp.exe	S-1-5-15	This Organization
+13492	LockApp.exe	S-1-5-113	Local Account
+13492	LockApp.exe	S-1-5-5-0-4925322	Logon Session
+13492	LockApp.exe	S-1-2-0	Local (Users with the ability to log in locally)
+13492	LockApp.exe	S-1-5-64-10	NTLM Authentication
+13492	LockApp.exe	S-1-16-4096	Low Mandatory Level
+13628	RuntimeBroker.	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+13628	RuntimeBroker.	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+13628	RuntimeBroker.	S-1-1-0	Everyone
+13628	RuntimeBroker.	S-1-5-114	Local Account (Member of Administrators)
+13628	RuntimeBroker.	S-1-5-21-1942469836-708821519-518219048-1011	-
+13628	RuntimeBroker.	S-1-5-32-544	Administrators
+13628	RuntimeBroker.	S-1-5-32-545	Users
+13628	RuntimeBroker.	S-1-5-4	Interactive
+13628	RuntimeBroker.	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+13628	RuntimeBroker.	S-1-5-11	Authenticated Users
+13628	RuntimeBroker.	S-1-5-15	This Organization
+13628	RuntimeBroker.	S-1-5-113	Local Account
+13628	RuntimeBroker.	S-1-5-5-0-4925322	Logon Session
+13628	RuntimeBroker.	S-1-2-0	Local (Users with the ability to log in locally)
+13628	RuntimeBroker.	S-1-5-64-10	NTLM Authentication
+13628	RuntimeBroker.	S-1-16-8192	Medium Mandatory Level
+
+4956	svchost.exe	S-1-5-19	NT Authority
+4956	svchost.exe	S-1-16-16384	System Mandatory Level
+4956	svchost.exe	S-1-1-0	Everyone
+4956	svchost.exe	S-1-5-32-545	Users
+4956	svchost.exe	S-1-5-6	Service
+4956	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+4956	svchost.exe	S-1-5-11	Authenticated Users
+4956	svchost.exe	S-1-5-15	This Organization
+4956	svchost.exe	S-1-5-80-4267341169-2882910712-659946508-2704364837-2204554466	W32Time
+4956	svchost.exe	S-1-5-5-0-8559737	Logon Session
+4956	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+4956	svchost.exe	S-1-5-32-3167453650-624722384-889205278-321484983-714554697-3592933102-807660695-1632717421	-
+4956	svchost.exe	S-1-5-32-383293015-3350740429-1839969850-1819881064-1569454686-4198502490-78857879-1413643331	-
+4956	svchost.exe	S-1-5-32-2035927579-283314533-3422103930-3587774809-765962649-3034203285-3544878962-607181067	-
+4956	svchost.exe	S-1-5-32-3659434007-2290108278-1125199667-3679670526-1293081662-2164323352-1777701501-2595986263	-
+4956	svchost.exe	S-1-5-32-11742800-2107441976-3443185924-4134956905-3840447964-3749968454-3843513199-670971053	-
+4956	svchost.exe	S-1-5-32-3523901360-1745872541-794127107-675934034-1867954868-1951917511-1111796624-2052600462	-
+4956	svchost.exe	S-1-5-32-1488445330-856673777-1515413738-1380768593-2977925950-2228326386-886087428-2802422674	-
+10524	svchost.exe	S-1-5-18	Local System
+10524	svchost.exe	S-1-16-16384	System Mandatory Level
+10524	svchost.exe	S-1-1-0	Everyone
+10524	svchost.exe	S-1-5-32-545	Users
+10524	svchost.exe	S-1-5-6	Service
+10524	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+10524	svchost.exe	S-1-5-11	Authenticated Users
+10524	svchost.exe	S-1-5-15	This Organization
+10524	svchost.exe	S-1-5-80-1014140700-3308905587-3330345912-272242898-93311788	wuauserv
+10524	svchost.exe	S-1-5-5-0-8625242	Logon Session
+10524	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+10524	svchost.exe	S-1-5-32-544	Administrators
+
+13380	svchost.exe	S-1-5-18	Local System
+13380	svchost.exe	S-1-16-16384	System Mandatory Level
+13380	svchost.exe	S-1-1-0	Everyone
+13380	svchost.exe	S-1-5-32-545	Users
+13380	svchost.exe	S-1-5-6	Service
+13380	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+13380	svchost.exe	S-1-5-11	Authenticated Users
+13380	svchost.exe	S-1-5-15	This Organization
+13380	svchost.exe	S-1-5-80-3704025948-1094794811-1175534343-2088422159-783153058	-
+13380	svchost.exe	S-1-5-5-0-8666992	Logon Session
+13380	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+13380	svchost.exe	S-1-5-32-544	Administrators
+14304	LocationNotifi	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+14304	LocationNotifi	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+14304	LocationNotifi	S-1-1-0	Everyone
+14304	LocationNotifi	S-1-5-114	Local Account (Member of Administrators)
+14304	LocationNotifi	S-1-5-21-1942469836-708821519-518219048-1011	-
+14304	LocationNotifi	S-1-5-32-544	Administrators
+14304	LocationNotifi	S-1-5-32-545	Users
+14304	LocationNotifi	S-1-5-4	Interactive
+14304	LocationNotifi	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+14304	LocationNotifi	S-1-5-11	Authenticated Users
+14304	LocationNotifi	S-1-5-15	This Organization
+14304	LocationNotifi	S-1-5-113	Local Account
+14304	LocationNotifi	S-1-5-5-0-4925322	Logon Session
+14304	LocationNotifi	S-1-2-0	Local (Users with the ability to log in locally)
+14304	LocationNotifi	S-1-5-64-10	NTLM Authentication
+14304	LocationNotifi	S-1-16-8192	Medium Mandatory Level
+14028	svchost.exe	S-1-5-19	NT Authority
+14028	svchost.exe	S-1-16-16384	System Mandatory Level
+14028	svchost.exe	S-1-1-0	Everyone
+14028	svchost.exe	S-1-5-32-545	Users
+14028	svchost.exe	S-1-5-6	Service
+14028	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+14028	svchost.exe	S-1-5-11	Authenticated Users
+14028	svchost.exe	S-1-5-15	This Organization
+14028	svchost.exe	S-1-5-80-3232712927-1625117661-2590453128-1738570065-3637376297	wscsvc
+14028	svchost.exe	S-1-5-5-0-8754841	Logon Session
+14028	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+14028	svchost.exe	S-1-5-32-3167453650-624722384-889205278-321484983-714554697-3592933102-807660695-1632717421	-
+14028	svchost.exe	S-1-5-32-383293015-3350740429-1839969850-1819881064-1569454686-4198502490-78857879-1413643331	-
+14028	svchost.exe	S-1-5-32-2035927579-283314533-3422103930-3587774809-765962649-3034203285-3544878962-607181067	-
+14028	svchost.exe	S-1-5-32-3659434007-2290108278-1125199667-3679670526-1293081662-2164323352-1777701501-2595986263	-
+14028	svchost.exe	S-1-5-32-11742800-2107441976-3443185924-4134956905-3840447964-3749968454-3843513199-670971053	-
+14028	svchost.exe	S-1-5-32-3523901360-1745872541-794127107-675934034-1867954868-1951917511-1111796624-2052600462	-
+14028	svchost.exe	S-1-5-32-1488445330-856673777-1515413738-1380768593-2977925950-2228326386-886087428-2802422674	-
+9880	svchost.exe	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+9880	svchost.exe	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+9880	svchost.exe	S-1-1-0	Everyone
+9880	svchost.exe	S-1-5-114	Local Account (Member of Administrators)
+
+9880	svchost.exe	S-1-5-21-1942469836-708821519-518219048-1011	-
+9880	svchost.exe	S-1-5-32-544	Administrators
+9880	svchost.exe	S-1-5-32-545	Users
+9880	svchost.exe	S-1-5-4	Interactive
+9880	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+9880	svchost.exe	S-1-5-11	Authenticated Users
+9880	svchost.exe	S-1-5-15	This Organization
+9880	svchost.exe	S-1-5-113	Local Account
+9880	svchost.exe	S-1-5-5-0-4925322	Logon Session
+9880	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+9880	svchost.exe	S-1-5-64-10	NTLM Authentication
+9880	svchost.exe	S-1-16-8192	Medium Mandatory Level
+12540	AMDRSSrcExt.ex	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+12540	AMDRSSrcExt.ex	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+12540	AMDRSSrcExt.ex	S-1-1-0	Everyone
+12540	AMDRSSrcExt.ex	S-1-5-114	Local Account (Member of Administrators)
+12540	AMDRSSrcExt.ex	S-1-5-21-1942469836-708821519-518219048-1011	-
+12540	AMDRSSrcExt.ex	S-1-5-32-544	Administrators
+12540	AMDRSSrcExt.ex	S-1-5-32-545	Users
+12540	AMDRSSrcExt.ex	S-1-5-4	Interactive
+12540	AMDRSSrcExt.ex	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+12540	AMDRSSrcExt.ex	S-1-5-11	Authenticated Users
+12540	AMDRSSrcExt.ex	S-1-5-15	This Organization
+12540	AMDRSSrcExt.ex	S-1-5-113	Local Account
+12540	AMDRSSrcExt.ex	S-1-5-5-0-4925322	Logon Session
+12540	AMDRSSrcExt.ex	S-1-2-0	Local (Users with the ability to log in locally)
+12540	AMDRSSrcExt.ex	S-1-5-64-10	NTLM Authentication
+12540	AMDRSSrcExt.ex	S-1-16-8192	Medium Mandatory Level
+14432	SecurityHealth	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+14432	SecurityHealth	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+14432	SecurityHealth	S-1-1-0	Everyone
+14432	SecurityHealth	S-1-5-114	Local Account (Member of Administrators)
+
+14432	SecurityHealth	S-1-5-21-1942469836-708821519-518219048-1011	-
+14432	SecurityHealth	S-1-5-32-544	Administrators
+14432	SecurityHealth	S-1-5-32-545	Users
+14432	SecurityHealth	S-1-5-4	Interactive
+14432	SecurityHealth	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+14432	SecurityHealth	S-1-5-11	Authenticated Users
+14432	SecurityHealth	S-1-5-15	This Organization
+14432	SecurityHealth	S-1-5-113	Local Account
+14432	SecurityHealth	S-1-5-5-0-4925322	Logon Session
+14432	SecurityHealth	S-1-2-0	Local (Users with the ability to log in locally)
+14432	SecurityHealth	S-1-5-64-10	NTLM Authentication
+14432	SecurityHealth	S-1-16-8192	Medium Mandatory Level
+14488	SecurityHealth	S-1-5-18	Local System
+14488	SecurityHealth	S-1-16-16384	System Mandatory Level
+14488	SecurityHealth	S-1-1-0	Everyone
+14488	SecurityHealth	S-1-5-32-545	Users
+14488	SecurityHealth	S-1-5-6	Service
+14488	SecurityHealth	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+14488	SecurityHealth	S-1-5-11	Authenticated Users
+14488	SecurityHealth	S-1-5-15	This Organization
+14488	SecurityHealth	S-1-5-80-259296475-4084429506-1152984619-38739575-565535606	-
+14488	SecurityHealth	S-1-5-5-0-9685090	Logon Session
+14488	SecurityHealth	S-1-2-0	Local (Users with the ability to log in locally)
+14488	SecurityHealth	S-1-5-32-544	Administrators
+10520	brave.exe	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+10520	brave.exe	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+10520	brave.exe	S-1-1-0	Everyone
+10520	brave.exe	S-1-5-114	Local Account (Member of Administrators)
+10520	brave.exe	S-1-5-21-1942469836-708821519-518219048-1011	-
+10520	brave.exe	S-1-5-32-544	Administrators
+10520	brave.exe	S-1-5-32-545	Users
+10520	brave.exe	S-1-5-4	Interactive
+10520	brave.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+10520	brave.exe	S-1-5-11	Authenticated Users
+10520	brave.exe	S-1-5-15	This Organization
+10520	brave.exe	S-1-5-113	Local Account
+10520	brave.exe	S-1-5-5-0-4925322	Logon Session
+10520	brave.exe	S-1-2-0	Local (Users with the ability to log in locally)
+10520	brave.exe	S-1-5-64-10	NTLM Authentication
+10520	brave.exe	S-1-16-8192	Medium Mandatory Level
+15208	ApplicationFra	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+15208	ApplicationFra	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+15208	ApplicationFra	S-1-1-0	Everyone
+15208	ApplicationFra	S-1-5-114	Local Account (Member of Administrators)
+15208	ApplicationFra	S-1-5-21-1942469836-708821519-518219048-1011	-
+15208	ApplicationFra	S-1-5-32-544	Administrators
+15208	ApplicationFra	S-1-5-32-545	Users
+15208	ApplicationFra	S-1-5-4	Interactive
+15208	ApplicationFra	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+15208	ApplicationFra	S-1-5-11	Authenticated Users
+15208	ApplicationFra	S-1-5-15	This Organization
+15208	ApplicationFra	S-1-5-113	Local Account
+15208	ApplicationFra	S-1-5-5-0-4925322	Logon Session
+15208	ApplicationFra	S-1-2-0	Local (Users with the ability to log in locally)
+15208	ApplicationFra	S-1-5-64-10	NTLM Authentication
+15208	ApplicationFra	S-1-16-8192	Medium Mandatory Level
+14108	CodeMeterCC.ex	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+14108	CodeMeterCC.ex	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+14108	CodeMeterCC.ex	S-1-1-0	Everyone
+14108	CodeMeterCC.ex	S-1-5-114	Local Account (Member of Administrators)
+
+14108	CodeMeterCC.ex	S-1-5-21-1942469836-708821519-518219048-1011	-
+14108	CodeMeterCC.ex	S-1-5-32-544	Administrators
+14108	CodeMeterCC.ex	S-1-5-32-545	Users
+14108	CodeMeterCC.ex	S-1-5-4	Interactive
+14108	CodeMeterCC.ex	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+14108	CodeMeterCC.ex	S-1-5-11	Authenticated Users
+14108	CodeMeterCC.ex	S-1-5-15	This Organization
+14108	CodeMeterCC.ex	S-1-5-113	Local Account
+14108	CodeMeterCC.ex	S-1-5-5-0-4925322	Logon Session
+14108	CodeMeterCC.ex	S-1-2-0	Local (Users with the ability to log in locally)
+14108	CodeMeterCC.ex	S-1-5-64-10	NTLM Authentication
+14108	CodeMeterCC.ex	S-1-16-8192	Medium Mandatory Level
+10640	CCXProcess.exe	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+10640	CCXProcess.exe	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+10640	CCXProcess.exe	S-1-1-0	Everyone
+10640	CCXProcess.exe	S-1-5-114	Local Account (Member of Administrators)
+10640	CCXProcess.exe	S-1-5-21-1942469836-708821519-518219048-1011	-
+10640	CCXProcess.exe	S-1-5-32-544	Administrators
+10640	CCXProcess.exe	S-1-5-32-545	Users
+10640	CCXProcess.exe	S-1-5-4	Interactive
+10640	CCXProcess.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+10640	CCXProcess.exe	S-1-5-11	Authenticated Users
+10640	CCXProcess.exe	S-1-5-15	This Organization
+10640	CCXProcess.exe	S-1-5-113	Local Account
+10640	CCXProcess.exe	S-1-5-5-0-4925322	Logon Session
+10640	CCXProcess.exe	S-1-2-0	Local (Users with the ability to log in locally)
+10640	CCXProcess.exe	S-1-5-64-10	NTLM Authentication
+10640	CCXProcess.exe	S-1-16-8192	Medium Mandatory Level
+8588	node.exe	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+8588	node.exe	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+8588	node.exe	S-1-1-0	Everyone
+8588	node.exe	S-1-5-114	Local Account (Member of Administrators)
+8588	node.exe	S-1-5-21-1942469836-708821519-518219048-1011	-
+8588	node.exe	S-1-5-32-544	Administrators
+8588	node.exe	S-1-5-32-545	Users
+8588	node.exe	S-1-5-4	Interactive
+8588	node.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+8588	node.exe	S-1-5-11	Authenticated Users
+8588	node.exe	S-1-5-15	This Organization
+8588	node.exe	S-1-5-113	Local Account
+8588	node.exe	S-1-5-5-0-4925322	Logon Session
+8588	node.exe	S-1-2-0	Local (Users with the ability to log in locally)
+8588	node.exe	S-1-5-64-10	NTLM Authentication
+8588	node.exe	S-1-16-8192	Medium Mandatory Level
+10708	conhost.exe	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+10708	conhost.exe	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+10708	conhost.exe	S-1-1-0	Everyone
+10708	conhost.exe	S-1-5-114	Local Account (Member of Administrators)
+10708	conhost.exe	S-1-5-21-1942469836-708821519-518219048-1011	-
+10708	conhost.exe	S-1-5-32-544	Administrators
+10708	conhost.exe	S-1-5-32-545	Users
+10708	conhost.exe	S-1-5-4	Interactive
+10708	conhost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+10708	conhost.exe	S-1-5-11	Authenticated Users
+10708	conhost.exe	S-1-5-15	This Organization
+10708	conhost.exe	S-1-5-113	Local Account
+10708	conhost.exe	S-1-5-5-0-4925322	Logon Session
+
+10708	conhost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+10708	conhost.exe	S-1-5-64-10	NTLM Authentication
+10708	conhost.exe	S-1-16-8192	Medium Mandatory Level
+5784	svchost.exe	S-1-5-18	Local System
+5784	svchost.exe	S-1-5-32-544	Administrators
+5784	svchost.exe	S-1-1-0	Everyone
+5784	svchost.exe	S-1-5-11	Authenticated Users
+5784	svchost.exe	S-1-16-16384	System Mandatory Level
+8696	AdobeIPCBroker	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+8696	AdobeIPCBroker	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+8696	AdobeIPCBroker	S-1-1-0	Everyone
+8696	AdobeIPCBroker	S-1-5-114	Local Account (Member of Administrators)
+8696	AdobeIPCBroker	S-1-5-21-1942469836-708821519-518219048-1011	-
+8696	AdobeIPCBroker	S-1-5-32-544	Administrators
+8696	AdobeIPCBroker	S-1-5-32-545	Users
+8696	AdobeIPCBroker	S-1-5-4	Interactive
+8696	AdobeIPCBroker	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+8696	AdobeIPCBroker	S-1-5-11	Authenticated Users
+8696	AdobeIPCBroker	S-1-5-15	This Organization
+8696	AdobeIPCBroker	S-1-5-113	Local Account
+8696	AdobeIPCBroker	S-1-5-5-0-4925322	Logon Session
+
+8696	AdobeIPCBroker	S-1-2-0	Local (Users with the ability to log in locally)
+8696	AdobeIPCBroker	S-1-5-64-10	NTLM Authentication
+8696	AdobeIPCBroker	S-1-16-8192	Medium Mandatory Level
+9688	brave.exe	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+9688	brave.exe	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+9688	brave.exe	S-1-1-0	Everyone
+9688	brave.exe	S-1-5-114	Local Account (Member of Administrators)
+9688	brave.exe	S-1-5-21-1942469836-708821519-518219048-1011	-
+9688	brave.exe	S-1-5-32-544	Administrators
+9688	brave.exe	S-1-5-32-545	Users
+9688	brave.exe	S-1-5-4	Interactive
+9688	brave.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+9688	brave.exe	S-1-5-11	Authenticated Users
+9688	brave.exe	S-1-5-15	This Organization
+9688	brave.exe	S-1-5-113	Local Account
+9688	brave.exe	S-1-5-5-0-4925322	Logon Session
+9688	brave.exe	S-1-2-0	Local (Users with the ability to log in locally)
+9688	brave.exe	S-1-5-64-10	NTLM Authentication
+9688	brave.exe	S-1-16-8192	Medium Mandatory Level
+11420	brave.exe	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+11420	brave.exe	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+11420	brave.exe	S-1-1-0	Everyone
+11420	brave.exe	S-1-5-114	Local Account (Member of Administrators)
+11420	brave.exe	S-1-5-21-1942469836-708821519-518219048-1011	-
+11420	brave.exe	S-1-5-32-544	Administrators
+11420	brave.exe	S-1-5-32-545	Users
+11420	brave.exe	S-1-5-4	Interactive
+
+11420	brave.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+11420	brave.exe	S-1-5-11	Authenticated Users
+11420	brave.exe	S-1-5-15	This Organization
+11420	brave.exe	S-1-5-113	Local Account
+11420	brave.exe	S-1-5-5-0-4925322	Logon Session
+11420	brave.exe	S-1-2-0	Local (Users with the ability to log in locally)
+11420	brave.exe	S-1-5-64-10	NTLM Authentication
+11420	brave.exe	S-1-16-8192	Medium Mandatory Level
+3452	brave.exe	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+3452	brave.exe	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+3452	brave.exe	S-1-1-0	Everyone
+3452	brave.exe	S-1-5-114	Local Account (Member of Administrators)
+3452	brave.exe	S-1-5-21-1942469836-708821519-518219048-1011	-
+3452	brave.exe	S-1-5-32-544	Administrators
+3452	brave.exe	S-1-5-32-545	Users
+3452	brave.exe	S-1-5-4	Interactive
+3452	brave.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+3452	brave.exe	S-1-5-11	Authenticated Users
+3452	brave.exe	S-1-5-15	This Organization
+3452	brave.exe	S-1-5-113	Local Account
+3452	brave.exe	S-1-5-5-0-4925322	Logon Session
+3452	brave.exe	S-1-2-0	Local (Users with the ability to log in locally)
+3452	brave.exe	S-1-5-64-10	NTLM Authentication
+3452	brave.exe	S-1-16-4096	Low Mandatory Level
+7064	brave.exe	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+7064	brave.exe	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+7064	brave.exe	S-1-1-0	Everyone
+
+7064	brave.exe	S-1-5-114	Local Account (Member of Administrators)
+7064	brave.exe	S-1-5-21-1942469836-708821519-518219048-1011	-
+7064	brave.exe	S-1-5-32-544	Administrators
+7064	brave.exe	S-1-5-32-545	Users
+7064	brave.exe	S-1-5-4	Interactive
+7064	brave.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+7064	brave.exe	S-1-5-11	Authenticated Users
+7064	brave.exe	S-1-5-15	This Organization
+7064	brave.exe	S-1-5-113	Local Account
+7064	brave.exe	S-1-5-5-0-4925322	Logon Session
+7064	brave.exe	S-1-2-0	Local (Users with the ability to log in locally)
+7064	brave.exe	S-1-5-64-10	NTLM Authentication
+7064	brave.exe	S-1-16-8192	Medium Mandatory Level
+2124	brave.exe	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+2124	brave.exe	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+2124	brave.exe	S-1-1-0	Everyone
+2124	brave.exe	S-1-5-114	Local Account (Member of Administrators)
+2124	brave.exe	S-1-5-21-1942469836-708821519-518219048-1011	-
+2124	brave.exe	S-1-5-32-544	Administrators
+2124	brave.exe	S-1-5-32-545	Users
+2124	brave.exe	S-1-5-4	Interactive
+2124	brave.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+2124	brave.exe	S-1-5-11	Authenticated Users
+2124	brave.exe	S-1-5-15	This Organization
+2124	brave.exe	S-1-5-113	Local Account
+2124	brave.exe	S-1-5-5-0-4925322	Logon Session
+2124	brave.exe	S-1-2-0	Local (Users with the ability to log in locally)
+2124	brave.exe	S-1-5-64-10	NTLM Authentication
+2124	brave.exe	S-1-16-0	Untrusted Mandatory Level
+
+9452	brave.exe	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+9452	brave.exe	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+9452	brave.exe	S-1-1-0	Everyone
+9452	brave.exe	S-1-5-114	Local Account (Member of Administrators)
+9452	brave.exe	S-1-5-21-1942469836-708821519-518219048-1011	-
+9452	brave.exe	S-1-5-32-544	Administrators
+9452	brave.exe	S-1-5-32-545	Users
+9452	brave.exe	S-1-5-4	Interactive
+9452	brave.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+9452	brave.exe	S-1-5-11	Authenticated Users
+9452	brave.exe	S-1-5-15	This Organization
+9452	brave.exe	S-1-5-113	Local Account
+9452	brave.exe	S-1-5-5-0-4925322	Logon Session
+9452	brave.exe	S-1-2-0	Local (Users with the ability to log in locally)
+9452	brave.exe	S-1-5-64-10	NTLM Authentication
+9452	brave.exe	S-1-16-8192	Medium Mandatory Level
+4080	brave.exe	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+4080	brave.exe	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+4080	brave.exe	S-1-1-0	Everyone
+4080	brave.exe	S-1-5-114	Local Account (Member of Administrators)
+4080	brave.exe	S-1-5-21-1942469836-708821519-518219048-1011	-
+4080	brave.exe	S-1-5-32-544	Administrators
+4080	brave.exe	S-1-5-32-545	Users
+4080	brave.exe	S-1-5-4	Interactive
+4080	brave.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+4080	brave.exe	S-1-5-11	Authenticated Users
+4080	brave.exe	S-1-5-15	This Organization
+4080	brave.exe	S-1-5-113	Local Account
+4080	brave.exe	S-1-5-5-0-4925322	Logon Session
+4080	brave.exe	S-1-2-0	Local (Users with the ability to log in locally)
+4080	brave.exe	S-1-5-64-10	NTLM Authentication
+4080	brave.exe	S-1-16-0	Untrusted Mandatory Level
+1496	brave.exe	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+1496	brave.exe	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+1496	brave.exe	S-1-1-0	Everyone
+1496	brave.exe	S-1-5-114	Local Account (Member of Administrators)
+1496	brave.exe	S-1-5-21-1942469836-708821519-518219048-1011	-
+1496	brave.exe	S-1-5-32-544	Administrators
+1496	brave.exe	S-1-5-32-545	Users
+1496	brave.exe	S-1-5-4	Interactive
+1496	brave.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+1496	brave.exe	S-1-5-11	Authenticated Users
+1496	brave.exe	S-1-5-15	This Organization
+1496	brave.exe	S-1-5-113	Local Account
+1496	brave.exe	S-1-5-5-0-4925322	Logon Session
+1496	brave.exe	S-1-2-0	Local (Users with the ability to log in locally)
+1496	brave.exe	S-1-5-64-10	NTLM Authentication
+1496	brave.exe	S-1-16-0	Untrusted Mandatory Level
+2824	brave.exe	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+2824	brave.exe	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+2824	brave.exe	S-1-1-0	Everyone
+2824	brave.exe	S-1-5-114	Local Account (Member of Administrators)
+2824	brave.exe	S-1-5-21-1942469836-708821519-518219048-1011	-
+2824	brave.exe	S-1-5-32-544	Administrators
+2824	brave.exe	S-1-5-32-545	Users
+2824	brave.exe	S-1-5-4	Interactive
+2824	brave.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+2824	brave.exe	S-1-5-11	Authenticated Users
+2824	brave.exe	S-1-5-15	This Organization
+2824	brave.exe	S-1-5-113	Local Account
+2824	brave.exe	S-1-5-5-0-4925322	Logon Session
+2824	brave.exe	S-1-2-0	Local (Users with the ability to log in locally)
+2824	brave.exe	S-1-5-64-10	NTLM Authentication
+2824	brave.exe	S-1-16-4096	Low Mandatory Level
+2868	svchost.exe	S-1-5-19	NT Authority
+2868	svchost.exe	S-1-16-16384	System Mandatory Level
+2868	svchost.exe	S-1-1-0	Everyone
+2868	svchost.exe	S-1-5-32-545	Users
+2868	svchost.exe	S-1-5-6	Service
+2868	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+2868	svchost.exe	S-1-5-11	Authenticated Users
+2868	svchost.exe	S-1-5-15	This Organization
+2868	svchost.exe	S-1-5-80-2168654060-3115992504-1782388893-2584760693-2634250426	-
+2868	svchost.exe	S-1-5-5-0-13776810	Logon Session
+2868	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+2868	svchost.exe	S-1-5-32-3167453650-624722384-889205278-321484983-714554697-3592933102-807660695-1632717421	-
+2868	svchost.exe	S-1-5-32-383293015-3350740429-1839969850-1819881064-1569454686-4198502490-78857879-1413643331	-
+2868	svchost.exe	S-1-5-32-2035927579-283314533-3422103930-3587774809-765962649-3034203285-3544878962-607181067	-
+
+2868	svchost.exe	S-1-5-32-3659434007-2290108278-1125199667-3679670526-1293081662-2164323352-1777701501-2595986263	-
+2868	svchost.exe	S-1-5-32-11742800-2107441976-3443185924-4134956905-3840447964-3749968454-3843513199-670971053	-
+2868	svchost.exe	S-1-5-32-3523901360-1745872541-794127107-675934034-1867954868-1951917511-1111796624-2052600462	-
+2868	svchost.exe	S-1-5-32-1488445330-856673777-1515413738-1380768593-2977925950-2228326386-886087428-2802422674	-
+14580	brave.exe	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+14580	brave.exe	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+14580	brave.exe	S-1-1-0	Everyone
+
+14580	brave.exe	S-1-5-114	Local Account (Member of Administrators)
+14580	brave.exe	S-1-5-21-1942469836-708821519-518219048-1011	-
+14580	brave.exe	S-1-5-32-544	Administrators
+14580	brave.exe	S-1-5-32-545	Users
+14580	brave.exe	S-1-5-4	Interactive
+14580	brave.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+14580	brave.exe	S-1-5-11	Authenticated Users
+
+14580	brave.exe	S-1-5-15	This Organization
+14580	brave.exe	S-1-5-113	Local Account
+14580	brave.exe	S-1-5-5-0-4925322	Logon Session
+14580	brave.exe	S-1-2-0	Local (Users with the ability to log in locally)
+14580	brave.exe	S-1-5-64-10	NTLM Authentication
+14580	brave.exe	S-1-16-0	Untrusted Mandatory Level
+13976	vmware-tray.ex	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+13976	vmware-tray.ex	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+13976	vmware-tray.ex	S-1-1-0	Everyone
+13976	vmware-tray.ex	S-1-5-114	Local Account (Member of Administrators)
+
+13976	vmware-tray.ex	S-1-5-21-1942469836-708821519-518219048-1011	-
+13976	vmware-tray.ex	S-1-5-32-544	Administrators
+13976	vmware-tray.ex	S-1-5-32-545	Users
+13976	vmware-tray.ex	S-1-5-4	Interactive
+13976	vmware-tray.ex	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+13976	vmware-tray.ex	S-1-5-11	Authenticated Users
+13976	vmware-tray.ex	S-1-5-15	This Organization
+13976	vmware-tray.ex	S-1-5-113	Local Account
+13976	vmware-tray.ex	S-1-5-5-0-4925322	Logon Session
+13976	vmware-tray.ex	S-1-2-0	Local (Users with the ability to log in locally)
+13976	vmware-tray.ex	S-1-5-64-10	NTLM Authentication
+13976	vmware-tray.ex	S-1-16-8192	Medium Mandatory Level
+9412	pythonw.exe	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+9412	pythonw.exe	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+
+9412	pythonw.exe	S-1-1-0	Everyone
+9412	pythonw.exe	S-1-5-114	Local Account (Member of Administrators)
+9412	pythonw.exe	S-1-5-21-1942469836-708821519-518219048-1011	-
+9412	pythonw.exe	S-1-5-32-544	Administrators
+9412	pythonw.exe	S-1-5-32-545	Users
+9412	pythonw.exe	S-1-5-4	Interactive
+9412	pythonw.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+9412	pythonw.exe	S-1-5-11	Authenticated Users
+9412	pythonw.exe	S-1-5-15	This Organization
+9412	pythonw.exe	S-1-5-113	Local Account
+9412	pythonw.exe	S-1-5-5-0-4925322	Logon Session
+9412	pythonw.exe	S-1-2-0	Local (Users with the ability to log in locally)
+9412	pythonw.exe	S-1-5-64-10	NTLM Authentication
+9412	pythonw.exe	S-1-16-8192	Medium Mandatory Level
+12572	vmware.exe	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+12572	vmware.exe	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+12572	vmware.exe	S-1-1-0	Everyone
+12572	vmware.exe	S-1-5-114	Local Account (Member of Administrators)
+12572	vmware.exe	S-1-5-21-1942469836-708821519-518219048-1011	-
+12572	vmware.exe	S-1-5-32-544	Administrators
+12572	vmware.exe	S-1-5-32-545	Users
+12572	vmware.exe	S-1-5-4	Interactive
+12572	vmware.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+12572	vmware.exe	S-1-5-11	Authenticated Users
+12572	vmware.exe	S-1-5-15	This Organization
+12572	vmware.exe	S-1-5-113	Local Account
+12572	vmware.exe	S-1-5-5-0-4925322	Logon Session
+12572	vmware.exe	S-1-2-0	Local (Users with the ability to log in locally)
+12572	vmware.exe	S-1-5-64-10	NTLM Authentication
+12572	vmware.exe	S-1-16-8192	Medium Mandatory Level
+14976	vmware-unity-h	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+14976	vmware-unity-h	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+14976	vmware-unity-h	S-1-1-0	Everyone
+14976	vmware-unity-h	S-1-5-114	Local Account (Member of Administrators)
+14976	vmware-unity-h	S-1-5-21-1942469836-708821519-518219048-1011	-
+14976	vmware-unity-h	S-1-5-32-544	Administrators
+14976	vmware-unity-h	S-1-5-32-545	Users
+14976	vmware-unity-h	S-1-5-4	Interactive
+14976	vmware-unity-h	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+14976	vmware-unity-h	S-1-5-11	Authenticated Users
+14976	vmware-unity-h	S-1-5-15	This Organization
+14976	vmware-unity-h	S-1-5-113	Local Account
+14976	vmware-unity-h	S-1-5-5-0-4925322	Logon Session
+14976	vmware-unity-h	S-1-2-0	Local (Users with the ability to log in locally)
+14976	vmware-unity-h	S-1-5-64-10	NTLM Authentication
+14976	vmware-unity-h	S-1-16-8192	Medium Mandatory Level
+5084	vmware-vmx.exe	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+5084	vmware-vmx.exe	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+5084	vmware-vmx.exe	S-1-1-0	Everyone
+5084	vmware-vmx.exe	S-1-5-114	Local Account (Member of Administrators)
+5084	vmware-vmx.exe	S-1-5-21-1942469836-708821519-518219048-1011	-
+5084	vmware-vmx.exe	S-1-5-32-544	Administrators
+5084	vmware-vmx.exe	S-1-5-32-545	Users
+5084	vmware-vmx.exe	S-1-5-4	Interactive
+5084	vmware-vmx.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+5084	vmware-vmx.exe	S-1-5-11	Authenticated Users
+5084	vmware-vmx.exe	S-1-5-15	This Organization
+5084	vmware-vmx.exe	S-1-5-113	Local Account
+5084	vmware-vmx.exe	S-1-5-5-0-4925322	Logon Session
+5084	vmware-vmx.exe	S-1-2-0	Local (Users with the ability to log in locally)
+5084	vmware-vmx.exe	S-1-5-64-10	NTLM Authentication
+5084	vmware-vmx.exe	S-1-16-16384	System Mandatory Level
+13152	cmd.exe	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+13152	cmd.exe	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+13152	cmd.exe	S-1-1-0	Everyone
+13152	cmd.exe	S-1-5-114	Local Account (Member of Administrators)
+13152	cmd.exe	S-1-5-21-1942469836-708821519-518219048-1011	-
+13152	cmd.exe	S-1-5-32-544	Administrators
+13152	cmd.exe	S-1-5-32-545	Users
+13152	cmd.exe	S-1-5-4	Interactive
+13152	cmd.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+13152	cmd.exe	S-1-5-11	Authenticated Users
+13152	cmd.exe	S-1-5-15	This Organization
+13152	cmd.exe	S-1-5-113	Local Account
+13152	cmd.exe	S-1-5-5-0-4925322	Logon Session
+13152	cmd.exe	S-1-2-0	Local (Users with the ability to log in locally)
+13152	cmd.exe	S-1-5-64-10	NTLM Authentication
+13152	cmd.exe	S-1-16-8192	Medium Mandatory Level
+14084	conhost.exe	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+14084	conhost.exe	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+14084	conhost.exe	S-1-1-0	Everyone
+14084	conhost.exe	S-1-5-114	Local Account (Member of Administrators)
+14084	conhost.exe	S-1-5-21-1942469836-708821519-518219048-1011	-
+14084	conhost.exe	S-1-5-32-544	Administrators
+14084	conhost.exe	S-1-5-32-545	Users
+14084	conhost.exe	S-1-5-4	Interactive
+14084	conhost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+14084	conhost.exe	S-1-5-11	Authenticated Users
+14084	conhost.exe	S-1-5-15	This Organization
+14084	conhost.exe	S-1-5-113	Local Account
+14084	conhost.exe	S-1-5-5-0-4925322	Logon Session
+14084	conhost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+14084	conhost.exe	S-1-5-64-10	NTLM Authentication
+14084	conhost.exe	S-1-16-8192	Medium Mandatory Level
+8368	OpenConsole.ex	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+8368	OpenConsole.ex	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+8368	OpenConsole.ex	S-1-1-0	Everyone
+8368	OpenConsole.ex	S-1-5-114	Local Account (Member of Administrators)
+8368	OpenConsole.ex	S-1-5-21-1942469836-708821519-518219048-1011	-
+8368	OpenConsole.ex	S-1-5-32-544	Administrators
+8368	OpenConsole.ex	S-1-5-32-545	Users
+8368	OpenConsole.ex	S-1-5-4	Interactive
+8368	OpenConsole.ex	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+8368	OpenConsole.ex	S-1-5-11	Authenticated Users
+8368	OpenConsole.ex	S-1-5-15	This Organization
+8368	OpenConsole.ex	S-1-5-113	Local Account
+8368	OpenConsole.ex	S-1-5-5-0-4925322	Logon Session
+8368	OpenConsole.ex	S-1-2-0	Local (Users with the ability to log in locally)
+8368	OpenConsole.ex	S-1-5-64-10	NTLM Authentication
+8368	OpenConsole.ex	S-1-16-8192	Medium Mandatory Level
+7460	WindowsTermina	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+7460	WindowsTermina	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+7460	WindowsTermina	S-1-1-0	Everyone
+7460	WindowsTermina	S-1-5-114	Local Account (Member of Administrators)
+7460	WindowsTermina	S-1-5-21-1942469836-708821519-518219048-1011	-
+7460	WindowsTermina	S-1-5-32-544	Administrators
+7460	WindowsTermina	S-1-5-32-545	Users
+7460	WindowsTermina	S-1-5-4	Interactive
+7460	WindowsTermina	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+7460	WindowsTermina	S-1-5-11	Authenticated Users
+7460	WindowsTermina	S-1-5-15	This Organization
+7460	WindowsTermina	S-1-5-113	Local Account
+7460	WindowsTermina	S-1-5-5-0-4925322	Logon Session
+7460	WindowsTermina	S-1-2-0	Local (Users with the ability to log in locally)
+7460	WindowsTermina	S-1-5-64-10	NTLM Authentication
+7460	WindowsTermina	S-1-16-8192	Medium Mandatory Level
+7044	RuntimeBroker.	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+7044	RuntimeBroker.	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+7044	RuntimeBroker.	S-1-1-0	Everyone
+7044	RuntimeBroker.	S-1-5-114	Local Account (Member of Administrators)
+7044	RuntimeBroker.	S-1-5-21-1942469836-708821519-518219048-1011	-
+7044	RuntimeBroker.	S-1-5-32-544	Administrators
+7044	RuntimeBroker.	S-1-5-32-545	Users
+7044	RuntimeBroker.	S-1-5-4	Interactive
+7044	RuntimeBroker.	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+7044	RuntimeBroker.	S-1-5-11	Authenticated Users
+7044	RuntimeBroker.	S-1-5-15	This Organization
+7044	RuntimeBroker.	S-1-5-113	Local Account
+7044	RuntimeBroker.	S-1-5-5-0-4925322	Logon Session
+7044	RuntimeBroker.	S-1-2-0	Local (Users with the ability to log in locally)
+7044	RuntimeBroker.	S-1-5-64-10	NTLM Authentication
+7044	RuntimeBroker.	S-1-16-8192	Medium Mandatory Level
+10668	jusched.exe	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+10668	jusched.exe	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+10668	jusched.exe	S-1-1-0	Everyone
+10668	jusched.exe	S-1-5-114	Local Account (Member of Administrators)
+10668	jusched.exe	S-1-5-21-1942469836-708821519-518219048-1011	-
+10668	jusched.exe	S-1-5-32-544	Administrators
+10668	jusched.exe	S-1-5-32-545	Users
+10668	jusched.exe	S-1-5-4	Interactive
+10668	jusched.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+10668	jusched.exe	S-1-5-11	Authenticated Users
+10668	jusched.exe	S-1-5-15	This Organization
+10668	jusched.exe	S-1-5-113	Local Account
+10668	jusched.exe	S-1-5-5-0-4925322	Logon Session
+10668	jusched.exe	S-1-2-0	Local (Users with the ability to log in locally)
+10668	jusched.exe	S-1-5-64-10	NTLM Authentication
+10668	jusched.exe	S-1-16-8192	Medium Mandatory Level
+8536	ssh.exe	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+8536	ssh.exe	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+8536	ssh.exe	S-1-1-0	Everyone
+8536	ssh.exe	S-1-5-114	Local Account (Member of Administrators)
+8536	ssh.exe	S-1-5-21-1942469836-708821519-518219048-1011	-
+8536	ssh.exe	S-1-5-32-544	Administrators
+8536	ssh.exe	S-1-5-32-545	Users
+8536	ssh.exe	S-1-5-4	Interactive
+8536	ssh.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+8536	ssh.exe	S-1-5-11	Authenticated Users
+8536	ssh.exe	S-1-5-15	This Organization
+8536	ssh.exe	S-1-5-113	Local Account
+8536	ssh.exe	S-1-5-5-0-4925322	Logon Session
+8536	ssh.exe	S-1-2-0	Local (Users with the ability to log in locally)
+8536	ssh.exe	S-1-5-64-10	NTLM Authentication
+8536	ssh.exe	S-1-16-8192	Medium Mandatory Level
+1900	cmd.exe	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+1900	cmd.exe	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+1900	cmd.exe	S-1-1-0	Everyone
+1900	cmd.exe	S-1-5-114	Local Account (Member of Administrators)
+1900	cmd.exe	S-1-5-21-1942469836-708821519-518219048-1011	-
+1900	cmd.exe	S-1-5-32-544	Administrators
+1900	cmd.exe	S-1-5-32-545	Users
+1900	cmd.exe	S-1-5-4	Interactive
+1900	cmd.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+1900	cmd.exe	S-1-5-11	Authenticated Users
+1900	cmd.exe	S-1-5-15	This Organization
+1900	cmd.exe	S-1-5-113	Local Account
+1900	cmd.exe	S-1-5-5-0-4925322	Logon Session
+1900	cmd.exe	S-1-2-0	Local (Users with the ability to log in locally)
+1900	cmd.exe	S-1-5-64-10	NTLM Authentication
+1900	cmd.exe	S-1-16-8192	Medium Mandatory Level
+6756	conhost.exe	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+6756	conhost.exe	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+6756	conhost.exe	S-1-1-0	Everyone
+6756	conhost.exe	S-1-5-114	Local Account (Member of Administrators)
+6756	conhost.exe	S-1-5-21-1942469836-708821519-518219048-1011	-
+6756	conhost.exe	S-1-5-32-544	Administrators
+6756	conhost.exe	S-1-5-32-545	Users
+6756	conhost.exe	S-1-5-4	Interactive
+6756	conhost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+6756	conhost.exe	S-1-5-11	Authenticated Users
+6756	conhost.exe	S-1-5-15	This Organization
+6756	conhost.exe	S-1-5-113	Local Account
+6756	conhost.exe	S-1-5-5-0-4925322	Logon Session
+6756	conhost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+6756	conhost.exe	S-1-5-64-10	NTLM Authentication
+6756	conhost.exe	S-1-16-8192	Medium Mandatory Level
+14468	OpenConsole.ex	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+14468	OpenConsole.ex	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+14468	OpenConsole.ex	S-1-1-0	Everyone
+14468	OpenConsole.ex	S-1-5-114	Local Account (Member of Administrators)
+14468	OpenConsole.ex	S-1-5-21-1942469836-708821519-518219048-1011	-
+14468	OpenConsole.ex	S-1-5-32-544	Administrators
+14468	OpenConsole.ex	S-1-5-32-545	Users
+14468	OpenConsole.ex	S-1-5-4	Interactive
+14468	OpenConsole.ex	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+14468	OpenConsole.ex	S-1-5-11	Authenticated Users
+14468	OpenConsole.ex	S-1-5-15	This Organization
+14468	OpenConsole.ex	S-1-5-113	Local Account
+14468	OpenConsole.ex	S-1-5-5-0-4925322	Logon Session
+14468	OpenConsole.ex	S-1-2-0	Local (Users with the ability to log in locally)
+14468	OpenConsole.ex	S-1-5-64-10	NTLM Authentication
+14468	OpenConsole.ex	S-1-16-8192	Medium Mandatory Level
+12896	KeePass.exe	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+12896	KeePass.exe	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+12896	KeePass.exe	S-1-1-0	Everyone
+12896	KeePass.exe	S-1-5-114	Local Account (Member of Administrators)
+12896	KeePass.exe	S-1-5-21-1942469836-708821519-518219048-1011	-
+12896	KeePass.exe	S-1-5-32-544	Administrators
+12896	KeePass.exe	S-1-5-32-545	Users
+12896	KeePass.exe	S-1-5-4	Interactive
+12896	KeePass.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+12896	KeePass.exe	S-1-5-11	Authenticated Users
+12896	KeePass.exe	S-1-5-15	This Organization
+12896	KeePass.exe	S-1-5-113	Local Account
+12896	KeePass.exe	S-1-5-5-0-4925322	Logon Session
+12896	KeePass.exe	S-1-2-0	Local (Users with the ability to log in locally)
+12896	KeePass.exe	S-1-5-64-10	NTLM Authentication
+
+12896	KeePass.exe	S-1-16-8192	Medium Mandatory Level
+14264	WhatsApp.exe	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+
+14264	WhatsApp.exe	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+14264	WhatsApp.exe	S-1-1-0	Everyone
+14264	WhatsApp.exe	S-1-5-114	Local Account (Member of Administrators)
+14264	WhatsApp.exe	S-1-5-21-1942469836-708821519-518219048-1011	-
+14264	WhatsApp.exe	S-1-5-32-544	Administrators
+14264	WhatsApp.exe	S-1-5-32-545	Users
+14264	WhatsApp.exe	S-1-5-4	Interactive
+14264	WhatsApp.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+14264	WhatsApp.exe	S-1-5-11	Authenticated Users
+14264	WhatsApp.exe	S-1-5-15	This Organization
+14264	WhatsApp.exe	S-1-5-113	Local Account
+14264	WhatsApp.exe	S-1-5-5-0-4925322	Logon Session
+14264	WhatsApp.exe	S-1-2-0	Local (Users with the ability to log in locally)
+14264	WhatsApp.exe	S-1-5-64-10	NTLM Authentication
+14264	WhatsApp.exe	S-1-16-4096	Low Mandatory Level
+2352	RuntimeBroker.	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+2352	RuntimeBroker.	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+2352	RuntimeBroker.	S-1-1-0	Everyone
+2352	RuntimeBroker.	S-1-5-114	Local Account (Member of Administrators)
+2352	RuntimeBroker.	S-1-5-21-1942469836-708821519-518219048-1011	-
+2352	RuntimeBroker.	S-1-5-32-544	Administrators
+2352	RuntimeBroker.	S-1-5-32-545	Users
+2352	RuntimeBroker.	S-1-5-4	Interactive
+2352	RuntimeBroker.	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+2352	RuntimeBroker.	S-1-5-11	Authenticated Users
+2352	RuntimeBroker.	S-1-5-15	This Organization
+2352	RuntimeBroker.	S-1-5-113	Local Account
+2352	RuntimeBroker.	S-1-5-5-0-4925322	Logon Session
+2352	RuntimeBroker.	S-1-2-0	Local (Users with the ability to log in locally)
+2352	RuntimeBroker.	S-1-5-64-10	NTLM Authentication
+2352	RuntimeBroker.	S-1-16-8192	Medium Mandatory Level
+3952	RuntimeBroker.	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+3952	RuntimeBroker.	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+3952	RuntimeBroker.	S-1-1-0	Everyone
+3952	RuntimeBroker.	S-1-5-114	Local Account (Member of Administrators)
+3952	RuntimeBroker.	S-1-5-21-1942469836-708821519-518219048-1011	-
+3952	RuntimeBroker.	S-1-5-32-544	Administrators
+3952	RuntimeBroker.	S-1-5-32-545	Users
+3952	RuntimeBroker.	S-1-5-4	Interactive
+
+3952	RuntimeBroker.	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+3952	RuntimeBroker.	S-1-5-11	Authenticated Users
+3952	RuntimeBroker.	S-1-5-15	This Organization
+3952	RuntimeBroker.	S-1-5-113	Local Account
+3952	RuntimeBroker.	S-1-5-5-0-4925322	Logon Session
+3952	RuntimeBroker.	S-1-2-0	Local (Users with the ability to log in locally)
+3952	RuntimeBroker.	S-1-5-64-10	NTLM Authentication
+3952	RuntimeBroker.	S-1-16-8192	Medium Mandatory Level
+10868	brave.exe	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+10868	brave.exe	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+10868	brave.exe	S-1-1-0	Everyone
+10868	brave.exe	S-1-5-114	Local Account (Member of Administrators)
+10868	brave.exe	S-1-5-21-1942469836-708821519-518219048-1011	-
+10868	brave.exe	S-1-5-32-544	Administrators
+10868	brave.exe	S-1-5-32-545	Users
+10868	brave.exe	S-1-5-4	Interactive
+10868	brave.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+10868	brave.exe	S-1-5-11	Authenticated Users
+10868	brave.exe	S-1-5-15	This Organization
+10868	brave.exe	S-1-5-113	Local Account
+10868	brave.exe	S-1-5-5-0-4925322	Logon Session
+10868	brave.exe	S-1-2-0	Local (Users with the ability to log in locally)
+10868	brave.exe	S-1-5-64-10	NTLM Authentication
+10868	brave.exe	S-1-16-0	Untrusted Mandatory Level
+1344	SystemSettings	S-1-5-21-1942469836-708821519-518219048-1001	technopc
+1344	SystemSettings	S-1-5-21-1942469836-708821519-518219048-513	Domain Users
+1344	SystemSettings	S-1-1-0	Everyone
+1344	SystemSettings	S-1-5-114	Local Account (Member of Administrators)
+1344	SystemSettings	S-1-5-21-1942469836-708821519-518219048-1011	-
+1344	SystemSettings	S-1-5-32-544	Administrators
+1344	SystemSettings	S-1-5-32-545	Users
+1344	SystemSettings	S-1-5-4	Interactive
+1344	SystemSettings	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+1344	SystemSettings	S-1-5-11	Authenticated Users
+1344	SystemSettings	S-1-5-15	This Organization
+1344	SystemSettings	S-1-5-113	Local Account
+1344	SystemSettings	S-1-5-5-0-4925322	Logon Session
+1344	SystemSettings	S-1-2-0	Local (Users with the ability to log in locally)
+1344	SystemSettings	S-1-5-64-10	NTLM Authentication
+1344	SystemSettings	S-1-16-8192	Medium Mandatory Level
+5912	svchost.exe	S-1-5-18	Local System
+5912	svchost.exe	S-1-16-16384	System Mandatory Level
+5912	svchost.exe	S-1-1-0	Everyone
+5912	svchost.exe	S-1-5-32-545	Users
+5912	svchost.exe	S-1-5-6	Service
+5912	svchost.exe	S-1-2-1	Console Logon (Users who are logged onto the physical console)
+5912	svchost.exe	S-1-5-11	Authenticated Users
+5912	svchost.exe	S-1-5-15	This Organization
+5912	svchost.exe	S-1-5-80-2949785411-1458004381-4011503523-1439849274-3428788682	-
+5912	svchost.exe	S-1-5-5-0-15478819	Logon Session
+5912	svchost.exe	S-1-2-0	Local (Users with the ability to log in locally)
+5912	svchost.exe	S-1-5-32-544	Administrators
+3244	<Array symbol_table_name1!array (.ImageFileName): layer_name @ 0xe785baf87668 #15>	Token unreadable	
+
+Time Stamp: Thu May 16 15:36:37 2024
+
+
+******* End of command output ******
+

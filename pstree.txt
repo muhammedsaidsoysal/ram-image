@@ -1,0 +1,215 @@
+﻿pstree, çalışan işlemleri bir ağç şeklinde gösteren Unix komutudur. ps komutunun daha görsel alternatifi olarak kullanılır. Ağacın kökü, ya başlatgıç ya da verilen bir kimlikleyicideki işlemdir.
+
+"C:\Users\technopc\Downloads\VolatilityWorkbench\vol.exe" -f "C:\Users\technopc\Desktop\volatility3\20240516.mem" windows.pstree.PsTree 
+Volatility 3 Framework 2.5.0
+PID	PPID	ImageFileName	Offset(V)	Threads	Handles	SessionId	Wow64	CreateTime	ExitTime
+4	0	System	0xe785a35a9040	352	-	N/A	False	2024-05-16 10:21:52.000000 	N/A
+* 600	4	smss.exe	0xe785a4f71200	2	-	N/A	False	2024-05-16 10:21:52.000000 	N/A
+* 148	4	Registry	0xe785a38eb040	4	-	N/A	False	2024-05-16 10:21:49.000000 	N/A
+* 108	4	Secure System	0xe785a35e6040	0	-	N/A	False	2024-05-16 10:21:49.000000 	N/A
+* 4188	4	MemCompression	0xe785b5b22040	26	-	N/A	False	2024-05-16 10:22:08.000000 	N/A
+756	808	csrss.exe	0xe785aed10140	15	-	0	False	2024-05-16 10:22:02.000000 	N/A
+1120	808	wininit.exe	0xe785b53b31c0	1	-	0	False	2024-05-16 10:22:03.000000 	N/A
+* 1288	1120	LsaIso.exe	0xe785b537f100	1	-	0	False	2024-05-16 10:22:03.000000 	N/A
+* 1296	1120	lsass.exe	0xe785b475b100	11	-	0	False	2024-05-16 10:22:03.000000 	N/A
+* 1460	1120	fontdrvhost.ex	0xe785aedc30c0	5	-	0	False	2024-05-16 10:22:04.000000 	N/A
+* 1268	1120	services.exe	0xe785b55ad140	8	-	0	False	2024-05-16 10:22:03.000000 	N/A
+** 2560	1268	vmms.exe	0xe785b32c90c0	12	-	0	False	2024-05-16 10:22:06.000000 	N/A
+** 5128	1268	svchost.exe	0xe785b7689080	6	-	0	False	2024-05-16 10:22:09.000000 	N/A
+** 2064	1268	svchost.exe	0xe785b29e10c0	3	-	0	False	2024-05-16 10:22:06.000000 	N/A
+** 3088	1268	svchost.exe	0xe785b4c5a0c0	7	-	0	False	2024-05-16 10:22:07.000000 	N/A
+** 4112	1268	svchost.exe	0xe785b5ab7080	3	-	0	False	2024-05-16 10:22:08.000000 	N/A
+** 5136	1268	svchost.exe	0xe785b7686080	3	-	0	False	2024-05-16 10:22:09.000000 	N/A
+** 1560	1268	svchost.exe	0xe785b49400c0	15	-	0	False	2024-05-16 10:22:05.000000 	N/A
+** 2072	1268	svchost.exe	0xe785b29e40c0	63	-	0	False	2024-05-16 10:22:06.000000 	N/A
+** 5144	1268	svchost.exe	0xe785b765d080	2	-	0	False	2024-05-16 10:22:09.000000 	N/A
+** 7192	1268	svchost.exe	0xe785b84d3080	2	-	0	False	2024-05-16 10:22:18.000000 	N/A
+** 3612	1268	svchost.exe	0xe785b3d32080	14	-	0	False	2024-05-16 10:22:07.000000 	N/A
+*** 2168	3612	taskhostw.exe	0xe785b96f1080	10	-	1	False	2024-05-16 10:23:46.000000 	N/A
+*** 2324	3612	CPUMetricsServ	0xe785bac240c0	4	-	1	False	2024-05-16 10:24:14.000000 	N/A
+*** 14304	3612	LocationNotifi	0xe785bc1ed080	3	-	1	False	2024-05-16 10:24:31.000000 	N/A
+** 10268	1268	svchost.exe	0xe785baa240c0	5	-	1	False	2024-05-16 10:24:21.000000 	N/A
+** 5152	1268	svchost.exe	0xe785b768a080	6	-	0	False	2024-05-16 10:22:09.000000 	N/A
+** 8736	1268	svchost.exe	0xe785b99a1080	11	-	0	False	2024-05-16 10:23:46.000000 	N/A
+** 5160	1268	svchost.exe	0xe785b768b080	10	-	0	False	2024-05-16 10:22:09.000000 	N/A
+** 4652	1268	svchost.exe	0xe785b32860c0	4	-	0	False	2024-05-16 10:22:08.000000 	N/A
+** 6192	1268	svchost.exe	0xe785b80e1080	27	-	0	False	2024-05-16 10:22:15.000000 	N/A
+** 4148	1268	svchost.exe	0xe785b5cdd080	2	-	0	False	2024-05-16 10:22:08.000000 	N/A
+** 4664	1268	svchost.exe	0xe785b72230c0	11	-	0	False	2024-05-16 10:22:08.000000 	N/A
+** 5176	1268	vmware-authd.e	0xe785b767d080	5	-	0	True	2024-05-16 10:22:09.000000 	N/A
+*** 5084	5176	vmware-vmx.exe	0xe785b88ea0c0	14	-	1	False	2024-05-16 10:32:29.000000 	N/A
+** 4156	1268	svchost.exe	0xe785b5e22080	8	-	0	False	2024-05-16 10:22:08.000000 	N/A
+** 5692	1268	svchost.exe	0xe785b7707080	6	-	0	False	2024-05-16 10:22:09.000000 	N/A
+** 5184	1268	CmWebAdmin.exe	0xe785b7681080	13	-	0	False	2024-05-16 10:22:09.000000 	N/A
+** 8256	1268	svchost.exe	0xe785b98240c0	8	-	0	False	2024-05-16 10:23:46.000000 	N/A
+** 8768	1268	svchost.exe	0xe785bac370c0	11	-	0	False	2024-05-16 10:24:28.000000 	N/A
+** 13380	1268	svchost.exe	0xe785bc1d7080	10	-	0	False	2024-05-16 10:24:30.000000 	N/A
+** 1608	1268	svchost.exe	0xe785b20ae0c0	8	-	0	False	2024-05-16 10:22:05.000000 	N/A
+** 5204	1268	mDNSResponder.	0xe785b7682080	2	-	0	False	2024-05-16 10:22:09.000000 	N/A
+** 3676	1268	svchost.exe	0xe785b5a4b080	3	-	0	False	2024-05-16 10:22:07.000000 	N/A
+** 5212	1268	vmnat.exe	0xe785b7657080	4	-	0	True	2024-05-16 10:22:09.000000 	N/A
+** 3172	1268	svchost.exe	0xe785b39230c0	8	-	0	False	2024-05-16 10:22:07.000000 	N/A
+** 5220	1268	MsMpEng.exe	0xe785b74b1080	47	-	0	False	2024-05-16 10:22:09.000000 	N/A
+** 2156	1268	svchost.exe	0xe785b2a530c0	6	-	0	False	2024-05-16 10:22:06.000000 	N/A
+** 2672	1268	svchost.exe	0xe785b34ee0c0	2	-	0	False	2024-05-16 10:22:07.000000 	N/A
+** 5232	1268	EZCastService.	0xe785b765b080	2	-	0	True	2024-05-16 10:22:09.000000 	N/A
+** 4208	1268	svchost.exe	0xe785b7dbc0c0	3	-	0	False	2024-05-16 10:22:16.000000 	N/A
+** 4728	1268	svchost.exe	0xe785b7683080	13	-	0	False	2024-05-16 10:22:09.000000 	N/A
+*** 7236	4728	AggregatorHost	0xe785b84d6080	3	-	0	False	2024-05-16 10:22:18.000000 	N/A
+** 3196	1268	amdfendrsr.exe	0xe785b54da0c0	4	-	0	False	2024-05-16 10:22:07.000000 	N/A
+** 5248	1268	vmnetdhcp.exe	0xe785b7690080	2	-	0	True	2024-05-16 10:22:09.000000 	N/A
+** 3204	1268	atiesrxx.exe	0xe785b54eb0c0	4	-	0	False	2024-05-16 10:22:07.000000 	N/A
+*** 3084	3204	atieclxx.exe	0xe785b928c080	11	-	1	False	2024-05-16 10:23:44.000000 	N/A
+** 5256	1268	MpDefenderCore	0xe785b7652080	8	-	0	False	2024-05-16 10:22:09.000000 	N/A
+** 4752	1268	svchost.exe	0xe785b767c0c0	8	-	0	False	2024-05-16 10:22:09.000000 	N/A
+** 8340	1268	svchost.exe	0xe785b9e57080	7	-	0	False	2024-05-16 10:23:49.000000 	N/A
+** 1688	1268	svchost.exe	0xe785b21850c0	1	-	0	False	2024-05-16 10:22:06.000000 	N/A
+** 9880	1268	svchost.exe	0xe785bbeec0c0	5	-	1	False	2024-05-16 10:24:33.000000 	N/A
+** 14488	1268	SecurityHealth	0xe785a96690c0	12	-	0	False	2024-05-16 10:29:35.000000 	N/A
+** 5784	1268	svchost.exe	0xe785bcbc50c0	1	-	0	False	2024-05-16 10:31:38.000000 	N/A
+** 2720	1268	svchost.exe	0xe785b35340c0	18	-	0	False	2024-05-16 10:22:07.000000 	N/A
+** 5288	1268	sqlwriter.exe	0xe785b76e9080	4	-	0	False	2024-05-16 10:22:09.000000 	N/A
+** 7336	1268	NisSrv.exe	0xe785b8c9d0c0	17	-	0	False	2024-05-16 10:22:29.000000 	N/A
+** 2224	1268	WUDFHost.exe	0xe785b2b5d0c0	6	-	0	False	2024-05-16 10:22:06.000000 	N/A
+** 3248	1268	svchost.exe	0xe785b964f080	13	-	1	False	2024-05-16 10:23:46.000000 	N/A
+** 3764	1268	svchost.exe	0xe785b5a84080	15	-	0	False	2024-05-16 10:22:07.000000 	N/A
+** 1724	1268	svchost.exe	0xe785b29430c0	6	-	0	False	2024-05-16 10:22:06.000000 	N/A
+** 2748	1268	svchost.exe	0xe785b36560c0	2	-	0	False	2024-05-16 10:22:07.000000 	N/A
+*** 3040	2748	dasHost.exe	0xe785b491f0c0	2	-	0	False	2024-05-16 10:22:07.000000 	N/A
+** 1732	1268	svchost.exe	0xe785b223d0c0	4	-	0	False	2024-05-16 10:22:06.000000 	N/A
+** 10444	1268	svchost.exe	0xe785ba9d2080	5	-	1	False	2024-05-16 10:24:06.000000 	N/A
+** 5836	1268	CodeMeter.exe	0xe785b25180c0	19	-	0	False	2024-05-16 10:24:15.000000 	N/A
+** 14028	1268	svchost.exe	0xe785bc1c8080	8	-	0	False	2024-05-16 10:24:31.000000 	N/A
+** 7384	1268	svchost.exe	0xe785b8ef4080	2	-	0	False	2024-05-16 10:22:45.000000 	N/A
+** 7900	1268	svchost.exe	0xe785b8905080	5	-	0	False	2024-05-16 10:22:19.000000 	N/A
+** 9444	1268	svchost.exe	0xe785b9fee0c0	4	-	0	False	2024-05-16 10:23:50.000000 	N/A
+** 1768	1268	svchost.exe	0xe785b22850c0	13	-	0	False	2024-05-16 10:22:06.000000 	N/A
+** 9460	1268	svchost.exe	0xe785ba63b080	11	-	1	False	2024-05-16 10:24:05.000000 	N/A
+** 2808	1268	svchost.exe	0xe785b2f7c0c0	13	-	0	False	2024-05-16 10:24:21.000000 	N/A
+** 6396	1268	gamingservices	0xe785b80e4080	3	-	0	False	2024-05-16 10:22:15.000000 	N/A
+** 5372	1268	vmware-usbarbi	0xe785b76ed080	5	-	0	False	2024-05-16 10:22:09.000000 	N/A
+** 2812	1268	svchost.exe	0xe785b2e560c0	5	-	1	False	2024-05-16 10:24:21.000000 	N/A
+** 1792	1268	svchost.exe	0xe785b23670c0	3	-	0	False	2024-05-16 10:22:06.000000 	N/A
+** 5380	1268	sqlceip.exe	0xe785b7b1a080	16	-	0	False	2024-05-16 10:22:10.000000 	N/A
+** 1800	1268	svchost.exe	0xe785b23880c0	3	-	0	False	2024-05-16 10:22:06.000000 	N/A
+** 1808	1268	svchost.exe	0xe785b238f0c0	3	-	0	False	2024-05-16 10:22:06.000000 	N/A
+** 8464	1268	svchost.exe	0xe785b9a93080	6	-	0	False	2024-05-16 10:23:48.000000 	N/A
+** 1816	1268	svchost.exe	0xe785b23990c0	7	-	0	False	2024-05-16 10:22:06.000000 	N/A
+** 5912	1268	svchost.exe	0xe785b506c0c0	0	-	0	False	2024-05-16 10:34:31.000000 	2024-05-16 10:34:38.000000 
+** 10524	1268	svchost.exe	0xe785bc1f2080	14	-	0	False	2024-05-16 10:24:30.000000 	N/A
+** 1824	1268	svchost.exe	0xe785b23960c0	4	-	0	False	2024-05-16 10:22:06.000000 	N/A
+** 6432	1268	svchost.exe	0xe785b7bd9080	5	-	0	False	2024-05-16 10:22:17.000000 	N/A
+** 2340	1268	svchost.exe	0xe785b2e7e0c0	8	-	0	False	2024-05-16 10:22:06.000000 	N/A
+*** 8072	2340	sihost.exe	0xe785b96430c0	12	-	1	False	2024-05-16 10:23:46.000000 	N/A
+** 4908	1268	svchost.exe	0xe785b5d32080	20	-	0	False	2024-05-16 10:22:09.000000 	N/A
+** 3888	1268	svchost.exe	0xe785b5ab5080	3	-	0	False	2024-05-16 10:22:07.000000 	N/A
+** 2864	1268	svchost.exe	0xe785b765c080	18	-	0	False	2024-05-16 10:22:09.000000 	N/A
+** 2868	1268	svchost.exe	0xe785bce020c0	2	-	0	False	2024-05-16 10:31:54.000000 	N/A
+** 6968	1268	svchost.exe	0xe785b8d06080	17	-	0	False	2024-05-16 10:22:45.000000 	N/A
+** 9020	1268	svchost.exe	0xe785ba4ef0c0	9	-	0	False	2024-05-16 10:24:04.000000 	N/A
+** 4932	1268	svchost.exe	0xe785b74ae080	6	-	0	False	2024-05-16 10:22:09.000000 	N/A
+** 6480	1268	gamingservices	0xe785b80e70c0	21	-	0	False	2024-05-16 10:22:15.000000 	N/A
+** 2388	1268	svchost.exe	0xe785b30560c0	10	-	0	False	2024-05-16 10:22:06.000000 	N/A
+** 3924	1268	svchost.exe	0xe785b5ae20c0	7	-	0	False	2024-05-16 10:22:07.000000 	N/A
+** 4956	1268	svchost.exe	0xe785bc2750c0	4	-	0	False	2024-05-16 10:24:29.000000 	N/A
+** 4960	1268	spoolsv.exe	0xe785b75230c0	11	-	0	False	2024-05-16 10:22:09.000000 	N/A
+** 5472	1268	wslservice.exe	0xe785b77810c0	6	-	0	False	2024-05-16 10:22:09.000000 	N/A
+** 5988	1268	svchost.exe	0xe785b96dc080	10	-	1	False	2024-05-16 10:23:46.000000 	N/A
+** 1904	1268	svchost.exe	0xe785b25020c0	5	-	0	False	2024-05-16 10:22:06.000000 	N/A
+** 1912	1268	svchost.exe	0xe785b24e10c0	1	-	0	False	2024-05-16 10:22:06.000000 	N/A
+** 4476	1268	svchost.exe	0xe785b5daa080	5	-	0	False	2024-05-16 10:22:08.000000 	N/A
+** 3964	1268	svchost.exe	0xe785b5c130c0	4	-	0	False	2024-05-16 10:22:07.000000 	N/A
+** 3972	1268	svchost.exe	0xe785b5c240c0	5	-	0	False	2024-05-16 10:22:07.000000 	N/A
+** 3980	1268	svchost.exe	0xe785b5c350c0	4	-	0	False	2024-05-16 10:22:07.000000 	N/A
+** 1424	1268	svchost.exe	0xe785aef2d100	21	-	0	False	2024-05-16 10:22:04.000000 	N/A
+*** 10372	1424	RuntimeBroker.	0xe785baaef080	26	-	1	False	2024-05-16 10:24:06.000000 	N/A
+*** 7044	1424	RuntimeBroker.	0xe785bc8240c0	1	-	1	False	2024-05-16 10:32:32.000000 	N/A
+*** 14468	1424	OpenConsole.ex	0xe785bd3640c0	8	-	1	False	2024-05-16 10:33:11.000000 	N/A
+*** 8712	1424	StartMenuExper	0xe785ba7990c0	16	-	1	False	2024-05-16 10:24:06.000000 	N/A
+*** 9720	1424	smartscreen.ex	0xe785ba2b80c0	6	-	1	False	2024-05-16 10:23:56.000000 	N/A
+*** 8844	1424	SearchHost.exe	0xe785ba76f180	59	-	1	False	2024-05-16 10:24:06.000000 	N/A
+*** 7460	1424	WindowsTermina	0xe785ba1130c0	24	-	1	False	2024-05-16 10:32:32.000000 	N/A
+*** 13096	1424	PhoneExperienc	0xe785bb136080	22	-	1	False	2024-05-16 10:24:23.000000 	N/A
+*** 3244	1424	dllhost.exe	0xe785baf870c0	0	-	1	False	2024-05-16 10:39:26.000000 	2024-05-16 10:39:31.000000 
+*** 11184	1424	RuntimeBroker.	0xe785bae020c0	13	-	1	False	2024-05-16 10:24:21.000000 	N/A
+*** 8368	1424	OpenConsole.ex	0xe785b38b90c0	8	-	1	False	2024-05-16 10:32:32.000000 	N/A
+*** 2352	1424	RuntimeBroker.	0xe785bc6cf0c0	3	-	1	False	2024-05-16 10:33:42.000000 	N/A
+*** 9268	1424	TextInputHost.	0xe785b39020c0	48	-	1	False	2024-05-16 10:24:16.000000 	N/A
+*** 13492	1424	LockApp.exe	0xe785bbede180	16	-	1	False	2024-05-16 10:24:28.000000 	N/A
+*** 11576	1424	SystemSettings	0xe785b9fd60c0	18	-	1	False	2024-05-16 10:24:21.000000 	N/A
+*** 14264	1424	WhatsApp.exe	0xe785bce7b0c0	18	-	1	False	2024-05-16 10:33:41.000000 	N/A
+*** 13628	1424	RuntimeBroker.	0xe785bbf600c0	12	-	1	False	2024-05-16 10:24:29.000000 	N/A
+*** 1344	1424	SystemSettings	0xe785bd4ef0c0	42	-	1	False	2024-05-16 10:34:11.000000 	N/A
+*** 9436	1424	WidgetService.	0xe785b4fb50c0	5	-	1	False	2024-05-16 10:24:25.000000 	N/A
+*** 10984	1424	UserOOBEBroker	0xe785bab92080	3	-	1	False	2024-05-16 10:24:07.000000 	N/A
+*** 12264	1424	ShellExperienc	0xe785ba7ec0c0	32	-	1	False	2024-05-16 10:24:21.000000 	N/A
+*** 15208	1424	ApplicationFra	0xe785a9e650c0	5	-	1	False	2024-05-16 10:30:50.000000 	N/A
+*** 6512	1424	WmiPrvSE.exe	0xe785b7df4080	5	-	0	False	2024-05-16 10:22:13.000000 	N/A
+*** 10224	1424	RuntimeBroker.	0xe785ba933080	6	-	1	False	2024-05-16 10:24:06.000000 	N/A
+*** 3952	1424	RuntimeBroker.	0xe785bc89d0c0	4	-	1	False	2024-05-16 10:33:47.000000 	N/A
+*** 9716	1424	Widgets.exe	0xe785ba85d0c0	12	-	1	False	2024-05-16 10:24:06.000000 	N/A
+*** 10744	1424	dllhost.exe	0xe785bac790c0	8	-	1	False	2024-05-16 10:24:07.000000 	N/A
+** 2448	1268	svchost.exe	0xe785b30880c0	5	-	0	False	2024-05-16 10:22:06.000000 	N/A
+** 5008	1268	svchost.exe	0xe785b75f8080	7	-	0	False	2024-05-16 10:22:09.000000 	N/A
+** 4500	1268	svchost.exe	0xe785b494a0c0	10	-	0	False	2024-05-16 10:22:08.000000 	N/A
+*** 12352	4500	audiodg.exe	0xe785bb92b0c0	5	-	0	False	2024-05-16 10:24:22.000000 	N/A
+** 3476	1268	SearchIndexer.	0xe785bb2350c0	13	-	0	False	2024-05-16 10:24:16.000000 	N/A
+** 3484	1268	svchost.exe	0xe785ba7130c0	2	-	0	False	2024-05-16 10:24:21.000000 	N/A
+** 4528	1268	svchost.exe	0xe785b49460c0	4	-	0	False	2024-05-16 10:22:08.000000 	N/A
+*** 12016	4528	ctfmon.exe	0xe785bb239080	15	-	1	False	2024-05-16 10:24:09.000000 	N/A
+** 4016	1268	vmcompute.exe	0xe785b910a080	3	-	0	False	2024-05-16 10:23:18.000000 	N/A
+** 3512	1268	svchost.exe	0xe785b3a5b0c0	4	-	0	False	2024-05-16 10:22:07.000000 	N/A
+** 4548	1268	svchost.exe	0xe785b7654080	1	-	0	False	2024-05-16 10:22:09.000000 	N/A
+
+** 2500	1268	svchost.exe	0xe785b46650c0	14	-	0	False	2024-05-16 10:24:21.000000 	N/A
+** 7124	1268	svchost.exe	0xe785ba64b080	2	-	0	False	2024-05-16 10:24:05.000000 	N/A
+** 3032	1268	svchost.exe	0xe785b49af0c0	39	-	0	False	2024-05-16 10:22:07.000000 	N/A
+** 5104	1268	svchost.exe	0xe785b96cf080	3	-	1	False	2024-05-16 10:23:46.000000 	N/A
+** 6140	1268	sqlservr.exe	0xe785b7b30080	105	-	0	False	2024-05-16 10:22:10.000000 	N/A
+1128	1112	csrss.exe	0xe785b55ab140	17	-	1	False	2024-05-16 10:22:03.000000 	N/A
+1192	1112	winlogon.exe	0xe785aeddb100	5	-	1	False	2024-05-16 10:22:03.000000 	N/A
+* 8984	1192	userinit.exe	0xe785b9ecc100	0	-	1	False	2024-05-16 10:23:49.000000 	2024-05-16 10:24:05.000000 
+** 8780	8984	explorer.exe	0xe785b9e38100	134	-	1	False	2024-05-16 10:23:49.000000 	N/A
+*** 14432	8780	SecurityHealth	0xe785b73020c0	3	-	1	False	2024-05-16 10:29:35.000000 	N/A
+*** 13152	8780	cmd.exe	0xe785bb08b0c0	1	-	1	False	2024-05-16 10:32:32.000000 	N/A
+**** 8536	13152	ssh.exe	0xe785bb8e80c0	2	-	1	False	2024-05-16 10:32:46.000000 	N/A
+**** 14084	13152	conhost.exe	0xe785b2f1b0c0	4	-	1	False	2024-05-16 10:32:32.000000 	N/A
+*** 12896	8780	KeePass.exe	0xe785bc5530c0	11	-	1	False	2024-05-16 10:33:33.000000 	N/A
+*** 9412	8780	pythonw.exe	0xe785b3d950c0	7	-	1	False	2024-05-16 10:32:09.000000 	N/A
+*** 9688	8780	brave.exe	0xe785b77990c0	42	-	1	False	2024-05-16 10:31:49.000000 	N/A
+**** 1496	9688	brave.exe	0xe785b3f2c0c0	20	-	1	False	2024-05-16 10:31:50.000000 	N/A
+**** 2824	9688	brave.exe	0xe785a9fc60c0	9	-	1	False	2024-05-16 10:31:53.000000 	N/A
+**** 9452	9688	brave.exe	0xe785af07f0c0	9	-	1	False	2024-05-16 10:31:50.000000 	N/A
+**** 2124	9688	brave.exe	0xe785bc5970c0	10	-	1	False	2024-05-16 10:31:50.000000 	N/A
+**** 4080	9688	brave.exe	0xe785b3dd10c0	14	-	1	False	2024-05-16 10:31:50.000000 	N/A
+**** 11420	9688	brave.exe	0xe785bc7840c0	8	-	1	False	2024-05-16 10:31:49.000000 	N/A
+**** 14580	9688	brave.exe	0xe785bc5db0c0	19	-	1	False	2024-05-16 10:31:59.000000 	N/A
+**** 10868	9688	brave.exe	0xe785bdb020c0	20	-	1	False	2024-05-16 10:33:55.000000 	N/A
+**** 7064	9688	brave.exe	0xe785bc27c0c0	20	-	1	False	2024-05-16 10:31:50.000000 	N/A
+**** 3452	9688	brave.exe	0xe785bd0020c0	25	-	1	False	2024-05-16 10:31:50.000000 	N/A
+*** 1900	8780	cmd.exe	0xe785bdb130c0	1	-	1	False	2024-05-16 10:33:11.000000 	N/A
+**** 6756	1900	conhost.exe	0xe785bd5850c0	4	-	1	False	2024-05-16 10:33:11.000000 	N/A
+*** 12572	8780	vmware.exe	0xe785b31af0c0	19	-	1	True	2024-05-16 10:32:17.000000 	N/A
+**** 14976	12572	vmware-unity-h	0xe785bb35c0c0	4	-	1	True	2024-05-16 10:32:25.000000 	N/A
+*** 10520	8780	brave.exe	0xe785bc5b90c0	0	-	1	False	2024-05-16 10:30:03.000000 	2024-05-16 10:30:32.000000 
+*** 14108	8780	CodeMeterCC.ex	0xe785bd2240c0	1	-	1	False	2024-05-16 10:31:36.000000 	N/A
+* 13104	1192	LogonUI.exe	0xe785bac350c0	0	-	1	False	2024-05-16 10:24:28.000000 	2024-05-16 10:29:42.000000 
+* 1452	1192	fontdrvhost.ex	0xe785b531e100	5	-	1	False	2024-05-16 10:22:04.000000 	N/A
+* 1364	1192	dwm.exe	0xe785b28a70c0	24	-	1	False	2024-05-16 10:22:06.000000 	N/A
+8392	4824	BraveCrashHand	0xe785b9a8f080	3	-	0	True	2024-05-16 10:23:48.000000 	N/A
+8728	4824	BraveCrashHand	0xe785b9b03080	3	-	0	False	2024-05-16 10:23:48.000000 	N/A
+11888	7136	RadeonSoftware	0xe785bb33b0c0	44	-	1	False	2024-05-16 10:24:10.000000 	N/A
+* 2132	11888	cncmd.exe	0xe785badd80c0	1	-	1	False	2024-05-16 10:24:20.000000 	N/A
+12540	5484	AMDRSSrcExt.ex	0xe785a9cdb0c0	8	-	1	False	2024-05-16 10:29:32.000000 	N/A
+10640	9492	CCXProcess.exe	0xe785bc8130c0	1	-	1	False	2024-05-16 10:31:36.000000 	N/A
+* 8588	10640	node.exe	0xe785bd4020c0	26	-	1	False	2024-05-16 10:31:36.000000 	N/A
+** 8696	8588	AdobeIPCBroker	0xe785b5c9b0c0	8	-	1	True	2024-05-16 10:31:38.000000 	N/A
+** 10708	8588	conhost.exe	0xe785b3d4a0c0	2	-	1	False	2024-05-16 10:31:36.000000 	N/A
+13976	8924	vmware-tray.ex	0xe785b40750c0	3	-	1	True	2024-05-16 10:32:06.000000 	N/A
+10668	8924	jusched.exe	0xe785bc9d60c0	3	-	1	True	2024-05-16 10:32:36.000000 	N/A
+
+Time Stamp: Thu May 16 15:19:05 2024
+
+
+******* End of command output ******
+

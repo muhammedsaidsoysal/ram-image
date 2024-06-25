@@ -1,0 +1,29 @@
+﻿"C:\Users\technopc\Downloads\VolatilityWorkbench\vol.exe" -f "C:\Users\technopc\Desktop\volatility3\20240516.mem" windows.info.Info 
+Volatility 3 Framework 2.5.0
+Variable	Value
+Kernel Base	0xf8020f800000
+DTB	0x1ae000
+Symbols	file:///C:/Users/technopc/Downloads/VolatilityWorkbench/symbols/windows/ntkrnlmp.pdb/25402BA3E80493C7AD61CFE71292FE06-1.json.xz
+Is64Bit	True
+IsPAE	False
+layer_name	0 WindowsIntel32e
+memory_layer	1 FileLayer
+KdVersionBlock	0xf802104099a8
+Major/Minor	15.22621
+MachineType	34404
+KeNumberProcessors	8
+SystemTime	2024-05-16 10:38:15
+NtSystemRoot	C:\WINDOWS
+NtProductType	NtProductWinNt
+NtMajorVersion	10
+NtMinorVersion	0
+PE MajorOperatingSystemVersion	10
+PE MinorOperatingSystemVersion	0
+PE Machine	34404
+PE TimeDateStamp	Sun Jun 28 04:52:38 2043
+
+Time Stamp: Thu May 16 15:07:25 2024
+
+
+******* End of command output ******
+

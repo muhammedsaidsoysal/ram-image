@@ -1,0 +1,214 @@
+﻿"C:\Users\technopc\Downloads\VolatilityWorkbench\vol.exe" -f "C:\Users\technopc\Desktop\volatility3\20240516.mem" windows.devicetree.DeviceTree 
+Volatility 3 Framework 2.5.0
+Offset	Type	DriverName	DeviceName	DriverNameOfAttDevice	DeviceType
+0x28181fe1174	DRV	-	N/A	N/A	N/A
+0x28dc1fe1174	DRV	-	N/A	N/A	N/A
+0x28e01fe1174	DRV	-	N/A	N/A	N/A
+0x2e581fe1174	DRV	-	N/A	N/A	N/A
+0x2e79e1e1174	DRV	-	N/A	N/A	N/A
+0x2f101fe1174	DRV	-	N/A	N/A	N/A
+0x2f481fe1174	DRV	-	N/A	N/A	N/A
+0x2f601fe1174	DRV	-	N/A	N/A	N/A
+0x2f841fe1174	DRV	-	N/A	N/A	N/A
+0x2f9c1fe1174	DRV	-	N/A	N/A	N/A
+0xb30782ecb9db	DRV	-	N/A	N/A	N/A
+0xb30782ecba24	DRV		N/A	N/A	N/A
+0xb307896fc9da	DRV	-	N/A	N/A	N/A
+0xb307a360db08	DRV	-	N/A	N/A	N/A
+0xb307b23e70f2	DRV	-	N/A	N/A	N/A
+0xb307b301fe30	DRV	RamCaptureDriver	N/A	N/A	N/A
+* 0xb307b301fe30	DEV	RamCaptureDriver	RamCaptureDriver	N/A	UNKNOWN
+0xb30902ecb9db	DRV	-	N/A	N/A	N/A
+0xb30902ecba24	DRV		N/A	N/A	N/A
+0xb309096fc9da	DRV	-	N/A	N/A	N/A
+0xb3092360db08	DRV	-	N/A	N/A	N/A
+0xb309323e70f2	DRV	-	N/A	N/A	N/A
+0xb3093301fe30	DRV	RamCaptureDriver	N/A	N/A	N/A
+* 0xb3093301fe30	DEV	RamCaptureDriver	RamCaptureDriver	N/A	UNKNOWN
+0xb314c1fe1174	DRV	-	N/A	N/A	N/A
+0xb32841fe1174	DRV	-	N/A	N/A	N/A
+0xb33a41fe1174	DRV	-	N/A	N/A	N/A
+0xb34dc1fe1174	DRV	-	N/A	N/A	N/A
+0xb35e82ecb9db	DRV	-	N/A	N/A	N/A
+0xb35e82ecba24	DRV		N/A	N/A	N/A
+0xb35e896fc9da	DRV	-	N/A	N/A	N/A
+0xb35ea360db08	DRV	-	N/A	N/A	N/A
+0xb35eb23e70f2	DRV	-	N/A	N/A	N/A
+0xb35eb301fe30	DRV	RamCaptureDriver	N/A	N/A	N/A
+* 0xb35eb301fe30	DEV	RamCaptureDriver	RamCaptureDriver	N/A	UNKNOWN
+0xb36002ecb9db	DRV	-	N/A	N/A	N/A
+0xb36002ecba24	DRV		N/A	N/A	N/A
+0xb360096fc9da	DRV	-	N/A	N/A	N/A
+0xb3602360db08	DRV	-	N/A	N/A	N/A
+0xb360323e70f2	DRV	-	N/A	N/A	N/A
+0xb3603301fe30	DRV	RamCaptureDriver	N/A	N/A	N/A
+* 0xb3603301fe30	DEV	RamCaptureDriver	RamCaptureDriver	N/A	UNKNOWN
+0xb36182ecb9db	DRV	-	N/A	N/A	N/A
+0xb36182ecba24	DRV		N/A	N/A	N/A
+0xb361896fc9da	DRV	-	N/A	N/A	N/A
+0xb361a360db08	DRV	-	N/A	N/A	N/A
+0xb361b23e70f2	DRV	-	N/A	N/A	N/A
+0xb361b301fe30	DRV	RamCaptureDriver	N/A	N/A	N/A
+* 0xb361b301fe30	DEV	RamCaptureDriver	RamCaptureDriver	N/A	UNKNOWN
+0xb36302ecb9db	DRV	-	N/A	N/A	N/A
+0xb36302ecba24	DRV		N/A	N/A	N/A
+0xb363096fc9da	DRV	-	N/A	N/A	N/A
+0xb3632360db08	DRV	-	N/A	N/A	N/A
+0xb363323e70f2	DRV	-	N/A	N/A	N/A
+0xb3633301fe30	DRV	RamCaptureDriver	N/A	N/A	N/A
+* 0xb3633301fe30	DEV	RamCaptureDriver	RamCaptureDriver	N/A	UNKNOWN
+0xb377c1fe1174	DRV	-	N/A	N/A	N/A
+0xe785a3508a30	DRV	CNG	N/A	N/A	N/A
+* 0xe785a3508a30	DEV	CNG	CNG	N/A	UNKNOWN
+0xe785a352d8e0	DRV	MsSecCore	N/A	N/A	N/A
+0xe785a354de20	DRV	ACPI_HAL	N/A	N/A	N/A
+* 0xe785a354de20	DEV	ACPI_HAL	00000031	N/A	FILE_DEVICE_BUS_EXTENDER
+** 0xe785a354de20	ATT	ACPI_HAL	-	\Driver\UEFI	FILE_DEVICE_BUS_EXTENDER
+0xe785a3553e20	DRV	WMIxWDM	N/A	N/A	N/A
+* 0xe785a3553e20	DEV	WMIxWDM	WMIDataDevice	N/A	FILE_DEVICE_UNKNOWN
+0xe785a355cd50	DRV	vmbus	N/A	N/A	N/A
+0xe785a35d2e30	DRV	PnpManager	N/A	N/A	N/A
+* 0xe785a35d2e30	DEV	PnpManager	000000b0	N/A	FILE_DEVICE_CONTROLLER
+** 0xe785a35d2e30	ATT	PnpManager	NDMP27	\Driver\VMSP	FILE_DEVICE_PHYSICAL_NETCARD
+0xe785a35dddc0	DRV	BasicRender	N/A	N/A	N/A
+* 0xe785a35dddc0	DEV	BasicRender	-	N/A	FILE_DEVICE_VIDEO
+0xe785a35dee10	DRV	DXGKrnl	N/A	N/A	N/A
+* 0xe785a35dee10	DEV	DXGKrnl	DxgKrnl	N/A	FILE_DEVICE_UNKNOWN
+0xe785a35e2e20	DRV	SoftwareDevice	N/A	N/A	N/A
+* 0xe785a35e2e20	DEV	SoftwareDevice	000000c3	N/A	FILE_DEVICE_UNKNOWN
+0xe785a36f3df0	DRV	DeviceApi	N/A	N/A	N/A
+* 0xe785a36f3df0	DEV	DeviceApi	DeviceApi	N/A	FILE_DEVICE_UNKNOWN
+0xe785a36fc2c0	DRV	PRM	N/A	N/A	N/A
+0xe785a36fc740	DRV	Wdf01000	N/A	N/A	N/A
+* 0xe785a36fc740	DEV	Wdf01000	KMDF0	N/A	FILE_DEVICE_UNKNOWN
+0xe785a37e1780	DRV	acpiex	N/A	N/A	N/A
+* 0xe785a37e1780	DEV	acpiex	RESOURCE_HUB	N/A	FILE_DEVICE_UNKNOWN
+0xe785a37e3770	DRV	pci	N/A	N/A	N/A
+* 0xe785a37e3770	DEV	pci	NTPNP_PCI0027	N/A	FILE_DEVICE_CONTROLLER
+** 0xe785a37e3770	ATT	pci	-	\Driver\ACPI	FILE_DEVICE_ACPI
+*** 0xe785a37e3770	ATT	pci	RaidPort0	\Driver\storahci	FILE_DEVICE_CONTROLLER
+0xe785a37e3bf0	DRV	msisadrv	N/A	N/A	N/A
+* 0xe785a37e3bf0	DEV	msisadrv	-	N/A	FILE_DEVICE_UNKNOWN
+0xe785a37e5bc0	DRV	storvsp	N/A	N/A	N/A
+* 0xe785a37e5bc0	DEV	storvsp	STORVSP	N/A	FILE_DEVICE_UNKNOWN
+0xe785a37e74e0	DRV	UEFI	N/A	N/A	N/A
+* 0xe785a37e74e0	DEV	UEFI	0000005a	N/A	FILE_DEVICE_BUS_EXTENDER
+
+0xe785a37e82c0	DRV	SpbCx	N/A	N/A	N/A
+* 0xe785a37e82c0	DEV	SpbCx	SpbCx0	N/A	FILE_DEVICE_UNKNOWN
+0xe785a37e9960	DRV	UCPD	N/A	N/A	N/A
+0xe785a37e99b0	DRV	-	N/A	N/A	N/A
+* 0xe785a37e99b0	DEV	-	-	N/A	UNKNOWN
+0xe785a37ea740	DRV	ACPI	N/A	N/A	N/A
+* 0xe785a37ea740	DEV	ACPI	-	N/A	FILE_DEVICE_ACPI
+** 0xe785a37ea740	ATT	ACPI	-	\Driver\monitor	FILE_DEVICE_UNKNOWN
+0xe785a37eabc0	DRV	WindowsTrustedRTProxy	N/A	N/A	N/A
+0xe785a37eb4e0	DRV	IntelPMT	N/A	N/A	N/A
+0xe785a37eb960	DRV	WindowsTrustedRT	N/A	N/A	N/A
+* 0xe785a37eb960	DEV	WindowsTrustedRT	WindowsTrustedRT	N/A	FILE_DEVICE_UNKNOWN
+0xe785a37ec2c0	DRV	intelpep	N/A	N/A	N/A
+0xe785a37ec740	DRV	WdBoot	N/A	N/A	N/A
+0xe785a37ecbc0	DRV	lxss	N/A	N/A	N/A
+* 0xe785a37ecbc0	DEV	lxss	lxss	N/A	FILE_DEVICE_NETWORK_FILE_SYSTEM
+
+0xe785a44a2d50	DRV	volmgrx	N/A	N/A	N/A
+0xe785a44a3d50	DRV	volmgr	N/A	N/A	N/A
+* 0xe785a44a3d50	DEV	volmgr	HarddiskVolume5	N/A	FILE_DEVICE_DISK
+** 0xe785a44a3d50	ATT	volmgr	-	\Driver\fvevol	FILE_DEVICE_DISK
+*** 0xe785a44a3d50	ATT	volmgr	-	\Driver\volume	FILE_DEVICE_DISK
+0xe785a44a9d50	DRV	partmgr	N/A	N/A	N/A
+* 0xe785a44a9d50	DEV	partmgr	-	N/A	FILE_DEVICE_DISK
+0xe785a44aad50	DRV	vsock	N/A	N/A	N/A
+* 0xe785a44aad50	DEV	vsock	vmci	N/A	FILE_DEVICE_UNKNOWN
+0xe785a44bae30	DRV	ws2ifsl	N/A	N/A	N/A
+* 0xe785a44bae30	DEV	ws2ifsl	WS2IFSL	N/A	FILE_DEVICE_NAMED_PIPE
+0xe785a44c6c90	DRV	NdisCap	N/A	N/A	N/A
+0xe785a44c8c90	DRV	NetBIOS	N/A	N/A	N/A
+* 0xe785a44c8c90	DEV	NetBIOS	Netbios	N/A	FILE_DEVICE_TRANSPORT
+0xe785a44f3d50	DRV	pdc	N/A	N/A	N/A
+* 0xe785a44f3d50	DEV	pdc	-	N/A	FILE_DEVICE_UNKNOWN
+0xe785a44f8d50	DRV	vdrvroot	N/A	N/A	N/A
+* 0xe785a44f8d50	DEV	vdrvroot	-	N/A	FILE_DEVICE_BUS_EXTENDER
+0xe785a44fbd50	DRV	Fs_Rec	N/A	N/A	N/A
+Traceback (most recent call last):
+* 0xe785a44fbd50	DEV	Fs_Rec	CdfsRecognizer	N/A	FILE_DEVICE_CD_ROM_FILE_SYSTEM
+0xe785a4609e20	DRV	TPM	N/A	N/A	N/A
+  File "vol.py", line 10, in <module>
+* 0xe785a4609e20	DEV	TPM	-	N/A	FILE_DEVICE_UNKNOWN
+0xe785a460ae20	DRV	RAW	N/A	N/A	N/A
+  File "volatility3\cli\__init__.py", line 790, in main
+  File "volatility3\cli\__init__.py", line 447, in run
+  File "volatility3\cli\text_renderer.py", line 193, in render
+  File "volatility3\framework\renderers\__init__.py", line 247, in populate
+  File "volatility3\cli\text_renderer.py", line 188, in visitor
+  File "encodings\cp1254.py", line 19, in encode
+* 0xe785a460ae20	DEV	RAW	RawTape	N/A	FILE_DEVICE_TAPE_FILE_SYSTEM
+0xe785a460dd10	DRV	vmci	N/A	N/A	N/A
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 19-39: character maps to <undefined>
+[1180] Failed to execute script 'vol' due to unhandled exception!
+* 0xe785a460dd10	DEV	vmci	VMCIHostDev	N/A	FILE_DEVICE_CONTROLLER
+0xe785a460fe20	DRV	pcw	N/A	N/A	N/A
+* 0xe785a460fe20	DEV	pcw	PcwDrv	N/A	FILE_DEVICE_UNKNOWN
+0xe785a463ccf0	DRV	mountmgr	N/A	N/A	N/A
+* 0xe785a463ccf0	DEV	mountmgr	MountPointManager	N/A	FILE_DEVICE_NETWORK
+0xe785a463e980	DRV	storahci	N/A	N/A	N/A
+* 0xe785a463e980	DEV	storahci	00000053	N/A	FILE_DEVICE_DISK
+** 0xe785a463e980	ATT	storahci	DR0	\Driver\disk	FILE_DEVICE_DISK
+*** 0xe785a463e980	ATT	storahci	-	\Driver\partmgr	FILE_DEVICE_DISK
+0xe785a463e9a0	DRV	storahci	N/A	N/A	N/A
+* 0xe785a463e9a0	DEV	storahci	-	N/A	UNKNOWN
+0xe785a4680da0	DRV	spaceport	N/A	N/A	N/A
+* 0xe785a4680da0	DEV	spaceport	Spaceport	N/A	FILE_DEVICE_CONTROLLER
+0xe785a468b410	DRV	KSecDD	N/A	N/A	N/A
+* 0xe785a468b410	DEV	KSecDD	KsecDD	N/A	FILE_DEVICE_KSEC
+0xe785a468b860	DRV	FltMgr	N/A	N/A	N/A
+* 0xe785a468b860	DEV	FltMgr	-	N/A	FILE_DEVICE_DISK_FILE_SYSTEM
+0xe785a46ae830	DRV	CLFS	N/A	N/A	N/A
+* 0xe785a46ae830	DEV	CLFS	clfs	N/A	FILE_DEVICE_DISK_FILE_SYSTEM
+0xe785a46b7e30	DRV	HidUsb	N/A	N/A	N/A
+* 0xe785a46b7e30	DEV	HidUsb	000000a3	N/A	FILE_DEVICE_UNKNOWN
+0xe785a46b96e0	DRV	NDIS	N/A	N/A	N/A
+* 0xe785a46b96e0	DEV	NDIS	lwm	N/A	FILE_DEVICE_NETWORK
+0xe785a46b96f0	DRV		N/A	N/A	N/A
+* 0xe785a46b96f0	DEV		-	N/A	UNKNOWN
+0xe785a46cdb90	DRV	FileInfo	N/A	N/A	N/A
+* 0xe785a46cdb90	DEV	FileInfo	FileInfo	N/A	FILE_DEVICE_UNKNOWN
+0xe785a46cee00	DRV	Wof	N/A	N/A	N/A
+0xe785a46d05c0	DRV	WdFilter	N/A	N/A	N/A
+0xe785a46d4af0	DRV	Ntfs	N/A	N/A	N/A
+* 0xe785a46d4af0	DEV	Ntfs	-	N/A	FILE_DEVICE_DISK_FILE_SYSTEM
+** 0xe785a46d4af0	ATT	Ntfs	-	\FileSystem\FltMgr	FILE_DEVICE_DISK_FILE_SYSTEM
+0xe785a46dfa70	DRV	Tcpip	N/A	N/A	N/A
+* 0xe785a46dfa70	DEV	Tcpip	eQoS	N/A	FILE_DEVICE_NETWORK
+0xe785a472cd60	DRV	KSecPkg	N/A	N/A	N/A
+0xe785a472daf0	DRV	amdpsp	N/A	N/A	N/A
+* 0xe785a472daf0	DEV	amdpsp	amdpsp	N/A	FILE_DEVICE_UNKNOWN
+0xe785a4738b80	DRV	fse	N/A	N/A	N/A
+* 0xe785a4738b80	DEV	fse	FseIoDevice	N/A	FILE_DEVICE_NETWORK
+0xe785a477ed70	DRV	rdyboost	N/A	N/A	N/A
+* 0xe785a477ed70	DEV	rdyboost	RdyBoost	N/A	FILE_DEVICE_UNKNOWN
+0xe785a478d8f0	DRV	VMSNPXY	N/A	N/A	N/A
+* 0xe785a478d8f0	DEV	VMSNPXY	VmsNicProxy	N/A	FILE_DEVICE_NETWORK
+0xe785a4796e20	DRV	volume	N/A	N/A	N/A
+* 0xe785a4796e20	DEV	volume	-	N/A	FILE_DEVICE_DISK
+0xe785a47fddc0	DRV	volsnap	N/A	N/A	N/A
+* 0xe785a47fddc0	DEV	volsnap	HarddiskVolumeShadowCopy1	N/A	FILE_DEVICE_VIRTUAL_DISK
+0xe785a48194f0	DRV	vpcivsp	N/A	N/A	N/A
+* 0xe785a48194f0	DEV	vpcivsp	-	N/A	FILE_DEVICE_UNKNOWN
+0xe785a481f280	DRV	WFPLWFS	N/A	N/A	N/A
+* 0xe785a481f280	DEV	WFPLWFS	WFPL2DPConfig	N/A	FILE_DEVICE_NETWORK
+
+0xe785a484be30	DRV	fvevol	N/A	N/A	N/A
+* 0xe785a484be30	DEV	fvevol	-	N/A	FILE_DEVICE_DISK
+** 0xe785a484be30	ATT	fvevol	-	\Driver\volume	FILE_DEVICE_DISK
+0xe785a484ebc0	DRV	VmsProxy	N/A	N/A	N/A
+* 0xe785a484ebc0	DEV	VmsProxy	VmSwitch	N/A	FILE_DEVICE_UNKNOWN
+0xe785a4869b00	DRV	disk	N/A	N/A	N/A
+* 0xe785a4869b00	DEV	disk	DR1	N/A	FILE_DEVICE_DISK
+** 0xe785a4869b00	ATT	disk	-	\Driver\partmgr	FILE_DEVICE_DISK
+
+Time Stamp: Thu May 16 15:29:36 2024
+
+
+******* End of command output ******
+

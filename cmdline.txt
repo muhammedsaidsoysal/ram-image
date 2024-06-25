@@ -1,0 +1,212 @@
+﻿"C:\Users\technopc\Downloads\VolatilityWorkbench\vol.exe" -f "C:\Users\technopc\Desktop\volatility3\20240516.mem" windows.cmdline.CmdLine 
+Volatility 3 Framework 2.5.0
+PID	Process	Args
+4	System	Required memory at 0x20 is not valid (process exited?)
+108	Secure System	Required memory at 0x20 is not valid (process exited?)
+148	Registry	Required memory at 0x20 is not valid (process exited?)
+600	smss.exe	\SystemRoot\System32\smss.exe
+756	csrss.exe	%SystemRoot%\system32\csrss.exe ObjectDirectory=\Windows SharedSection=1024,20480,768 Windows=On SubSystemType=Windows ServerDll=basesrv,1 ServerDll=winsrv:UserServerDllInitialization,3 ServerDll=sxssrv,4 ProfileControl=Off MaxRequestThreads=16
+1120	wininit.exe	wininit.exe
+1128	csrss.exe	%SystemRoot%\system32\csrss.exe ObjectDirectory=\Windows SharedSection=1024,20480,768 Windows=On SubSystemType=Windows ServerDll=basesrv,1 ServerDll=winsrv:UserServerDllInitialization,3 ServerDll=sxssrv,4 ProfileControl=Off MaxRequestThreads=16
+1192	winlogon.exe	winlogon.exe
+1268	services.exe	C:\WINDOWS\system32\services.exe
+1288	LsaIso.exe	\??\C:\WINDOWS\system32\lsaiso.exe -CredGuard -KeyGuard
+1296	lsass.exe	C:\WINDOWS\system32\lsass.exe
+1424	svchost.exe	C:\WINDOWS\system32\svchost.exe -k DcomLaunch -p
+1452	fontdrvhost.ex	"fontdrvhost.exe"
+1460	fontdrvhost.ex	"fontdrvhost.exe"
+1560	svchost.exe	C:\WINDOWS\system32\svchost.exe -k RPCSS -p
+1608	svchost.exe	C:\WINDOWS\system32\svchost.exe -k DcomLaunch -p -s LSM
+1688	svchost.exe	C:\WINDOWS\system32\svchost.exe -k LocalSystemNetworkRestricted -p -s HvHost
+1732	svchost.exe	C:\WINDOWS\System32\svchost.exe -k LocalSystemNetworkRestricted -p -s NcbService
+1768	svchost.exe	C:\WINDOWS\system32\svchost.exe -k LocalSystemNetworkRestricted -p -s DisplayEnhancementService
+1792	svchost.exe	C:\WINDOWS\System32\svchost.exe -k LocalServiceNetworkRestricted -p -s lmhosts
+1800	svchost.exe	C:\WINDOWS\system32\svchost.exe -k LocalServiceNetworkRestricted -p -s TimeBrokerSvc
+1808	svchost.exe	C:\WINDOWS\system32\svchost.exe -k LocalService -p -s BthAvctpSvc
+1816	svchost.exe	C:\WINDOWS\system32\svchost.exe -k LocalService -p -s bthserv
+1824	svchost.exe	C:\WINDOWS\system32\svchost.exe -k LocalServiceNetworkRestricted -s BTAGService
+1904	svchost.exe	C:\WINDOWS\system32\svchost.exe -k LocalSystemNetworkRestricted -p -s hidserv
+1912	svchost.exe	C:\WINDOWS\system32\svchost.exe -k LocalSystemNetworkRestricted -p -s NgcSvc
+1364	dwm.exe	"dwm.exe"
+1724	svchost.exe	C:\WINDOWS\system32\svchost.exe -k LocalService -p -s nsi
+2064	svchost.exe	C:\WINDOWS\system32\svchost.exe -k LocalSystemNetworkRestricted -p -s DevQueryBroker
+2072	svchost.exe	C:\WINDOWS\System32\svchost.exe -k netprofm -p -s netprofm
+2156	svchost.exe	C:\WINDOWS\system32\svchost.exe -k UserProfileService -p -s ProfSvc
+2224	WUDFHost.exe	"C:\Windows\System32\WUDFHost.exe" -HostGUID:{193a1820-d9ac-4997-8c55-be817523f6aa} -IoEventPortName:\UMDFCommunicationPorts\WUDF\HostProcess-42f1d7e8-896a-4855-8d6b-fc5f17239195 -SystemEventPortName:\UMDFCommunicationPorts\WUDF\HostProcess-d02ddacd-0242-47ad-9b27-04147e000de5 -IoCancelEventPortName:\UMDFCommunicationPorts\WUDF\HostProcess-b1f96e1e-3a54-4c57-a83c-b6161715ac3f -NonStateChangingEventPortName:\UMDFCommunicationPorts\WUDF\HostProcess-3398f4b4-a559-4a53-9341-386b497c6c3d -LifetimeId:009e9330-5f2a-4968-9466-53efe4d9b272 -DeviceGroupId:WpdFsGroup -HostArg:0
+2340	svchost.exe	C:\WINDOWS\system32\svchost.exe -k netsvcs -p -s UserManager
+2388	svchost.exe	C:\WINDOWS\system32\svchost.exe -k netsvcs -p -s Winmgmt
+2448	svchost.exe	C:\WINDOWS\system32\svchost.exe -k osprivacy -p -s camsvc
+2560	vmms.exe	C:\WINDOWS\system32\vmms.exe
+2672	svchost.exe	C:\WINDOWS\system32\svchost.exe -k LocalService -p -s PhoneSvc
+2720	svchost.exe	C:\WINDOWS\system32\svchost.exe -k NetworkService -p
+2748	svchost.exe	C:\WINDOWS\system32\svchost.exe -k LocalSystemNetworkRestricted -p -s DeviceAssociationService
+3032	svchost.exe	C:\WINDOWS\system32\svchost.exe -k LocalServiceNetworkRestricted -p -s Dhcp
+3040	dasHost.exe	dashost.exe {88720bf0-e1e5-4872-ad99fd4f7f5a187e}
+3088	svchost.exe	C:\WINDOWS\system32\svchost.exe -k NetSvcs -p -s HNS
+3172	svchost.exe	C:\WINDOWS\System32\svchost.exe -k LocalServiceNetworkRestricted -p -s EventLog
+3196	amdfendrsr.exe	C:\WINDOWS\System32\amdfendrsr.exe
+3204	atiesrxx.exe	C:\WINDOWS\System32\DriverStore\FileRepository\u0390451.inf_amd64_39377efdd62734d1\B390182\atiesrxx.exe
+3512	svchost.exe	C:\WINDOWS\system32\svchost.exe -k LocalServiceNetworkRestricted -p -s WinHttpAutoProxySvc
+3612	svchost.exe	C:\WINDOWS\system32\svchost.exe -k netsvcs -p -s Schedule
+3676	svchost.exe	C:\WINDOWS\system32\svchost.exe -k NetSvcs -s nvagent
+3764	svchost.exe	C:\WINDOWS\system32\svchost.exe -k LocalServiceNoNetworkFirewall -p
+3888	svchost.exe	C:\WINDOWS\System32\svchost.exe -k netsvcs -p -s SharedAccess
+3924	svchost.exe	C:\WINDOWS\system32\svchost.exe -k LocalServiceAndNoImpersonation -p -s SSDPSRV
+3964	svchost.exe	C:\WINDOWS\System32\svchost.exe -k netsvcs -p -s Themes
+3972	svchost.exe	C:\WINDOWS\system32\svchost.exe -k LocalSystemNetworkRestricted -p -s SysMain
+3980	svchost.exe	C:\WINDOWS\system32\svchost.exe -k LocalService -p -s EventSystem
+4112	svchost.exe	C:\WINDOWS\system32\svchost.exe -k netsvcs -p -s SENS
+4148	svchost.exe	C:\WINDOWS\System32\svchost.exe -k LocalSystemNetworkRestricted -p -s AudioEndpointBuilder
+4156	svchost.exe	C:\WINDOWS\system32\svchost.exe -k LocalService -p -s FontCache
+4188	MemCompression	Required memory at 0x20 is not valid (process exited?)
+4476	svchost.exe	C:\WINDOWS\system32\svchost.exe -k appmodel -p -s StateRepository
+4500	svchost.exe	C:\WINDOWS\System32\svchost.exe -k LocalServiceNetworkRestricted -p
+4528	svchost.exe	C:\WINDOWS\System32\svchost.exe -k LocalSystemNetworkRestricted -p -s TextInputManagementService
+4652	svchost.exe	C:\WINDOWS\System32\svchost.exe -k LocalServiceNetworkRestricted -p
+4664	svchost.exe	C:\WINDOWS\system32\svchost.exe -k LocalServiceNetworkRestricted -p
+4908	svchost.exe	C:\WINDOWS\system32\svchost.exe -k LocalSystemNetworkRestricted -p
+4932	svchost.exe	C:\WINDOWS\System32\svchost.exe -k netsvcs -p -s ShellHWDetection
+4960	spoolsv.exe	C:\WINDOWS\System32\spoolsv.exe
+5008	svchost.exe	C:\WINDOWS\System32\svchost.exe -k NetworkService -p -s LanmanWorkstation
+4548	svchost.exe	C:\WINDOWS\system32\svchost.exe -k LocalService -p -s DispBrokerDesktopSvc
+2864	svchost.exe	C:\WINDOWS\System32\svchost.exe -k LocalServiceNoNetwork -p -s DPS
+4728	svchost.exe	C:\WINDOWS\System32\svchost.exe -k utcsvc -p
+4752	svchost.exe	C:\WINDOWS\system32\svchost.exe -k NetworkService -p
+5128	svchost.exe	C:\WINDOWS\System32\svchost.exe -k NetSvcs -p -s iphlpsvc
+5136	svchost.exe	C:\WINDOWS\System32\svchost.exe -k LocalSystemNetworkRestricted -p -s TrkWks
+5144	svchost.exe	C:\WINDOWS\system32\svchost.exe -k LocalServiceNoNetwork -p
+5152	svchost.exe	C:\WINDOWS\system32\svchost.exe -k imgsvc
+5160	svchost.exe	C:\WINDOWS\system32\svchost.exe -k netsvcs -p -s WpnService
+5176	vmware-authd.e	"C:\Program Files (x86)\VMware\VMware Workstation\vmware-authd.exe"
+5184	CmWebAdmin.exe	"C:\Program Files\CodeMeter\Runtime\bin\CmWebAdmin.exe"
+5204	mDNSResponder.	"C:\Program Files\Bonjour\mDNSResponder.exe"
+5212	vmnat.exe	C:\WINDOWS\SysWOW64\vmnat.exe
+5220	MsMpEng.exe	"C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.24030.9-0\MsMpEng.exe"
+5232	EZCastService.	"C:\Program Files (x86)\EZCast\EZCastService.exe" -e
+5248	vmnetdhcp.exe	C:\WINDOWS\SysWOW64\vmnetdhcp.exe
+5256	MpDefenderCore	"C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.24030.9-0\MpDefenderCoreService.exe"
+5288	sqlwriter.exe	"C:\Program Files\Microsoft SQL Server\90\Shared\sqlwriter.exe"
+5372	vmware-usbarbi	"C:\Program Files (x86)\Common Files\VMware\USB\vmware-usbarbitrator64.exe"
+5472	wslservice.exe	"C:\Program Files\WSL\wslservice.exe"
+5692	svchost.exe	C:\WINDOWS\system32\svchost.exe -k netsvcs -p -s LanmanServer
+6140	sqlservr.exe	"C:\Program Files\Microsoft SQL Server\MSSQL15.MSSQLSERVER\MSSQL\Binn\sqlservr.exe" -sMSSQLSERVER
+5380	sqlceip.exe	"C:\Program Files\Microsoft SQL Server\MSSQL15.MSSQLSERVER\MSSQL\Binn\sqlceip.exe" -Service 
+6512	WmiPrvSE.exe	C:\WINDOWS\system32\wbem\wmiprvse.exe
+6192	svchost.exe	C:\WINDOWS\system32\svchost.exe -k wsappx -p -s AppXSvc
+6396	gamingservices	"C:\Program Files\WindowsApps\Microsoft.GamingServices_21.89.7001.0_x64__8wekyb3d8bbwe\GamingServicesNet.exe"
+6480	gamingservices	"C:\Program Files\WindowsApps\Microsoft.GamingServices_21.89.7001.0_x64__8wekyb3d8bbwe\GamingServices.exe"
+4208	svchost.exe	C:\WINDOWS\system32\svchost.exe -k DcomLaunch -p -s DeviceInstall
+6432	svchost.exe	C:\WINDOWS\System32\svchost.exe -k netsvcs -p
+7192	svchost.exe	C:\WINDOWS\System32\svchost.exe -k LocalSystemNetworkRestricted -p -s StorSvc
+7236	AggregatorHost	AggregatorHost.exe
+7900	svchost.exe	C:\WINDOWS\system32\svchost.exe -k netsvcs -p -s wlidsvc
+7336	NisSrv.exe	"C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.24030.9-0\NisSrv.exe"
+7384	svchost.exe	C:\WINDOWS\System32\svchost.exe -k LocalSystemNetworkRestricted -p -s WdiSystemHost
+6968	svchost.exe	C:\WINDOWS\system32\svchost.exe -k LocalSystemNetworkRestricted -p -s PcaSvc
+4016	vmcompute.exe	C:\WINDOWS\system32\vmcompute.exe
+3084	atieclxx.exe	atieclxx
+8072	sihost.exe	sihost.exe
+3248	svchost.exe	C:\WINDOWS\system32\svchost.exe -k UnistackSvcGroup -s CDPUserSvc
+5104	svchost.exe	C:\WINDOWS\system32\svchost.exe -k LocalSystemNetworkRestricted -p -s webthreatdefusersvc
+5988	svchost.exe	C:\WINDOWS\system32\svchost.exe -k UnistackSvcGroup -s WpnUserService
+2168	taskhostw.exe	taskhostw.exe {222A245B-E637-4AE9-A93F-A59CA119A75E}
+8256	svchost.exe	C:\WINDOWS\system32\svchost.exe -k netsvcs -p -s TokenBroker
+8736	svchost.exe	C:\WINDOWS\system32\svchost.exe -k LocalService -p -s CDPSvc
+8464	svchost.exe	C:\WINDOWS\System32\svchost.exe -k netsvcs -p -s EapHost
+8392	BraveCrashHand	"C:\Program Files (x86)\BraveSoftware\Update\1.3.361.149\BraveCrashHandler.exe"
+8728	BraveCrashHand	"C:\Program Files (x86)\BraveSoftware\Update\1.3.361.149\BraveCrashHandler64.exe"
+8984	userinit.exe	Required memory at 0xa0e826c020 is not valid (process exited?)
+8780	explorer.exe	C:\WINDOWS\Explorer.EXE
+8340	svchost.exe	C:\WINDOWS\System32\svchost.exe -k LocalServiceNetworkRestricted -s RmSvc
+9444	svchost.exe	C:\WINDOWS\system32\svchost.exe -k LocalServiceNetworkRestricted -p -s NgcCtnrSvc
+9720	smartscreen.ex	C:\Windows\System32\smartscreen.exe -Embedding
+9020	svchost.exe	C:\WINDOWS\system32\svchost.exe -k WebThreatDefense -p -s webthreatdefsvc
+9460	svchost.exe	C:\WINDOWS\system32\svchost.exe -k ClipboardSvcGroup -p -s cbdhsvc
+7124	svchost.exe	C:\WINDOWS\system32\svchost.exe -k netsvcs -p -s Appinfo
+8844	SearchHost.exe	"C:\WINDOWS\SystemApps\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\SearchHost.exe" -ServerName:CortanaUI.AppXstmwaab17q5s3y22tp6apqz7a45vwv65.mca
+8712	StartMenuExper	"C:\WINDOWS\SystemApps\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\StartMenuExperienceHost.exe" -ServerName:App.AppXywbrabmsek0gm3tkwpr5kwzbs55tkqay.mca
+9716	Widgets.exe	"C:\Program Files\WindowsApps\MicrosoftWindows.Client.WebExperience_424.1301.450.0_x64__cw5n1h2txyewy\Dashboard\Widgets.exe" -ServerName:Microsoft.Windows.DashboardServer
+10224	RuntimeBroker.	C:\Windows\System32\RuntimeBroker.exe -Embedding
+10372	RuntimeBroker.	C:\Windows\System32\RuntimeBroker.exe -Embedding
+10444	svchost.exe	C:\WINDOWS\system32\svchost.exe -k UdkSvcGroup -s UdkUserSvc
+10744	dllhost.exe	C:\WINDOWS\system32\DllHost.exe /Processid:{973D20D7-562D-44B9-B70B-5A0F49CCDF3F}
+10984	UserOOBEBroker	C:\Windows\System32\oobe\UserOOBEBroker.exe -Embedding
+12016	ctfmon.exe	"ctfmon.exe"
+11888	RadeonSoftware	"C:\Program Files\AMD\CNext\CNext\Radeonsoftware.exe" atlogon
+2324	CPUMetricsServ	"C:\Program Files\AMD\CNext\CNext\cpumetricsserver.exe"
+5836	CodeMeter.exe	"C:\Program Files\CodeMeter\Runtime\bin\CodeMeter.exe"
+9268	TextInputHost.	"C:\WINDOWS\SystemApps\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\TextInputHost.exe" -ServerName:InputApp.AppXk0k6mrh4r2q0ct33a9wgbez0x7v9cz5y.mca
+3476	SearchIndexer.	C:\WINDOWS\system32\SearchIndexer.exe /Embedding
+2132	cncmd.exe	"C:\Program Files\AMD\CNext\CNext\cncmd.exe" watch 11888
+12264	ShellExperienc	"C:\WINDOWS\SystemApps\ShellExperienceHost_cw5n1h2txyewy\ShellExperienceHost.exe" -ServerName:App.AppXtk181tbxbce2qsex02s8tw7hfxa9xb3t.mca
+10268	svchost.exe	C:\WINDOWS\system32\svchost.exe -k LocalService -p -s NPSMSvc
+11184	RuntimeBroker.	C:\Windows\System32\RuntimeBroker.exe -Embedding
+11576	SystemSettings	C:\Windows\System32\SystemSettingsBroker.exe -Embedding
+3484	svchost.exe	C:\WINDOWS\system32\svchost.exe -k LocalService -p -s SstpSvc
+2808	svchost.exe	C:\WINDOWS\System32\svchost.exe -k NetworkService -p -s TapiSrv
+2812	svchost.exe	C:\WINDOWS\system32\svchost.exe -k DevicesFlow -s DevicesFlowUserSvc
+2500	svchost.exe	C:\WINDOWS\System32\svchost.exe -k netsvcs
+12352	audiodg.exe	C:\WINDOWS\system32\AUDIODG.EXE 0x0000000000000874
+13096	PhoneExperienc	"C:\Program Files\WindowsApps\Microsoft.YourPhone_1.24041.108.0_x64__8wekyb3d8bbwe\PhoneExperienceHost.exe" -ComServer:Background -Embedding
+9436	WidgetService.	"C:\Program Files\WindowsApps\MicrosoftWindows.Client.WebExperience_424.1301.450.0_x64__cw5n1h2txyewy\Dashboard\widgetservice.exe" -RegisterProcessAsComServer -Embedding
+8768	svchost.exe	C:\WINDOWS\system32\svchost.exe -k netsvcs -p -s UsoSvc
+13104	LogonUI.exe	Required memory at 0xf9a888020 is not valid (process exited?)
+13492	LockApp.exe	"C:\WINDOWS\SystemApps\Microsoft.LockApp_cw5n1h2txyewy\LockApp.exe" -ServerName:WindowsDefaultLockScreen.AppX7y4nbzq37zn4ks9k7amqjywdat7d3j2z.mca
+13628	RuntimeBroker.	C:\Windows\System32\RuntimeBroker.exe -Embedding
+4956	svchost.exe	C:\WINDOWS\system32\svchost.exe -k LocalService -s W32Time
+10524	svchost.exe	C:\WINDOWS\system32\svchost.exe -k netsvcs -p -s wuauserv
+13380	svchost.exe	C:\WINDOWS\system32\svchost.exe -k netsvcs -p -s lfsvc
+14304	LocationNotifi	"C:\WINDOWS\System32\LocationNotificationWindows.exe"
+14028	svchost.exe	C:\WINDOWS\System32\svchost.exe -k LocalServiceNetworkRestricted -p -s wscsvc
+9880	svchost.exe	C:\WINDOWS\system32\svchost.exe -k UnistackSvcGroup
+12540	AMDRSSrcExt.ex	"C:\Program Files\AMD\CNext\CNext\AMDRSSrcExt.exe" fb28e830-7c29-4591-b2df-4e16275fa0d9 SOFTWARE\AMD\DVR\Overlays
+14432	SecurityHealth	"C:\Windows\System32\SecurityHealthSystray.exe" 
+14488	SecurityHealth	C:\WINDOWS\system32\SecurityHealthService.exe
+10520	brave.exe	Required memory at 0x97c977020 is not valid (process exited?)
+15208	ApplicationFra	C:\WINDOWS\system32\ApplicationFrameHost.exe -Embedding
+14108	CodeMeterCC.ex	"C:\Program Files\CodeMeter\Runtime\bin\CodeMeterCC.exe" 
+10640	CCXProcess.exe	"C:\Program Files\Adobe\Adobe Creative Cloud Experience\CCXProcess.exe"
+8588	node.exe	"C:\Program Files\Adobe\Adobe Creative Cloud Experience\libs\node.exe" "C:\Program Files\Adobe\Adobe Creative Cloud Experience\js\main.js"
+10708	conhost.exe	\??\C:\WINDOWS\system32\conhost.exe 0x4
+5784	svchost.exe	C:\WINDOWS\system32\svchost.exe -k netsvcs -p -s seclogon
+8696	AdobeIPCBroker	"C:\Program Files (x86)\Common Files\Adobe\Adobe Desktop Common\IPCBox\AdobeIPCBroker.exe" "-launchedbyvulcan-8588 C:\Program Files\Adobe\Adobe Creative Cloud Experience\libs\node.exe"
+9688	brave.exe	"C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe" 
+11420	brave.exe	"C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe" --type=crashpad-handler "--user-data-dir=C:\Users\technopc\AppData\Local\BraveSoftware\Brave-Browser\User Data" /prefetch:4 --monitor-self-annotation=ptype=crashpad-handler "--database=C:\Users\technopc\AppData\Local\BraveSoftware\Brave-Browser\User Data\Crashpad" "--metrics-dir=C:\Users\technopc\AppData\Local\BraveSoftware\Brave-Browser\User Data" --url=https://cr.brave.com --annotation=plat=Win64 --annotation=prod=Brave --annotation=ver=124.1.65.133 --initial-client-data=0x138,0x13c,0x140,0x114,0x144,0x7fffaf961c80,0x7fffaf961c8c,0x7fffaf961c98
+3452	brave.exe	"C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe" --type=gpu-process --no-appcompat-clear --start-stack-profiler --gpu-preferences=WAAAAAAAAADgAAAMAAAAAAAAAAAAAAAAAABgAAEAAAA4AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGAAAAAAAAAAYAAAAAAAAAAgAAAAAAAAACAAAAAAAAAAIAAAAAAAAAA== --field-trial-handle=1972,i,12565518167307129938,11664108623005352344,262144 --variations-seed-version=1 --mojo-platform-channel-handle=1968 /prefetch:2
+7064	brave.exe	"C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe" --type=utility --utility-sub-type=network.mojom.NetworkService --lang=tr --service-sandbox-type=none --no-appcompat-clear --start-stack-profiler --field-trial-handle=1960,i,12565518167307129938,11664108623005352344,262144 --variations-seed-version=1 --mojo-platform-channel-handle=1892 /prefetch:3
+2124	brave.exe	"C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe" --type=utility --utility-sub-type=storage.mojom.StorageService --lang=tr --service-sandbox-type=service --no-appcompat-clear --field-trial-handle=2316,i,12565518167307129938,11664108623005352344,262144 --variations-seed-version=1 --mojo-platform-channel-handle=2508 /prefetch:8
+9452	brave.exe	"C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe" --type=utility --utility-sub-type=brave_rewards.mojom.RewardsEngineFactory --lang=tr --service-sandbox-type=none --no-appcompat-clear --field-trial-handle=2600,i,12565518167307129938,11664108623005352344,262144 --variations-seed-version=1 --mojo-platform-channel-handle=2764 /prefetch:8
+4080	brave.exe	"C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe" --type=renderer --extension-process --enable-distillability-service --origin-trial-public-key=bYUKPJoPnCxeNvu72j4EmPuK7tr1PAC7SHh8ld9Mw3E=,fMS4mpO6buLQ/QMd+zJmxzty/VQ6B1EUZqoCU04zoRU= --no-appcompat-clear --brave_session_token=13710549437620410705 --lang=tr --device-scale-factor=1.25 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=6 --time-ticks-at-unix-epoch=-1715854909113527 --launch-time-ticks=601029548 --field-trial-handle=3396,i,12565518167307129938,11664108623005352344,262144 --variations-seed-version=1 --mojo-platform-channel-handle=4248 /prefetch:2
+1496	brave.exe	"C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe" --type=renderer --extension-process --enable-distillability-service --origin-trial-public-key=bYUKPJoPnCxeNvu72j4EmPuK7tr1PAC7SHh8ld9Mw3E=,fMS4mpO6buLQ/QMd+zJmxzty/VQ6B1EUZqoCU04zoRU= --no-appcompat-clear --brave_session_token=13710549437620410705 --lang=tr --device-scale-factor=1.25 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=7 --time-ticks-at-unix-epoch=-1715854909113527 --launch-time-ticks=601233139 --field-trial-handle=2708,i,12565518167307129938,11664108623005352344,262144 --variations-seed-version=1 --mojo-platform-channel-handle=4832 /prefetch:2
+2824	brave.exe	"C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe" --type=utility --utility-sub-type=audio.mojom.AudioService --lang=tr --service-sandbox-type=audio --no-appcompat-clear --field-trial-handle=6032,i,12565518167307129938,11664108623005352344,262144 --variations-seed-version=1 --mojo-platform-channel-handle=5416 /prefetch:8
+2868	svchost.exe	C:\WINDOWS\System32\svchost.exe -k LocalService -p -s LicenseManager
+14580	brave.exe	"C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe" --type=renderer --enable-distillability-service --origin-trial-public-key=bYUKPJoPnCxeNvu72j4EmPuK7tr1PAC7SHh8ld9Mw3E=,fMS4mpO6buLQ/QMd+zJmxzty/VQ6B1EUZqoCU04zoRU= --no-appcompat-clear --brave_session_token=13710549437620410705 --lang=tr --device-scale-factor=1.25 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=36 --time-ticks-at-unix-epoch=-1715854909113527 --launch-time-ticks=610675339 --field-trial-handle=6608,i,12565518167307129938,11664108623005352344,262144 --variations-seed-version=1 --mojo-platform-channel-handle=7132 /prefetch:1
+13976	vmware-tray.ex	"C:\Program Files (x86)\VMware\VMware Workstation\vmware-tray.exe" 
+9412	pythonw.exe	"C:\Program Files (x86)\Nmap\zenmap\bin\pythonw.exe" -c "from zenmapGUI.App import run;run()"
+12572	vmware.exe	"C:\Program Files (x86)\VMware\VMware Workstation\vmware.exe" 
+14976	vmware-unity-h	"C:\Program Files (x86)\VMware\VMware Workstation\vmware-unity-helper.exe" -d -e:{DBDA22DA-C993-4486-9606-DC74C47207B6}
+5084	vmware-vmx.exe	"C:\Program Files (x86)\VMware\VMware Workstation\x64\vmware-vmx.exe" -T querytoken -s vmx.stdio.keep=TRUE -# "product=1;name=VMware Workstation;version=17.0.0;buildnumber=20800274;licensename=VMware Workstation;licenseversion=17.0;" -@ pipe=\\.\pipe\vmx249e88cc111c9525;msgs=ui C:\Users\technopc\Downloads\metasploitable-linux-2.0.0\Metasploitable2-Linux\Metasploitable.vmx
+13152	cmd.exe	"C:\WINDOWS\system32\cmd.exe" 
+14084	conhost.exe	\??\C:\WINDOWS\system32\conhost.exe 0x4
+8368	OpenConsole.ex	"C:\Program Files\WindowsApps\Microsoft.WindowsTerminal_1.19.11213.0_x64__8wekyb3d8bbwe\OpenConsole.exe" -Embedding
+7460	WindowsTermina	"C:\Program Files\WindowsApps\Microsoft.WindowsTerminal_1.19.11213.0_x64__8wekyb3d8bbwe\WindowsTerminal.exe" -Embedding
+7044	RuntimeBroker.	C:\Windows\System32\RuntimeBroker.exe -Embedding
+10668	jusched.exe	Process 10668: Required memory at 0x6500700000 is not valid (incomplete layer memory_layer?)
+8536	ssh.exe	ssh  msfadmin@192.168.15.131
+1900	cmd.exe	"C:\WINDOWS\system32\cmd.exe" 
+6756	conhost.exe	\??\C:\WINDOWS\system32\conhost.exe 0x4
+14468	OpenConsole.ex	"C:\Program Files\WindowsApps\Microsoft.WindowsTerminal_1.19.11213.0_x64__8wekyb3d8bbwe\OpenConsole.exe" -Embedding
+12896	KeePass.exe	"C:\Program Files\KeePass Password Safe 2\KeePass.exe" 
+14264	WhatsApp.exe	"C:\Program Files\WindowsApps\5319275A.WhatsAppDesktop_2.2418.6.0_x64__cv1g1gvanyjgm\WhatsApp.exe" -ServerName:App.AppXkf4yh0averk473g9chjmra34tgccdh3d.mca
+2352	RuntimeBroker.	C:\Windows\System32\RuntimeBroker.exe -Embedding
+3952	RuntimeBroker.	C:\Windows\System32\RuntimeBroker.exe -Embedding
+10868	brave.exe	"C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe" --type=renderer --enable-distillability-service --origin-trial-public-key=bYUKPJoPnCxeNvu72j4EmPuK7tr1PAC7SHh8ld9Mw3E=,fMS4mpO6buLQ/QMd+zJmxzty/VQ6B1EUZqoCU04zoRU= --no-appcompat-clear --brave_session_token=13710549437620410705 --lang=tr --device-scale-factor=1.25 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=38 --time-ticks-at-unix-epoch=-1715854909113527 --launch-time-ticks=726215299 --field-trial-handle=6488,i,12565518167307129938,11664108623005352344,262144 --variations-seed-version=1 --mojo-platform-channel-handle=6328 /prefetch:1
+1344	SystemSettings	Required memory at 0xc167aac020 is inaccessible (swapped)
+5912	svchost.exe	Required memory at 0xf4872a1020 is not valid (process exited?)
+3244	dllhost.exe	Required memory at 0x6b828c7020 is not valid (process exited?)
+
+Time Stamp: Thu May 16 15:09:22 2024
+
+
+******* End of command output ******
+
